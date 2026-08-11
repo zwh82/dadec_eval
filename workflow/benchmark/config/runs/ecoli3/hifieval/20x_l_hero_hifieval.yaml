@@ -1,0 +1,20 @@
+schema_version: 1
+project_root: /home/work/wenhai/dadec
+dataset: {id: ecoli3_20x}
+run: {id: ecoli3_20x_l_hero_hifieval, method: l_hero}
+inputs:
+  corrected_fasta: benchmark/runs/ecoli3_20x/ecoli3_20x_l_hero_original_k31_ls5_hs30_hi3/output/short_20x/l_hero/corrected.fa
+  raw_paf: /home/yczhang/zyc/final_result/ecoil/data/long/long_reads.paf
+  reference: /home/yczhang/zyc/final_result/ecoil/data/ref/ref.fa
+  truth_maf: /home/yczhang/zyc/final_result/ecoil/data/long/any/hap.maf
+tools:
+  minimap2: /home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2
+  hifieval: tools/hifieval/hifieval.py
+  readseval: tools/hifieval/readseval.py
+environment: dadec_eval
+threads: 64
+header_transform: none
+read_mapping_mode: legacy_endpoint
+min_free_disk_gb: 5
+checksum_inputs: true
+output_dir: benchmark/results/hifieval/ecoli3_20x/l_hero

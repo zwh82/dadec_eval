@@ -1,0 +1,92 @@
+project_root: /home/work/wenhai/dadec
+
+tools:
+  conda: /home/wenhai/miniconda3/bin/conda
+  python: python
+  runner_python: /home/wenhai/miniconda3/envs/dadec_eval/bin/python
+  hero_python: /home/wenhai/miniconda3/envs/hero/bin/python
+  dadec: /home/work/wenhai/wh-github/DADEC/DADEC
+  fmlrc: /home/wenhai/miniconda3/envs/hero/bin/fmlrc2
+  fmlrc_convert: /home/wenhai/miniconda3/envs/hero/bin/fmlrc2-convert
+  ropebwt2: /home/wenhai/miniconda3/envs/hero/bin/ropebwt2
+  hero: /home/yczhang/zyc/HERO/HERO/bin/HERO.py
+  ratatosk: /home/yczhang/zyc/tools/Ratatosk/bin/Ratatosk
+  lordec: /home/yczhang/zyc/tools/lordec-bin_0.9_linux64/lordec-correct
+  colormap: /home/yczhang/zyc/final_experiment/colormap/runCorr.sh
+  proovread: /home/work/wenhai/dadec/tools/proovread/bin/proovread
+  vechat: /home/wenhai/miniconda3/envs/vechat/bin/vechat
+  dechat: /home/wenhai/miniconda3/envs/vechat/bin/dechat
+  seqkit: /home/work/wenhai/bin/seqkit
+  quast: /home/yczhang/zyc/tools/quast/quast.py
+  metaquast: /home/yczhang/zyc/tools/quast/metaquast.py
+  time: /usr/bin/time
+
+environments:
+  evaluation: dadec_eval
+  methods:
+    dadec: DADEC
+    fmlrc: dadec_eval
+    f_hero: hero
+    ratatosk: dadec_eval
+    r_hero: hero
+    lordec: dadec_eval
+    l_hero: hero
+    colormap: dadec_eval
+    proovread: proovread
+    vechat: vechat
+    dechat: vechat
+
+methods: all
+parameter_profile: study
+evaluation_only: false
+parameters:
+  profiles:
+    tool_defaults: {}
+    study:
+      dadec_k1: 31
+      dadec_k2: 31
+      fmlrc_k1: 21
+      fmlrc_k2: 59
+      ratatosk_k1: 31
+      ratatosk_k2: 63
+      lordec_k: 21
+  hero_split: 10
+  hero_iterations: 3
+  lordec_solid: 5
+
+resources:
+  method_threads: 64
+  metaquast_threads: 64
+  min_free_disk_gb: 40
+
+dadec:
+  split_number: 1
+  msa_threshold: 0.08
+  abundance_min1: 2
+  abundance_min2: 1
+
+metaquast:
+  ambiguity_usage: all
+  ambiguity_scores: [0.99, 0.9999]
+  min_contig: 500
+  # Previous report-only speed flags (kept for provenance):
+  # extra_args: "--no-html --no-icarus --no-krona"
+  extra_args: "--fast"
+
+quast:
+  min_contig: 500
+  # Previous report-only speed flags (kept for provenance):
+  # extra_args: "--no-html --no-icarus"
+  extra_args: "--fast"
+
+quast_cleanup:
+  threshold_mib: 100
+
+evaluation:
+  tool: metaquast
+
+paths:
+  run_root: benchmark/runs
+  work: benchmark/work
+  results: benchmark/results
+  logs: benchmark/logs

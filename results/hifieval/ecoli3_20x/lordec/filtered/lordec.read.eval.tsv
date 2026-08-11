@@ -1,0 +1,7 @@
+metric	count
+raw_mismapped	114
+corrected_mismapped	169
+read_oc	87
+read_cc	32
+read_uc	82
+read_oc_filtered_from_base_eval	87

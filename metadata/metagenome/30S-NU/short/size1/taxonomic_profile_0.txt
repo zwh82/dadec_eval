@@ -1,0 +1,87 @@
+@SampleID:
+@Version:0.9.1
+@Ranks:superkingdom|phylum|class|order|family|genus|species|strain
+
+@@TAXID	RANK	TAXPATH	TAXPATHSN	PERCENTAGE	_CAMI_genomeID	_CAMI_OTU
+2	superkingdom	2	Bacteria	100.0000		
+1239	phylum	2|1239	Bacteria|Firmicutes	54.5866		
+1224	phylum	2|1224	Bacteria|Proteobacteria	41.2578		
+1117	phylum	2|1117	Bacteria|Cyanobacteria	4.1557		
+91061	class	2|1239|91061	Bacteria|Firmicutes|Bacilli	19.3427		
+186801	class	2|1239|186801	Bacteria|Firmicutes|Clostridia	35.2439		
+1236	class	2|1224|1236	Bacteria|Proteobacteria|Gammaproteobacteria	28.8114		
+29547	class	2|1224|29547	Bacteria|Proteobacteria|Epsilonproteobacteria	10.0748		
+28221	class	2|1224|28221	Bacteria|Proteobacteria|Deltaproteobacteria	2.3716		
+186826	order	2|1239|91061|186826	Bacteria|Firmicutes|Bacilli|Lactobacillales	8.1039		
+186802	order	2|1239|186801|186802	Bacteria|Firmicutes|Clostridia|Clostridiales	35.2439		
+91347	order	2|1224|1236|91347	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales	19.0215		
+1385	order	2|1239|91061|1385	Bacteria|Firmicutes|Bacilli|Bacillales	11.2388		
+72274	order	2|1224|1236|72274	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales	9.7898		
+213849	order	2|1224|29547|213849	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales	10.0748		
+1150	order	2|1117||1150	Bacteria|Cyanobacteria||Oscillatoriales	4.1557		
+213115	order	2|1224|28221|213115	Bacteria|Proteobacteria|Deltaproteobacteria|Desulfovibrionales	2.3716		
+1300	family	2|1239|91061|186826|1300	Bacteria|Firmicutes|Bacilli|Lactobacillales|Streptococcaceae	8.1039		
+31979	family	2|1239|186801|186802|31979	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae	35.2439		
+543	family	2|1224|1236|91347|543	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae	19.0215		
+186817	family	2|1239|91061|1385|186817	Bacteria|Firmicutes|Bacilli|Bacillales|Bacillaceae	6.1435		
+468	family	2|1224|1236|72274|468	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales|Moraxellaceae	9.7898		
+72293	family	2|1224|29547|213849|72293	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae	10.0748		
+1892252	family	2|1117||1150|1892252	Bacteria|Cyanobacteria||Oscillatoriales|Microcoleaceae	4.1557		
+194924	family	2|1224|28221|213115|194924	Bacteria|Proteobacteria|Deltaproteobacteria|Desulfovibrionales|Desulfovibrionaceae	2.3716		
+90964	family	2|1239|91061|1385|90964	Bacteria|Firmicutes|Bacilli|Bacillales|Staphylococcaceae	5.0953		
+1301	genus	2|1239|91061|186826|1300|1301	Bacteria|Firmicutes|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus	8.1039		
+1485	genus	2|1239|186801|186802|31979|1485	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium	35.2439		
+547	genus	2|1224|1236|91347|543|547	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter	10.6077		
+1386	genus	2|1239|91061|1385|186817|1386	Bacteria|Firmicutes|Bacilli|Bacillales|Bacillaceae|Bacillus	6.1435		
+469	genus	2|1224|1236|72274|468|469	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales|Moraxellaceae|Acinetobacter	9.7898		
+209	genus	2|1224|29547|213849|72293|209	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter	10.0748		
+1205	genus	2|1117||1150|1892252|1205	Bacteria|Cyanobacteria||Oscillatoriales|Microcoleaceae|Trichodesmium	4.1557		
+561	genus	2|1224|1236|91347|543|561	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia	8.4138		
+872	genus	2|1224|28221|213115|194924|872	Bacteria|Proteobacteria|Deltaproteobacteria|Desulfovibrionales|Desulfovibrionaceae|Desulfovibrio	2.3716		
+1279	genus	2|1239|91061|1385|90964|1279	Bacteria|Firmicutes|Bacilli|Bacillales|Staphylococcaceae|Staphylococcus	5.0953		
+1313	species	2|1239|91061|186826|1300|1301|1313	Bacteria|Firmicutes|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae	8.1039		
+1509	species	2|1239|186801|186802|31979|1485|1509	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium sporogenes	11.2183		
+1812934	species	2|1224|1236|91347|543|547|1812934	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter cloacae complex 'Hoffmann cluster III'	3.4492		
+1296536	species	2|1224|1236|91347|543|547|1296536	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter xiangfangensis	3.5334		
+1392	species	2|1239|91061|1385|186817|1386|1392	Bacteria|Firmicutes|Bacilli|Bacillales|Bacillaceae|Bacillus|Bacillus anthracis	6.1435		
+1492	species	2|1239|186801|186802|31979|1485|1492	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium butyricum	6.2132		
+36745	species	2|1239|186801|186802|31979|1485|36745	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium saccharoperbutylacetonicum	3.4976		
+1504	species	2|1239|186801|186802|31979|1485|1504	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium septicum	8.8904		
+470	species	2|1224|1236|72274|468|469|470	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii	9.7898		
+210	species	2|1224|29547|213849|72293|209|210	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori	10.0748		
+1206	species	2|1117||1150|1892252|1205|1206	Bacteria|Cyanobacteria||Oscillatoriales|Microcoleaceae|Trichodesmium|Trichodesmium erythraeum	4.1557		
+562	species	2|1224|1236|91347|543|561|562	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli	8.4138		
+1502	species	2|1239|186801|186802|31979|1485|1502	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium perfringens	5.4243		
+881	species	2|1224|28221|213115|194924|872|881	Bacteria|Proteobacteria|Deltaproteobacteria|Desulfovibrionales|Desulfovibrionaceae|Desulfovibrio|Desulfovibrio vulgaris	2.3716		
+158836	species	2|1224|1236|91347|543|547|158836	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter hormaechei	3.6251		
+1280	species	2|1239|91061|1385|90964|1279|1280	Bacteria|Firmicutes|Bacilli|Bacillales|Staphylococcaceae|Staphylococcus|Staphylococcus aureus	5.0953		
+170187.1	strain	2|1239|91061|186826|1300|1301|1313|170187.1	Bacteria|Firmicutes|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae|Streptococcus pneumoniae TIGR4 strain	1.9194	GCF_000006885.1	2
+1509.1	strain	2|1239|186801|186802|31979|1485|1509|1509.1	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium sporogenes|Clostridium sporogenes strain	3.8803	GCF_001020205.1	12
+1812934.1	strain	2|1224|1236|91347|543|547|1812934|1812934.1	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter cloacae complex 'Hoffmann cluster III'|Enterobacter cloacae complex 'Hoffmann cluster III' strain	3.4492	GCF_001729745.1	15
+1296536.1	strain	2|1224|1236|91347|543|547|1296536|1296536.1	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter xiangfangensis|Enterobacter xiangfangensis strain	3.5334	GCF_001729785.1	16
+198094.1	strain	2|1239|91061|1385|186817|1386|1392|198094.1	Bacteria|Firmicutes|Bacilli|Bacillales|Bacillaceae|Bacillus|Bacillus anthracis|Bacillus anthracis str. Ames strain	4.2498	GCF_000007845.1	3
+1492.1	strain	2|1239|186801|186802|31979|1485|1492|1492.1	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium butyricum|Clostridium butyricum strain	2.6348	GCF_014131795.1	23
+931276.1	strain	2|1239|186801|186802|31979|1485|36745|931276.1	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium saccharoperbutylacetonicum|Clostridium saccharoperbutylacetonicum N1-4(HMT) strain	3.4976	GCF_000340885.1	10
+1509.2	strain	2|1239|186801|186802|31979|1485|1509|1509.2	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium sporogenes|Clostridium sporogenes strain	4.2701	GCF_900461305.1	30
+1504.1	strain	2|1239|186801|186802|31979|1485|1504|1504.1	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium septicum|Clostridium septicum strain	2.5665	GCF_003606265.1	19
+470.1	strain	2|1224|1236|72274|468|469|470|470.1	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii|Acinetobacter baumannii strain	3.8082	GCF_017090145.1	25
+210.1	strain	2|1224|29547|213849|72293|209|210|210.1	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori|Helicobacter pylori strain	2.4482	GCF_004295525.1	20
+470.2	strain	2|1224|1236|72274|468|469|470|470.2	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii|Acinetobacter baumannii strain	4.5128	GCF_900444725.1	29
+1313.1	strain	2|1239|91061|186826|1300|1301|1313|1313.1	Bacteria|Firmicutes|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae|Streptococcus pneumoniae strain	2.0287	GCF_001679535.1	14
+210.2	strain	2|1224|29547|213849|72293|209|210|210.2	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori|Helicobacter pylori strain	4.4497	GCF_025998455.1	28
+203124.1	strain	2|1117||1150|1892252|1205|1206|203124.1	Bacteria|Cyanobacteria||Oscillatoriales|Microcoleaceae|Trichodesmium|Trichodesmium erythraeum|Trichodesmium erythraeum IMS101 strain	4.1557	GCF_000014265.1	8
+1509.3	strain	2|1239|186801|186802|31979|1485|1509|1509.3	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium sporogenes|Clostridium sporogenes strain	3.0679	GCF_000973705.1	11
+386585.1	strain	2|1224|1236|91347|543|561|562|386585.1	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli|Escherichia coli O157:H7 str. Sakai strain	2.9199	GCF_000008865.2	5
+470.3	strain	2|1224|1236|72274|468|469|470|470.3	Bacteria|Proteobacteria|Gammaproteobacteria|Pseudomonadales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii|Acinetobacter baumannii strain	1.4688	GCF_009035845.1	22
+1502.1	strain	2|1239|186801|186802|31979|1485|1502|1502.1	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium perfringens|Clostridium perfringens strain	1.7978	GCF_016027375.1	24
+1504.2	strain	2|1239|186801|186802|31979|1485|1504|1504.2	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium septicum|Clostridium septicum strain	6.3239	GCF_020736665.1	27
+210.3	strain	2|1224|29547|213849|72293|209|210|210.3	Bacteria|Proteobacteria|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori|Helicobacter pylori strain	3.1770	GCF_003050665.1	18
+1313.2	strain	2|1239|91061|186826|1300|1301|1313|1313.2	Bacteria|Firmicutes|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae|Streptococcus pneumoniae strain	4.1558	GCF_001457635.1	13
+882.1	strain	2|1224|28221|213115|194924|872|881|882.1	Bacteria|Proteobacteria|Deltaproteobacteria|Desulfovibrionales|Desulfovibrionaceae|Desulfovibrio|Desulfovibrio vulgaris|Desulfovibrio vulgaris str. Hildenborough strain	2.3716	GCF_000195755.1	9
+158836.1	strain	2|1224|1236|91347|543|547|158836|158836.1	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter hormaechei|Enterobacter hormaechei strain	3.6251	GCF_019048245.1	26
+195103.1	strain	2|1239|186801|186802|31979|1485|1502|195103.1	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium perfringens|Clostridium perfringens ATCC 13124 strain	3.6265	GCF_000013285.1	6
+93061.1	strain	2|1239|91061|1385|90964|1279|1280|93061.1	Bacteria|Firmicutes|Bacilli|Bacillales|Staphylococcaceae|Staphylococcus|Staphylococcus aureus|Staphylococcus aureus subsp. aureus NCTC 8325 strain	5.0953	GCF_000013425.1	7
+1492.2	strain	2|1239|186801|186802|31979|1485|1492|1492.2	Bacteria|Firmicutes|Clostridia|Clostridiales|Clostridiaceae|Clostridium|Clostridium butyricum|Clostridium butyricum strain	3.5784	GCF_006742065.1	21
+261594.1	strain	2|1239|91061|1385|186817|1386|1392|261594.1	Bacteria|Firmicutes|Bacilli|Bacillales|Bacillaceae|Bacillus|Bacillus anthracis|Bacillus anthracis str. 'Ames Ancestor' strain	1.8937	GCF_000008445.1	4
+562.1	strain	2|1224|1236|91347|543|561|562|562.1	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli|Escherichia coli strain	2.4988	GCF_002058765.1	17
+511145.1	strain	2|1224|1236|91347|543|561|562|511145.1	Bacteria|Proteobacteria|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli|Escherichia coli str. K-12 substr. MG1655 strain	2.9952	GCF_000005845.2	1

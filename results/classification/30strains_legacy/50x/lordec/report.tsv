@@ -1,0 +1,22 @@
+name	taxID	taxRank	genomeSize	numReads	numUniqueReads	abundance
+Helicobacter pylori	210	species	5058328	4684	2305	0.0137558
+Acinetobacter baumannii	470	species	11893028	22336	791	0.120486
+Escherichia coli	562	species	5070115	2848	2818	0.0106466
+Nitratidesulfovibrio vulgaris str. Hildenborough	882	strain	3773159	1846	1846	0.0011274
+Streptococcus pneumoniae	1313	species	2160842	4184	1682	0.0466105
+Clostridium butyricum	1492	species	9410692	11449	677	0.10487
+Clostridium perfringens	1502	species	3256683	1337	1245	0.0225974
+Clostridium septicum	1504	species	6803993	10189	2351	0.120932
+Clostridium sporogenes	1509	species	12562466	26312	1420	0.12062
+Staphylococcus aureus subsp. aureus NCTC 8325	93061	strain	2821361	2964	2964	0.136665
+Enterobacter hormaechei	158836	species	4670207	3701	3695	0.0210797
+Streptococcus pneumoniae TIGR4	170187	strain	2160842	897	870	0.00471414
+Clostridium perfringens ATCC 13124	195103	strain	3256683	2464	2371	0.0206004
+Bacillus anthracis str. Ames	198094	strain	5227293	6528	171	0.154585
+Trichodesmium erythraeum IMS101	203124	strain	7750108	6698	6698	0.0020779
+Bacillus anthracis str. 'Ames Ancestor'	261594	strain	5227419	6493	136	0.062809
+Escherichia coli O157:H7 str. Sakai	386585	strain	5498578	3328	3310	0.000221667
+Escherichia coli str. K-12 substr. MG1655	511145	leaf	4641652	2879	2846	0.00859735
+Clostridium saccharoperbutylacetonicum N1-4(HMT)	931276	leaf	6666445	4810	4810	0.0255696
+Enterobacter hormaechei subsp. xiangfangensis	1296536	subspecies	4661849	3414	3407	0.00143391
+Enterobacter hormaechei subsp. hoffmannii	1812934	subspecies	4678566	3329	3322	0.0

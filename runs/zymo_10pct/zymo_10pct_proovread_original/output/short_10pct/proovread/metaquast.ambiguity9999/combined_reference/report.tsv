@@ -1,0 +1,43 @@
+Assembly	proovread
+# contigs (>= 0 bp)	346162
+# contigs (>= 1000 bp)	318623
+# contigs (>= 5000 bp)	95766
+# contigs (>= 10000 bp)	18701
+# contigs (>= 25000 bp)	603
+# contigs (>= 50000 bp)	3
+Total length (>= 0 bp)	1446746776
+Total length (>= 1000 bp)	1429219838
+Total length (>= 5000 bp)	779444768
+Total length (>= 10000 bp)	267840868
+Total length (>= 25000 bp)	17727797
+Total length (>= 50000 bp)	279564
+# contigs	337722
+Largest contig	144685
+Total length	1443296132
+Reference length	76778694
+N50	5309
+N90	2315
+auN	6861.9
+L50	84544
+L90	242368
+# misassemblies	14190
+# misassembled contigs	13499
+Misassembled contigs length	112557413
+# local misassemblies	12970
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	3873
+# unaligned contigs	26342 + 18610 part
+Unaligned length	133364580
+Genome fraction (%)	78.585
+Duplication ratio	22.951
+# N's per 100 kbp	0.14
+# mismatches per 100 kbp	191.25
+# indels per 100 kbp	185.16
+Largest alignment	43698
+Total aligned length	1299780021
+NA50	4629
+NA90	286
+auNA	5793.0
+LA50	96363
+LA90	327549

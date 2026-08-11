@@ -1,0 +1,71 @@
+schema_version: 1
+project_root: /home/work/wenhai/dadec
+dataset: drosophila
+run_id: drosophila_43x_assembly
+threads: 64
+quast_threads: 64
+genome_size: 137m
+min_free_disk_gb: 500
+output_root: benchmark/runs/drosophila_43x/assembly
+
+reference: /home/yczhang/zyc/final_result/Drosophila/data/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna
+
+tools:
+  python: /home/wenhai/miniconda3/envs/dadec_eval/bin/python
+  time: /usr/bin/time
+  canu: /home/yczhang/zyc/final_experiment/canu/build/bin/canu
+  hifiasm: /home/yczhang/zyc/final_experiment/hifiasm/hifiasm
+  quast: /home/yczhang/zyc/tools/quast/quast.py
+
+methods:
+  dadec:
+    mode: build
+    corrected_fasta: benchmark/runs/drosophila_43x/drosophila_43x_dadec_dev_fix_a_k39_k39_s3_a3_a2/output/short_43x/dadec/corrected.fa
+  fmlrc:
+    mode: reuse
+    assemblies:
+      canu: /home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_fmlrc1.fa
+      hifiasm: /home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/fmlrc1.hifiasm.fa
+  ratatosk:
+    mode: reuse
+    assemblies:
+      canu: /home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_ratatosk1.fa
+      hifiasm: /home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/ratatosk1.hifiasm.fa
+  lordec:
+    mode: reuse
+    assemblies:
+      canu: /home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_lordec1.fa
+      hifiasm: /home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/lordec1.hifiasm.fa
+  f_hero:
+    mode: reuse
+    assemblies:
+      canu: /home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_F_HERO.fa
+      hifiasm: /home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/F_HERO.hifiasm.fa
+  r_hero:
+    mode: reuse
+    assemblies:
+      canu: /home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_R_HERO.fa
+      hifiasm: /home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/R_HERO.hifiasm.fa
+  l_hero:
+    mode: reuse
+    assemblies:
+      canu: /home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_L_HERO.fa
+      hifiasm: /home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/L_HERO.hifiasm.fa
+  colormap:
+    mode: build
+    corrected_fasta: /home/yczhang/zyc/final_result/Drosophila/test/colormap_sp.fa
+    skip_assemblers:
+      - canu
+      - hifiasm
+    skip_reasons:
+      canu: Canu retained only 5.96x trimmed-read coverage, below its 10x minimum
+      hifiasm: hifiasm produced an empty GFA for this corrected-read input
+  proovread:
+    mode: build
+    corrected_fasta: /home/yczhang/zyc/final_result/Drosophila/test/proovread.fa
+    skip_assemblers:
+      - canu
+      - hifiasm
+    skip_reasons:
+      canu: Proovread correction did not yield sufficient input quality for a valid assembly
+      hifiasm: hifiasm produced an empty GFA for this corrected-read input

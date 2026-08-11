@@ -1,0 +1,6 @@
+evaluation:
+  tool: quast
+  corrected_fasta: /home/yczhang/zyc/final_result/Arabidopsis/data/sim/cor/lordec1.fa
+run: {id: arabidopsis_sim_32x_lordec_original, coverage: 32x, method: lordec, parameter_set: original}
+lordec_k: 31
+lordec_solid: 5

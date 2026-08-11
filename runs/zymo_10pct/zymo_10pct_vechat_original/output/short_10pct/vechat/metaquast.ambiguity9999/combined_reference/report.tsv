@@ -1,0 +1,45 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     vechat        
+# contigs (>= 0 bp)          177470        
+# contigs (>= 1000 bp)       177447        
+# contigs (>= 5000 bp)       47652         
+# contigs (>= 10000 bp)      7927          
+# contigs (>= 25000 bp)      252           
+# contigs (>= 50000 bp)      0             
+Total length (>= 0 bp)       768356092     
+Total length (>= 1000 bp)    768333126     
+Total length (>= 5000 bp)    377663336     
+Total length (>= 10000 bp)   113498891     
+Total length (>= 25000 bp)   7309336       
+Total length (>= 50000 bp)   0             
+# contigs                    177470        
+Largest contig               44550         
+Total length                 768356092     
+Reference length             76778694      
+N50                          4979          
+N90                          2446          
+auN                          6400.4        
+L50                          48958         
+L90                          134940        
+# misassemblies              9625          
+# misassembled contigs       9158          
+Misassembled contigs length  73835902      
+# local misassemblies        15491         
+# scaffold gap ext. mis.     0             
+# scaffold gap loc. mis.     0             
+# unaligned mis. contigs     13            
+# unaligned contigs          122 + 735 part
+Unaligned length             2096925       
+Genome fraction (%)          45.018        
+Duplication ratio            23.132        
+# N's per 100 kbp            0.00          
+# mismatches per 100 kbp     98.75         
+# indels per 100 kbp         533.21        
+Largest alignment            40723         
+Total aligned length         765789656     
+NA50                         4824          
+NA90                         2373          
+auNA                         5954.5        
+LA50                         52872         
+LA90                         143218        

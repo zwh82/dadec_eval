@@ -1,0 +1,4 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/100strains/100_cor/colormap_sp.fa
+run: {id: 100strains_legacy_30x_colormap_original, coverage: 30x, method: colormap, parameter_set: original}

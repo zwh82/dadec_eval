@@ -1,0 +1,39 @@
+version: 1
+
+# These are experiment-level defaults selected for this benchmark. LoRDEC 0.9
+# itself does not provide defaults for its mandatory -k and -s options.
+methods:
+  fmlrc:
+    fmlrc_k1: 21
+    fmlrc_k2: 59
+  ratatosk:
+    ratatosk_k1: 31
+    ratatosk_k2: 63
+  lordec:
+    lordec_k: 19
+    lordec_solid: 5
+
+datasets:
+  - id: 100strains
+    config: benchmark/config/datasets/100strains.yaml
+    run_config_dir: benchmark/config/runs/100strains
+  - id: 30strains
+    config: benchmark/config/datasets/30strains.yaml
+    run_config_dir: benchmark/config/runs/30strains
+  - id: 30strains_legacy
+    config: benchmark/config/datasets/30strains_legacy.yaml
+    run_config_dir: benchmark/config/runs/30strains_legacy
+  - id: arabidopsis
+    config: benchmark/config/datasets/arabidopsis.yaml
+    run_config_dir: benchmark/config/runs/arabidopsis
+  - id: ecoli3
+    config: benchmark/config/datasets/ecoli3.yaml
+    run_config_dir: benchmark/config/runs/ecoli3
+  - id: ecoli_error
+    config: benchmark/config/datasets/ecoli_error_tech.yaml
+    run_config_dir: benchmark/config/runs/ecoli_error
+    run_labels:
+      20x: miseq
+      21x: nextseq
+      22x: novaseq
+      23x: hiseq

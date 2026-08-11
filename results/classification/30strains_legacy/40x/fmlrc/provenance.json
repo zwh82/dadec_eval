@@ -1,0 +1,14 @@
+{
+  "assignment": "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/40x/fmlrc/assignments.tsv",
+  "assignment_sha256": "768f6671a293133624e1b5011ab6aad48ca07b38ece4827cfdf508cf77363293",
+  "comparison": {
+    "actual_rows": 21,
+    "diffs": [],
+    "expected_rows": 21,
+    "match": true
+  },
+  "coverage": "40x",
+  "report": "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/40x/fmlrc/report.tsv",
+  "report_sha256": "fa472c0f2d0504c18102bacf550fef1870ed51b48c057afb887c0418281d6e96",
+  "status": "current_match"
+}

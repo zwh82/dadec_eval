@@ -1,0 +1,9 @@
+evaluation:
+  tool: quast
+  # Fill in the corrected FASTA path before running this evaluation.
+  corrected_fasta: /home/yczhang/zyc/final_result/Drosophila/test/R_HERO.fa
+run: {id: drosophila_43x_r_hero, coverage: 43x, method: r_hero, parameter_set: original}
+ratatosk_k1: 31
+ratatosk_k2: 63
+hero_split: 10
+hero_iterations: 1

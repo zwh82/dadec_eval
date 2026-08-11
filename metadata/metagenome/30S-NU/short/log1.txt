@@ -1,0 +1,1021 @@
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 1.37
+
+The random seed for the run: 501461949
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            4.77305X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000006885.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000006885.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000006885.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 1.34
+
+The random seed for the run: 1168887846
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            5.04488X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001679535.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001679535.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001679535.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 1.34
+
+The random seed for the run: 1936314120
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            6.08797X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_004295525.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_004295525.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_004295525.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 2.45
+
+The random seed for the run: 1578860196
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            11.0651X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_025998455.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_025998455.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_025998455.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 2.85
+
+The random seed for the run: 1334301016
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            6.38221X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_003606265.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_003606265.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_003606265.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 1.95
+
+The random seed for the run: 707234499
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            3.65241X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_009035845.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_009035845.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_009035845.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 1.99
+
+The random seed for the run: 2008261020
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            4.47069X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_016027375.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_016027375.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_016027375.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 4.08
+
+The random seed for the run: 1759491054
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            6.55207X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_014131795.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_014131795.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_014131795.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 4.16
+
+The random seed for the run: 540262785
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            7.62904X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000973705.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000973705.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000973705.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 1.76
+
+The random seed for the run: 1844314074
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            7.90025X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_003050665.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_003050665.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_003050665.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 4.87
+
+The random seed for the run: 1095861397
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            9.47007X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_017090145.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_017090145.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_017090145.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.24
+
+The random seed for the run: 1457648466
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            9.64935X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001020205.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001020205.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001020205.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.36
+
+The random seed for the run: 827354944
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            8.78674X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001729785.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001729785.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001729785.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.39
+
+The random seed for the run: 1298973812
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            8.57713X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001729745.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001729745.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001729745.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.93
+
+The random seed for the run: 572969589
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            11.2222X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_900444725.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_900444725.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_900444725.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.98
+
+The random seed for the run: 2147233187
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            10.6185X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_900461305.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_900461305.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_900461305.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 2.87
+
+The random seed for the run: 2109612831
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            10.3343X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001457635.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001457635.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_001457635.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 2.99
+
+The random seed for the run: 1363369712
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            5.89745X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000195755.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000195755.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000195755.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.35
+
+The random seed for the run: 462162147
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            7.26097X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000008865.21.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000008865.22.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000008865.2.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 7.38
+
+The random seed for the run: 285191647
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            10.568X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000007845.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000007845.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000007845.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 7.72
+
+The random seed for the run: 1719137085
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            8.69768X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000340885.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000340885.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000340885.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 3.97
+
+The random seed for the run: 1127583849
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            9.01805X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000013285.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000013285.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000013285.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 3.27
+
+The random seed for the run: 963443859
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            4.70918X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000008445.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000008445.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000008445.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 4.74
+
+The random seed for the run: 1513042778
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            12.6707X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000013425.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000013425.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000013425.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 7.04
+
+The random seed for the run: 1414372849
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            15.7259X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_020736665.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_020736665.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_020736665.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 4.51
+
+The random seed for the run: 623796022
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            6.21372X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_002058765.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_002058765.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_002058765.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.84
+
+The random seed for the run: 2025652157
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            9.01465X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_019048245.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_019048245.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_019048245.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 4.61
+
+The random seed for the run: 67047012
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            7.44827X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000005845.21.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000005845.22.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000005845.2.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 5.52
+
+The random seed for the run: 1032956336
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            8.89852X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_006742065.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_006742065.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_006742065.1.sam
+
+=======================================ART======================================
+                            ART_Illumina (2008-2015)                            
+                            Q Version 2.3.6 (Mar 9, 2015)                      
+                     Contact: Weichun Huang at whduke@gmail.com                 
+================================================================================
+
+                          Paired-end sequencing simulation
+
+Total CPU time used: 10.51
+
+The random seed for the run: 91520332
+
+Parameters used during run
+	Read Length:	150
+	Genome masking 'N' cutoff frequency: 	1 in 150
+	Fold Coverage:            10.334X
+	Mean Fragment Length:     270
+	Standard Deviation:       27
+	Profile Type:             Combined
+	ID Tag:                   
+
+Quality Profile(s)
+	First Read:   /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R1.txt (user's profile)
+	Second Read:  /home/yczhang/zyc/tools/CAMISIM-master/tools/art_illumina-2.3.6/profiles/ART_MBARC-26_HiSeq_R2.txt (user's profile)
+
+Output files
+
+  FASTQ Sequence Files:
+	 the 1st reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000014265.11.fq
+	 the 2nd reads: /home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000014265.12.fq
+
+  SAM Alignment File:
+	/home/yczhang/zyc/final_result/30strains/data/tmp/tmprr6ijv28/2025.05.11_12.11.02_sample_0/reads/GCF_000014265.1.sam
+
+DEBUG: Looking for genome_location at /home/yczhang/zyc/final_result/30strains/data/short/internal/genome_locations.tsv

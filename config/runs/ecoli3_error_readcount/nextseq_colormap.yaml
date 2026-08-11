@@ -1,0 +1,2 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_error_readcount_nextseq_colormap_original, coverage: 21x, method: colormap, parameter_set: original}

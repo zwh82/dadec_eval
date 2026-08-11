@@ -1,0 +1,45 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     long_reads       
+# contigs (>= 0 bp)          426510           
+# contigs (>= 1000 bp)       421521           
+# contigs (>= 5000 bp)       415887           
+# contigs (>= 10000 bp)      303942           
+# contigs (>= 25000 bp)      129              
+# contigs (>= 50000 bp)      0                
+Total length (>= 0 bp)       5000005812       
+Total length (>= 1000 bp)    4997532672       
+Total length (>= 5000 bp)    4981878938       
+Total length (>= 10000 bp)   4029592141       
+Total length (>= 25000 bp)   3366656          
+Total length (>= 50000 bp)   0                
+# contigs                    423841           
+Largest contig               30104            
+Total length                 4999225604       
+Reference length             409670985        
+N50                          12468            
+N90                          8908             
+auN                          12699.7          
+L50                          167800           
+L90                          353503           
+# misassemblies              66               
+# misassembled contigs       52               
+Misassembled contigs length  635510           
+# local misassemblies        805              
+# scaffold gap ext. mis.     0                
+# scaffold gap loc. mis.     519              
+# unaligned mis. contigs     280              
+# unaligned contigs          15992 + 5370 part
+Unaligned length             215136538        
+Genome fraction (%)          99.328           
+Duplication ratio            26.923           
+# N's per 100 kbp            4.43             
+# mismatches per 100 kbp     3601.08          
+# indels per 100 kbp         13646.70         
+Largest alignment            30087            
+Total aligned length         4774096001       
+NA50                         12255            
+NA90                         8132             
+auNA                         12089.8          
+LA50                         169744           
+LA90                         362394           

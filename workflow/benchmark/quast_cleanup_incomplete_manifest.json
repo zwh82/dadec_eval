@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-07-19T12:19:30.245750+00:00",
+  "mode": "apply",
+  "threshold_mib": 100.0,
+  "roots": [
+    {
+      "root": "/home/work/wenhai/dadec/benchmark/runs/arabidopsis_32x/arabidopsis_32x_dadec_ablation_k39_k39_s4_a3_a2_t0p1_dev_fix_c_lr_10x/stage_2/quast",
+      "required_report": null,
+      "threshold_bytes": 104857600,
+      "files": [
+        {
+          "path": "/home/work/wenhai/dadec/benchmark/runs/arabidopsis_32x/arabidopsis_32x_dadec_ablation_k39_k39_s4_a3_a2_t0p1_dev_fix_c_lr_10x/stage_2/quast/quast_corrected_input/arabidopsis.fa",
+          "size_bytes": 124876323
+        }
+      ],
+      "bytes": 124876323,
+      "status": "deleted"
+    }
+  ],
+  "file_count": 1,
+  "bytes": 124876323
+}

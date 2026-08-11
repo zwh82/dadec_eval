@@ -1,0 +1,2 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	CPU(h)	WallTime(h)	Memory(GB)	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+drosophila_43x_dadec_dev_fix_a_k39_k39_s3_a3_a2	original	drosophila	32x	43x	DADEC	NA	166.243	4.292	69.842	281.84	87.75	98.449	59859	643733

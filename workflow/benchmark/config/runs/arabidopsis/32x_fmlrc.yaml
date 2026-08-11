@@ -1,0 +1,4 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_32x_fmlrc_original, coverage: 32x, method: fmlrc, parameter_set: original}
+fmlrc_k1: 21
+fmlrc_k2: 59

@@ -1,0 +1,82 @@
+dataset_label	dataset_id	short_coverage	method	method_id	candidate_count	exact_config_count	exact_config_with_report_count	recommended_run_id	status	note
+arabidopsis	arabidopsis	3x	DADEC	dadec	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	FMLRC	fmlrc	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	F_HERO	f_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	Ratatosk	ratatosk	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	R_HERO	r_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	LoRDEC	lordec	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	L_HERO	l_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	CoLoRMap	colormap	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	3x	Proovread	proovread	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	5x	DADEC	dadec	4	1	1	arabidopsis_5x_dadec_dev_fix_a_k39_k39_s1_a2_a1_t0p1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	5x	FMLRC	fmlrc	1	1	1	arabidopsis_5x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	F_HERO	f_hero	1	1	1	arabidopsis_5x_f_hero_original_k21_k59_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	Ratatosk	ratatosk	2	1	1	arabidopsis_5x_ratatosk_original_k21_k63	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	R_HERO	r_hero	1	1	1	arabidopsis_5x_r_hero_original_k31_k63_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	LoRDEC	lordec	2	1	1	arabidopsis_5x_lordec_original_k21_ls5	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	L_HERO	l_hero	1	1	1	arabidopsis_5x_l_hero_original_k21_ls5_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	CoLoRMap	colormap	1	1	1	arabidopsis_5x_colormap_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	5x	Proovread	proovread	1	1	1	arabidopsis_5x_proovread_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	8x	DADEC	dadec	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	FMLRC	fmlrc	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	F_HERO	f_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	Ratatosk	ratatosk	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	R_HERO	r_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	LoRDEC	lordec	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	L_HERO	l_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	CoLoRMap	colormap	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	8x	Proovread	proovread	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	10x	DADEC	dadec	5	1	1	arabidopsis_10x_dadec_dev_fix_a_k39_k39_s1_a2_a1_t0p1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	10x	FMLRC	fmlrc	1	1	1	arabidopsis_10x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	F_HERO	f_hero	1	1	1	arabidopsis_10x_f_hero_original_k21_k59_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	Ratatosk	ratatosk	2	1	1	arabidopsis_10x_ratatosk_original_k21_k63	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	R_HERO	r_hero	1	1	1	arabidopsis_10x_r_hero_original_k31_k63_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	LoRDEC	lordec	2	1	1	arabidopsis_10x_lordec_original_k21_ls5	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	L_HERO	l_hero	1	1	1	arabidopsis_10x_l_hero_original_k21_ls5_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	CoLoRMap	colormap	1	1	1	arabidopsis_10x_colormap_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	10x	Proovread	proovread	1	1	1	arabidopsis_10x_proovread_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	15x	DADEC	dadec	1	1	1	arabidopsis_15x_dadec_dev_fix_a_k21_k21_s1_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	15x	FMLRC	fmlrc	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	15x	F_HERO	f_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	15x	Ratatosk	ratatosk	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	15x	R_HERO	r_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	15x	LoRDEC	lordec	1	1	1	arabidopsis_15x_lordec_original_k21_ls5	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	15x	L_HERO	l_hero	1	1	0		missing_report	exact-config candidate exists but has no required evaluation report
+arabidopsis	arabidopsis	15x	CoLoRMap	colormap	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	15x	Proovread	proovread	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	20x	DADEC	dadec	2	1	1	arabidopsis_20x_dadec_dev_fix_a_k39_k39_s1_a2_a1_t0p1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	20x	FMLRC	fmlrc	1	1	1	arabidopsis_20x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	F_HERO	f_hero	1	1	1	arabidopsis_20x_f_hero_original_k21_k59_hs10_hi3	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	Ratatosk	ratatosk	1	1	1	arabidopsis_20x_ratatosk_original_k31_k63	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	R_HERO	r_hero	1	1	1	arabidopsis_20x_r_hero_original_k31_k63_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	LoRDEC	lordec	1	1	1	arabidopsis_20x_lordec_original_k21_ls5	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	L_HERO	l_hero	1	1	1	arabidopsis_20x_l_hero_original_k21_ls5_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	CoLoRMap	colormap	1	1	1	arabidopsis_20x_colormap_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	20x	Proovread	proovread	1	1	1	arabidopsis_20x_proovread_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	25x	DADEC	dadec	1	1	1	arabidopsis_25x_dadec_dev_fix_a_k31_k31_s1_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	25x	FMLRC	fmlrc	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	F_HERO	f_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	Ratatosk	ratatosk	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	R_HERO	r_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	LoRDEC	lordec	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	L_HERO	l_hero	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	CoLoRMap	colormap	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	25x	Proovread	proovread	0	0	0		missing_run	no provenance-bearing run found
+arabidopsis	arabidopsis	30x	DADEC	dadec	2	2	2	arabidopsis_30x_dadec_dev_fix_a_k39_k39_s10_a3_a2_t0p1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	30x	FMLRC	fmlrc	1	1	1	arabidopsis_30x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	F_HERO	f_hero	1	1	1	arabidopsis_30x_f_hero_original_k21_k59_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	Ratatosk	ratatosk	1	1	1	arabidopsis_30x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	R_HERO	r_hero	1	1	1	arabidopsis_30x_r_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	LoRDEC	lordec	2	1	1	arabidopsis_30x_lordec_original_k39_ls5	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	L_HERO	l_hero	1	1	1	arabidopsis_30x_l_hero_original_k39_ls5_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	CoLoRMap	colormap	1	1	1	arabidopsis_30x_colormap_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	30x	Proovread	proovread	1	1	1	arabidopsis_30x_proovread_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	DADEC	dadec	3	2	2	arabidopsis_32x_dadec_dev_fix_a_k39_k39_s4_a3_a2_t0p1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+arabidopsis	arabidopsis	32x	FMLRC	fmlrc	1	1	1	arabidopsis_32x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	F_HERO	f_hero	1	1	1	arabidopsis_32x_f_hero_original_k21_k59_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	Ratatosk	ratatosk	2	1	1	arabidopsis_32x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	R_HERO	r_hero	1	1	1	arabidopsis_32x_r_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	LoRDEC	lordec	2	1	1	arabidopsis_32x_lordec_original_k39_ls5	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	L_HERO	l_hero	1	1	1	arabidopsis_32x_l_hero_original_k39_ls5_hs10_hi1	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	CoLoRMap	colormap	1	1	1	arabidopsis_32x_colormap_original	selected	exact config; best residual-error rank
+arabidopsis	arabidopsis	32x	Proovread	proovread	1	1	1	arabidopsis_32x_proovread_original	selected	exact config; best residual-error rank

@@ -1,0 +1,101 @@
+Strain ID	SpeciesNames	mANI
+GCF_000021065.1	Buchnera aphidicola str. Tuc7 (Acyrthosiphon pisum)	99.793953
+GCF_000183285.1	Buchnera aphidicola str. JF99 (Acyrthosiphon pisum)	99.793953
+GCF_000021085.1	Buchnera aphidicola str. 5A (Acyrthosiphon pisum)	99.707703
+GCF_009730575.1	Shewanella putrefaciens	NA
+GCF_006402015.1	Myxococcus xanthus	91.377869
+GCF_000219105.1	Corallococcus macrosporus	98.532333
+GCF_002305895.1	Corallococcus macrosporus DSM 14697	98.532333
+GCF_004135755.1	Sorangium cellulosum	95.440643
+GCF_000418325.1	Sorangium cellulosum So0157-2	95.440643
+GCF_005954665.1	Lysobacter enzymogenes	80.832245
+GCF_009720545.1	Gimesia maris	NA
+GCF_003367295.1	Borreliella burgdorferi	78.123764
+GCF_023035675.1	Borrelia hermsii DAH	96.424561
+GCF_023035795.1	Borrelia hermsii YOR	96.424561
+GCF_000512145.1	Borrelia parkeri HR1	97.471115
+GCF_023035415.1	Borrelia turicatae	99.79245
+GCF_023035855.1	Borrelia turicatae 91E135	99.79245
+GCF_025905525.1	Treponema denticola	96.953827
+GCF_024181545.1	Treponema denticola	98.006363
+GCF_024181485.1	Treponema denticola	98.006363
+GCF_002850235.1	Brachyspira hyodysenteriae	99.334839
+GCF_017751225.1	Brachyspira hyodysenteriae	99.176865
+GCF_000022105.1	Brachyspira hyodysenteriae WA1	99.334839
+GCF_029866705.1	Treponema pallidum subsp. pertenue	NA
+GCF_008152825.1	Treponema phagedenis	99.511742
+GCF_008153055.1	Treponema phagedenis	99.511742
+GCF_017161245.1	Treponema phagedenis	99.478256
+GCF_001293065.1	Leptospira interrogans serovar Hardjo str. Norma	98.847595
+GCF_005222585.1	Leptospira interrogans	98.847595
+GCF_024704545.1	Leptospira borgpetersenii	80.070885
+GCF_005222205.1	Azospirillum brasilense	74.96608
+GCF_024752555.1	Campylobacter coli	86.552094
+GCF_000759485.1	Campylobacter fetus subsp. fetus 04/554	82.533569
+GCF_912579705.1	Campylobacter jejuni	86.552094
+GCF_005844045.1	Campylobacter hyointestinalis subsp. hyointestinalis	98.454956
+GCF_001643955.1	Campylobacter hyointestinalis subsp. hyointestinalis LMG 9260	100.0
+GCF_902385735.1	Campylobacter hyointestinalis	100.0
+GCF_015680025.1	Campylobacter concisus	95.314171
+GCF_000017725.2	Campylobacter concisus 13826	95.121033
+GCF_003048375.1	Campylobacter concisus	95.314171
+GCF_000017465.2	Campylobacter curvus 525.92	78.391808
+GCF_001017575.1	Campylobacter lari	97.914047
+GCF_900638335.1	Campylobacter lari	95.085419
+GCF_000816405.1	Campylobacter lari RM16701	97.914047
+GCF_004803775.1	Campylobacter mucosalis CCUG 21559	77.800278
+GCF_002220775.1	Campylobacter sputorum	95.492844
+GCF_002220735.1	Campylobacter sputorum bv. faecalis CCUG 20703	98.141182
+GCF_002220755.1	Campylobacter sputorum bv. paraureolyticus LMG 11764	98.141182
+GCF_000498335.1	Helicobacter pylori BM012S	95.775299
+GCF_006337405.1	Helicobacter pylori	95.898193
+GCF_020735805.1	Helicobacter pylori	95.898193
+GCF_003213825.2	Helicobacter cinaedi	99.177254
+GCF_003214155.2	Helicobacter cinaedi	99.488045
+GCF_000349975.1	Helicobacter cinaedi CCUG 18818 = ATCC BAA-847	99.488045
+GCF_000740135.1	Brucella abortus	99.850677
+GCF_000740155.1	Brucella abortus	99.850677
+GCF_002022145.1	Elizabethkingia meningoseptica	98.460007
+GCF_011612125.1	Elizabethkingia meningoseptica	98.460007
+GCF_009834475.1	Empedobacter brevis	NA
+GCF_002208925.2	Chryseobacterium indologenes	98.937141
+GCF_016694815.1	Chryseobacterium indologenes	98.937141
+GCF_003815915.1	Chryseobacterium indoltheticum	96.504639
+GCF_003815895.1	Chryseobacterium indoltheticum	96.755051
+GCF_016657085.1	Chryseobacterium indoltheticum	96.755051
+GCF_016726985.1	Myroides odoratus	95.63253
+GCF_016727005.1	Myroides odoratus	95.63253
+GCF_000833355.1	Francisella tularensis subsp. novicida D9876	NA
+GCF_022846355.1	Thermus thermophilus	NA
+GCF_014076415.1	Comamonas testosteroni	99.134361
+GCF_029026905.1	Comamonas testosteroni	99.134361
+GCF_029961525.1	Pseudomonas aeruginosa	98.960228
+GCF_002192495.1	Pseudomonas aeruginosa	98.960228
+GCF_009586235.1	Burkholderia cepacia	97.909653
+GCF_023374475.1	Burkholderia cepacia	97.909653
+GCF_001747385.1	Pseudomonas fluorescens	99.031067
+GCF_016728065.1	Pseudomonas fluorescens	99.031067
+GCF_002128325.1	Pseudomonas fragi	82.293297
+GCF_017798225.1	Pseudomonas mendocina	89.078781
+GCF_029814875.1	Pseudomonas oleovorans	97.291916
+GCF_000297075.2	Pseudomonas oleovorans CECT 5344	97.291916
+GCF_000281215.1	Pseudomonas putida DOT-T1E	80.669418
+GCF_015698365.1	Ralstonia solanacearum	79.514549
+GCF_024972815.1	Stutzerimonas stutzeri	97.644608
+GCF_003008495.1	Stutzerimonas stutzeri	97.644608
+GCF_000452605.2	Pseudomonas syringae CC440	80.696053
+GCF_024760625.1	Burkholderia glumae	99.388077
+GCF_013122645.1	Burkholderia glumae	99.388077
+GCF_000012105.1	Xanthomonas campestris pv. campestris str. 8004	99.826141
+GCF_023206795.1	Xanthomonas campestris pv. campestris	99.826141
+GCF_023221635.1	Xanthomonas translucens pv. undulosa	99.358337
+GCF_017301695.1	Xanthomonas translucens pv. translucens	97.656502
+GCF_003050685.1	Xanthomonas translucens pv. undulosa	99.358337
+GCF_002019265.2	Xanthomonas citri pv. durantae	98.443062
+GCF_002288585.1	Xanthomonas citri pv. malvacearum	98.443062
+GCF_001042735.1	Xanthomonas oryzae pv. oryzicola	89.885605
+GCF_002220155.1	Azotobacter chroococcum	98.542557
+GCF_016406165.1	Azotobacter chroococcum	98.542557
+GCF_000817975.1	Azotobacter chroococcum NCIMB 8003	97.668182
+GCF_030506185.1	Azotobacter vinelandii	99.353539
+GCF_000380335.1	Azotobacter vinelandii CA	99.353539

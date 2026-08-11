@@ -1,0 +1,6 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_20x_r_hero_original, coverage: 20x, method: r_hero, parameter_set: original}
+ratatosk_k1: 31
+ratatosk_k2: 63
+hero_split: 10
+hero_iterations: 1

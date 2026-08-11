@@ -1,0 +1,20 @@
+schema_version: 1
+project_root: /home/work/wenhai/dadec
+dataset: {id: arabidopsis_sim_32x}
+run: {id: arabidopsis_sim_32x_dadec_dev_fix_a_hifieval, method: dadec}
+inputs:
+  corrected_fasta: benchmark/runs/arabidopsis_sim_32x/arabidopsis_sim_32x_dadec_original_dev_fix_a_k39_k39_s4_a3_a2_t0p1/output/short_32x/dadec/corrected.fa
+  raw_paf: /home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf
+  reference: /home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta
+  truth_maf: /home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/hap.maf
+tools:
+  minimap2: /home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2
+  hifieval: tools/hifieval/hifieval.py
+  readseval: tools/hifieval/readseval.py
+environment: dadec_eval
+threads: 64
+header_transform: strip_after_colon
+read_mapping_mode: legacy_endpoint
+min_free_disk_gb: 8
+checksum_inputs: true
+output_dir: benchmark/results/hifieval/arabidopsis_sim_32x/dadec

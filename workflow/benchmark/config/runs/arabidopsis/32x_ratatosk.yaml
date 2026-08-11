@@ -1,0 +1,4 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_32x_ratatosk_original, coverage: 32x, method: ratatosk, parameter_set: original}
+ratatosk_k1: 21
+ratatosk_k2: 31

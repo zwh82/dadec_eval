@@ -1,0 +1,4 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/mhc/nano/colormap_sp.fa
+run: {id: mhc_ont_50x_colormap_original, coverage: 50x, method: colormap, parameter_set: original}

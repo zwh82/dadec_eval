@@ -1,0 +1,43 @@
+Assembly	colormap_sp.nul_to_N
+# contigs (>= 0 bp)	426510
+# contigs (>= 1000 bp)	421698
+# contigs (>= 5000 bp)	415894
+# contigs (>= 10000 bp)	302899
+# contigs (>= 25000 bp)	123
+# contigs (>= 50000 bp)	0
+Total length (>= 0 bp)	4988353391
+Total length (>= 1000 bp)	4985868664
+Total length (>= 5000 bp)	4969963988
+Total length (>= 10000 bp)	4008725953
+Total length (>= 25000 bp)	3208244
+Total length (>= 50000 bp)	0
+# contigs	424078
+Largest contig	30104
+Total length	4987602844
+Reference length	405029333
+N50	12435
+N90	8890
+auN	12665.9
+L50	167884
+L90	353604
+# misassemblies	127
+# misassembled contigs	103
+Misassembled contigs length	1226902
+# local misassemblies	1425
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	478
+# unaligned mis. contigs	3040
+# unaligned contigs	6422 + 9342 part
+Unaligned length	136675694
+Genome fraction (%)	99.665
+Duplication ratio	25.025
+# N's per 100 kbp	3.30
+# mismatches per 100 kbp	2581.94
+# indels per 100 kbp	5735.77
+Largest alignment	30087
+Total aligned length	4841482798
+NA50	12280
+NA90	8377
+auNA	12235.9
+LA50	169327
+LA90	359853

@@ -1,0 +1,16 @@
+sample_label	interpretation	estimated_raw_depth_x	method	contigs_or_reads	genome_fraction_pct	duplication_ratio	mismatches_per_100_kbp	indels_per_100_kbp	misassemblies	local_misassemblies	source_report
+5	5% of full long-read set	9.37	DADEC	168716	66.148	14.164	94.95	75.00	9006	4228	zymo_cor/coverage_self/5_DADEC_k49_a21_s1.txt
+5	5% of full long-read set	9.37	DeChat	168591	63.535	13.641	1234.55	1982.34	6935	8279	zymo_cor/coverage_self/5_dechat.txt
+5	5% of full long-read set	9.37	VeChat	67916	33.513	11.464	101.28	577.18	3524	5738	zymo_cor/coverage_self/5_vechat.txt
+10	10% of full long-read set	18.73	DADEC	337563	78.650	23.726	93.81	75.03	17883	8364	zymo_cor/coverage_self/10_DADEC_k49_a21_s1.txt
+10	10% of full long-read set	18.73	DeChat	337305	75.863	23.055	1221.55	2117.48	14015	17995	zymo_cor/coverage_self/10_dechat.txt
+10	10% of full long-read set	18.73	VeChat	177470	45.018	23.132	98.75	533.21	9625	15491	zymo_cor/coverage_self/10_vechat.txt
+20	20% of full long-read set	37.47	DADEC	676110	89.938	41.630	95.18	75.00	35812	16707	zymo_cor/coverage_self/20_DADEC_k49_a21_s1.txt
+20	20% of full long-read set	37.47	DeChat	675605	88.316	39.740	1386.18	2438.62	27987	37844	zymo_cor/coverage_self/20_dechat.txt
+20	20% of full long-read set	37.47	VeChat	408098	49.667	49.501	101.09	500.06	21966	48130	zymo_cor/coverage_self/20_vechat.txt
+30	30% of full long-read set	56.20	DADEC	1014440	94.655	59.423	95.48	75.09	53674	24979	zymo_cor/coverage_self/30_DADEC_k49_a21_s1.txt
+30	30% of full long-read set	56.20	DeChat	1013656	93.892	55.952	1514.42	2634.17	41982	57317	zymo_cor/coverage_self/30_dechat.txt
+30	30% of full long-read set	56.20	VeChat	643228	54.826	71.114	102.59	484.54	34769	94682	zymo_cor/coverage_self/30_vechat.txt
+40	40% of full long-read set	74.93	DADEC	1351377	96.743	77.482	95.27	74.84	71588	33026	zymo_cor/coverage_self/40_DADEC_k49_a21_s1.txt
+40	40% of full long-read set	74.93	DeChat	1350300	96.470	72.359	1608.17	2760.76	55834	75712	zymo_cor/coverage_self/40_dechat.txt
+40	40% of full long-read set	74.93	VeChat	878562	60.424	88.272	100.84	474.62	47723	150890	zymo_cor/coverage_self/40_vechat.txt

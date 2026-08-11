@@ -1,0 +1,2 @@
+Assembly	# contigs (>= 1000 bp)	# contigs (>= 5000 bp)	# contigs (>= 10000 bp)	# contigs (>= 25000 bp)	# contigs (>= 50000 bp)	Total length (>= 1000 bp)	Total length (>= 5000 bp)	Total length (>= 10000 bp)	Total length (>= 25000 bp)	Total length (>= 50000 bp)	# contigs	Largest contig	Total length	N50	N90	auN	L50	L90	# N's per 100 kbp
+raw_long_reads	304877	76205	12965	315	12	1240070750	598642563	181675525	9911359	1060923	332185	144685	1260097114	4810	2040	6163.1	82610	236428	0.00

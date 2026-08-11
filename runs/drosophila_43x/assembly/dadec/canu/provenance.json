@@ -1,0 +1,13 @@
+{
+  "assembler": "canu",
+  "assembly_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/dadec/canu/assembly.fa",
+  "assembly_sha256": "643ab10f90be51579bf1c0239962b12c5a707e069406492b68433a14a764d0e8",
+  "assembly_size": 151518762,
+  "assembly_source_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/dadec/canu/work_pacbio/canu.contigs.fasta",
+  "created_utc": "2026-07-30T14:57:23.835159+00:00",
+  "method": "dadec",
+  "mode": "build",
+  "source_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/drosophila_43x_dadec_dev_fix_a_k39_k39_s3_a3_a2/output/short_43x/dadec/corrected.fa",
+  "source_sha256": "261e46fa4c85eb1cdf19bb16790ee713aa0900c9db97e02ae33a612b22319b1b",
+  "source_size": 5072285128
+}

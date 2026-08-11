@@ -1,0 +1,4 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_15x_lordec_original, coverage: 15x, method: lordec, parameter_set: original}
+lordec_k: 21
+lordec_solid: 5

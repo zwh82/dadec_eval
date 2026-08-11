@@ -1,0 +1,8 @@
+evaluation: {tool: metaquast}
+run: {id: zymo_5pct_dadec_original, coverage: 5pct, method: dadec, parameter_set: original}
+dadec_k1: 59
+dadec_k2: 59
+dadec_split: 1
+dadec_threshold: 0.08
+dadec_abundance1: 2
+dadec_abundance2: 1

@@ -1,0 +1,4 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_20x_lordec_original, coverage: 20x, method: lordec, parameter_set: original}
+lordec_k: 31
+lordec_solid: 5

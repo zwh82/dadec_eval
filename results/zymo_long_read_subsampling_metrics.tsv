@@ -1,0 +1,16 @@
+long_read_subsampling_percent	method	mismatches_per_100_kbp	indels_per_100_kbp	genome_fraction_percent	local_misassemblies	contigs_number	result_source
+5	DADEC	96.47	79.46	66.545	3849	168925	current_strict_metaquast
+5	DeChat	1234.55	1982.34	63.535	8279	168591	imported_legacy_metaquast_report
+5	VeChat	101.28	577.18	33.513	5738	67916	imported_legacy_metaquast_report
+10	DADEC	91.95	77.20	78.616	7724	337507	current_strict_metaquast
+10	DeChat	1221.55	2117.48	75.863	17995	337305	imported_legacy_metaquast_report
+10	VeChat	98.75	533.21	45.018	15491	177470	imported_legacy_metaquast_report
+20	DADEC	88.35	75.87	89.934	15542	676747	current_strict_metaquast
+20	DeChat	1386.18	2438.62	88.316	37844	675605	imported_legacy_metaquast_report
+20	VeChat	101.09	500.06	49.667	48130	408098	imported_legacy_metaquast_report
+30	DADEC	87.81	75.46	94.640	23511	1013476	current_strict_metaquast
+30	DeChat	1514.42	2634.17	93.892	57317	1013656	imported_legacy_metaquast_report
+30	VeChat	102.59	484.54	54.826	94682	643228	imported_legacy_metaquast_report
+40	DADEC	87.05	75.58	96.809	31327	1352304	current_strict_metaquast
+40	DeChat	1608.17	2760.76	96.470	75712	1350300	imported_legacy_metaquast_report
+40	VeChat	100.84	474.62	60.424	150890	878562	imported_legacy_metaquast_report

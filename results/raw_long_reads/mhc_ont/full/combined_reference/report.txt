@@ -1,0 +1,45 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     raw_long_reads
+# contigs (>= 0 bp)          7190          
+# contigs (>= 1000 bp)       7190          
+# contigs (>= 5000 bp)       5149          
+# contigs (>= 10000 bp)      3335          
+# contigs (>= 25000 bp)      1131          
+# contigs (>= 50000 bp)      278           
+Total length (>= 0 bp)       101419478     
+Total length (>= 1000 bp)    101419478     
+Total length (>= 5000 bp)    95240307      
+Total length (>= 10000 bp)   82086296      
+Total length (>= 25000 bp)   47234586      
+Total length (>= 50000 bp)   18292061      
+# contigs                    7190          
+Largest contig               96488         
+Total length                 101419478     
+Reference length             9481123       
+N50                          23167         
+N90                          6591          
+auN                          29345.5       
+L50                          1276          
+L90                          4462          
+# misassemblies              9             
+# misassembled contigs       8             
+Misassembled contigs length  170138        
+# local misassemblies        12            
+# scaffold gap ext. mis.     0             
+# scaffold gap loc. mis.     0             
+# unaligned mis. contigs     21            
+# unaligned contigs          555 + 676 part
+Unaligned length             7220249       
+Genome fraction (%)          99.944        
+Duplication ratio            10.166        
+# N's per 100 kbp            0.00          
+# mismatches per 100 kbp     3798.77       
+# indels per 100 kbp         5257.00       
+Largest alignment            96452         
+Total aligned length         93633838      
+NA50                         21236         
+NA90                         3352          
+auNA                         27424.5       
+LA50                         1339          
+LA90                         5426          

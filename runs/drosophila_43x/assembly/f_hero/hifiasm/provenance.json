@@ -1,0 +1,13 @@
+{
+  "assembler": "hifiasm",
+  "assembly_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/f_hero/hifiasm/assembly.fa",
+  "assembly_sha256": "4669612b68456e56f1dd89f43dcc065e1da30ac770cae45f3229489b5c70445c",
+  "assembly_size": 154870604,
+  "assembly_source_path": "/home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/F_HERO.hifiasm.fa",
+  "created_utc": "2026-07-31T02:29:27.410474+00:00",
+  "method": "f_hero",
+  "mode": "reuse",
+  "source_path": "/home/yczhang/zyc/final_result/Drosophila/test/assambly/hifiasm/F_HERO.hifiasm.fa",
+  "source_sha256": "4669612b68456e56f1dd89f43dcc065e1da30ac770cae45f3229489b5c70445c",
+  "source_size": 154870604
+}

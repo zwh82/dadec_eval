@@ -1,0 +1,19 @@
+method	assembler	quast_report	resource_log	provenance	report_status	resource_status
+DADEC	hifiasm	benchmark/runs/drosophila_43x/assembly/dadec/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/dadec/hifiasm/resources/hifiasm.time.txt	benchmark/runs/drosophila_43x/assembly/dadec/hifiasm/provenance.json	present	present
+DADEC	canu	benchmark/runs/drosophila_43x/assembly/dadec/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/dadec/canu/resources/canu.time.txt	benchmark/runs/drosophila_43x/assembly/dadec/canu/provenance.json	present	present
+FMLRC	hifiasm	benchmark/runs/drosophila_43x/assembly/fmlrc/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/fmlrc/hifiasm/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/fmlrc/hifiasm/provenance.json	present	present
+FMLRC	canu	benchmark/runs/drosophila_43x/assembly/fmlrc/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/fmlrc/canu/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/fmlrc/canu/provenance.json	present	present
+F_HERO	hifiasm	benchmark/runs/drosophila_43x/assembly/f_hero/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/f_hero/hifiasm/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/f_hero/hifiasm/provenance.json	present	present
+F_HERO	canu	benchmark/runs/drosophila_43x/assembly/f_hero/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/f_hero/canu/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/f_hero/canu/provenance.json	present	present
+Ratatosk	hifiasm	benchmark/runs/drosophila_43x/assembly/ratatosk/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/ratatosk/hifiasm/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/ratatosk/hifiasm/provenance.json	present	present
+Ratatosk	canu	benchmark/runs/drosophila_43x/assembly/ratatosk/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/ratatosk/canu/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/ratatosk/canu/provenance.json	present	present
+R_HERO	hifiasm	benchmark/runs/drosophila_43x/assembly/r_hero/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/r_hero/hifiasm/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/r_hero/hifiasm/provenance.json	present	present
+R_HERO	canu	benchmark/runs/drosophila_43x/assembly/r_hero/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/r_hero/canu/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/r_hero/canu/provenance.json	present	present
+LoRDEC	hifiasm	benchmark/runs/drosophila_43x/assembly/lordec/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/lordec/hifiasm/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/lordec/hifiasm/provenance.json	present	present
+LoRDEC	canu	benchmark/runs/drosophila_43x/assembly/lordec/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/lordec/canu/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/lordec/canu/provenance.json	present	present
+L_HERO	hifiasm	benchmark/runs/drosophila_43x/assembly/l_hero/hifiasm/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/l_hero/hifiasm/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/l_hero/hifiasm/provenance.json	present	present
+L_HERO	canu	benchmark/runs/drosophila_43x/assembly/l_hero/canu/quast/report.tsv	benchmark/runs/drosophila_43x/assembly/l_hero/canu/resources/quast.time.txt	benchmark/runs/drosophila_43x/assembly/l_hero/canu/provenance.json	present	present
+CoLoRMap	hifiasm		benchmark/runs/drosophila_43x/assembly/colormap/hifiasm/resources/hifiasm.time.txt		missing	present
+CoLoRMap	canu		benchmark/runs/drosophila_43x/assembly/colormap/canu/resources/canu.time.txt		missing	present
+Proovread	hifiasm		benchmark/runs/drosophila_43x/assembly/proovread/hifiasm/resources/hifiasm.time.txt		missing	present
+Proovread	canu				missing	missing

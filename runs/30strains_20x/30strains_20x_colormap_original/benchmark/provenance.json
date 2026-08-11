@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-07-08T10:07:03.104171+00:00",
+  "dataset": "30strains",
+  "long_coverage": "10x",
+  "run_id": "30strains_20x_colormap_original",
+  "parameter_set": "original",
+  "parameter_signature": "",
+  "evaluation_tool": "metaquast",
+  "run_root": "/home/work/wenhai/dadec/benchmark/runs/30strains_20x/30strains_20x_colormap_original",
+  "methods": [
+    "colormap"
+  ],
+  "parameter_profile": "study",
+  "parameters_by_coverage": {
+    "20x": {
+      "dadec_abundance1": 2,
+      "dadec_abundance2": 1,
+      "dadec_k1": 31,
+      "dadec_k2": 31,
+      "dadec_split": 1,
+      "dadec_threshold": 0.08,
+      "fmlrc_k1": 21,
+      "fmlrc_k2": 59,
+      "hero_iterations": 3,
+      "hero_split": 10,
+      "lordec_k": 21,
+      "lordec_solid": 5,
+      "ratatosk_k1": 31,
+      "ratatosk_k2": 63
+    }
+  },
+  "preflight": {
+    "status": "ok",
+    "dataset": "30strains",
+    "methods": [
+      "colormap"
+    ],
+    "evaluation_tool": "metaquast",
+    "inputs": [
+      "/home/work/wenhai/dadec/data/30strains/sim_30strains_long_10x/2026.06.30_14.04.11_sample_0/reads/anonymous_reads.fq.gz",
+      "/home/work/wenhai/dadec/data/30strains/sim_30strains_short_20x/2026.06.30_11.27.28_sample_0/reads/anonymous_reads.fq.gz"
+    ],
+    "genomes": 30,
+    "free_disk_gb": 1079.95,
+    "executables": {
+      "colormap": "/home/yczhang/zyc/final_experiment/colormap/runCorr.sh",
+      "conda": "/home/wenhai/miniconda3/bin/conda",
+      "metaquast": "/home/yczhang/zyc/tools/quast/metaquast.py",
+      "python": "/home/wenhai/miniconda3/envs/dadec_eval/bin/python3.10",
+      "runner_python": "/home/wenhai/miniconda3/envs/dadec_eval/bin/python3.10",
+      "seqkit": "/home/wenhai/application/seqkit/seqkit",
+      "time": "/usr/bin/time"
+    },
+    "method_environments": {
+      "colormap": "dadec_eval"
+    }
+  },
+  "simulation_configs": [
+    {
+      "path": "/home/work/wenhai/dadec/data/30strains/sim_30strains_long_10x_config.ini",
+      "sha256": "a8aa16719005e9161299486265d180ce2489e4f9b1af7fed4c5a32dcfd3fc22b"
+    },
+    {
+      "path": "/home/work/wenhai/dadec/data/30strains/sim_30strains_short_10x_config.ini",
+      "sha256": "03ab4b08abf690448e7e2a4fd199412225767caf7df47dc94bbe1cba3a8ee603"
+    },
+    {
+      "path": "/home/work/wenhai/dadec/data/30strains/sim_30strains_short_20x_config.ini",
+      "sha256": "c83a453464e5e870655adbdf35ce220b070ab322cb0a2feae85e4fad3c2ae1b6"
+    },
+    {
+      "path": "/home/work/wenhai/dadec/data/30strains/sim_30strains_short_30x_config.ini",
+      "sha256": "b73582f3e1f71088babc9e293c14ebb26074ff90de26123066f0a54d9a80d93f"
+    },
+    {
+      "path": "/home/work/wenhai/dadec/data/30strains/sim_30strains_short_40x_config.ini",
+      "sha256": "3237b379dd6790230c89a650438bfad2331006e7a1ccb0a246303cf721ca4045"
+    },
+    {
+      "path": "/home/work/wenhai/dadec/data/30strains/sim_30strains_short_50x_config.ini",
+      "sha256": "f23a39deb69b282305e8c7e41cd7c5d2615d595130f8f47f97aba719ea0faf0f"
+    }
+  ],
+  "run_group": "30strains_20x",
+  "ambiguity_scores": [
+    "0.99",
+    "0.9999"
+  ]
+}

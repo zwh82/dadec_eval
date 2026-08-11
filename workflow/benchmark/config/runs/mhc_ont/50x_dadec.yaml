@@ -1,0 +1,9 @@
+evaluation: {tool: metaquast}
+run: {id: mhc_ont_50x_dadec, coverage: 50x, method: dadec, parameter_set: original}
+parameter_profile: study
+dadec_k1: 63
+dadec_k2: 63
+dadec_split: 1
+dadec_threshold: 0.08
+dadec_abundance1: 2
+dadec_abundance2: 1

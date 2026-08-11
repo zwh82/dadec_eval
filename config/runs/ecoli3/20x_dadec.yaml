@@ -1,0 +1,8 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_20x_dadec, coverage: 20x, method: dadec, parameter_set: original}
+dadec_k1: 31
+dadec_k2: 31
+dadec_split: 1
+dadec_threshold: 0.08
+dadec_abundance1: 2
+dadec_abundance2: 1

@@ -1,0 +1,7 @@
+evaluation:
+  tool: quast
+  # Fill in the corrected FASTA path before running this evaluation.
+  corrected_fasta: /home/yczhang/zyc/final_result/Drosophila/test/ratatosk1.fa
+run: {id: drosophila_43x_ratatosk, coverage: 43x, method: ratatosk, parameter_set: original}
+ratatosk_k1: 31
+ratatosk_k2: 63

@@ -1,0 +1,15 @@
+method	input_type	algorithm_family	role_in_this_directory	notes
+Raw	long reads	none	baseline	Uncorrected Zymo long reads
+DADEC	short + long reads	hybrid DBG + MSA	corrected-read benchmark and 5%-40% subsampling comparison	Several parameter trials exist; k49/a21/S1 is used in the subsampling comparison
+FMLRC	short + long reads	hybrid FM-index/DBG-like path correction	corrected-read benchmark	Files named fmlrc1 are retained
+LoRDEC	short + long reads	hybrid de Bruijn graph	corrected-read benchmark	Files named lordec1 are retained
+Ratatosk	short + long reads	hybrid multi-k de Bruijn graph	corrected-read benchmark	Files named ratatosk1 are retained
+CoLoRMap	short + long reads	hybrid short-read mapping and local assembly	corrected-read benchmark	Files named colormap_sp are retained
+proovread	short + long reads	hybrid short-read alignment/consensus	corrected-read benchmark	Corrected FASTA, QUAST report, and log are retained
+F_HERO	short + long reads	hybrid-hybrid MSA refinement	corrected-read benchmark	HERO applied after FMLRC pre-correction
+L_HERO	short + long reads	hybrid-hybrid MSA refinement	corrected-read benchmark	HERO applied after LoRDEC pre-correction
+R_HERO	short + long reads	hybrid-hybrid MSA refinement	corrected-read benchmark	HERO applied after Ratatosk pre-correction
+DeChat	long reads only	self-correction: compacted DBG + haplotype-aware MSA	5%-40% subsampling comparison	QUAST reports retained; corrected FASTAs for the five fractions are absent
+VeChat	long reads only	self-correction: variation graph	5%-40% subsampling comparison	QUAST reports retained; corrected FASTAs for the five fractions are absent
+Canu	corrected long reads	assembler	downstream assembly evaluation	Assembly FASTAs and QUAST reports retained
+hifiasm	corrected long reads	assembler	downstream assembly evaluation	Only QUAST text reports are retained here

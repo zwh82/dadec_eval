@@ -1,0 +1,43 @@
+Assembly	fmlrc1
+# contigs (>= 0 bp)	426510
+# contigs (>= 1000 bp)	421459
+# contigs (>= 5000 bp)	415747
+# contigs (>= 10000 bp)	296683
+# contigs (>= 25000 bp)	100
+# contigs (>= 50000 bp)	0
+Total length (>= 0 bp)	4932460500
+Total length (>= 1000 bp)	4929958574
+Total length (>= 5000 bp)	4913890082
+Total length (>= 10000 bp)	3903158686
+Total length (>= 25000 bp)	2603902
+Total length (>= 50000 bp)	0
+# contigs	423800
+Largest contig	29665
+Total length	4931669927
+Reference length	405029333
+N50	12300
+N90	8788
+auN	12528.7
+L50	167786
+L90	353492
+# misassemblies	1295
+# misassembled contigs	1151
+Misassembled contigs length	12069889
+# local misassemblies	12583
+# scaffold gap ext. mis.	1
+# scaffold gap loc. mis.	320
+# unaligned mis. contigs	1778
+# unaligned contigs	91 + 6805 part
+Unaligned length	29732642
+Genome fraction (%)	99.688
+Duplication ratio	25.069
+# N's per 100 kbp	1.75
+# mismatches per 100 kbp	381.73
+# indels per 100 kbp	502.57
+Largest alignment	29665
+Total aligned length	4895208661
+NA50	12235
+NA90	8631
+auNA	12387.3
+LA50	168449
+LA90	355850

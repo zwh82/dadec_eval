@@ -1,0 +1,241 @@
+dataset_id: 30strains_legacy
+run_config_dir: benchmark/config/runs/30strains_legacy
+default_coverage: 10x
+output_root: benchmark/results/classification
+
+execution:
+  conda_env: dadec_eval
+  python: /home/wenhai/miniconda3/envs/dadec_eval/bin/python
+
+centrifuge:
+  bin_dir: /home/yczhang/zyc/final_experiment/centrifuge
+  python_wrapper: /usr/bin/python3
+  ld_preload_fallback: /home/wenhai/.local/custom_lib64/libstdc++.so.6
+
+database:
+  mode: existing
+  existing_prefix: /home/yczhang/zyc/final_result/30strains/classification/10x/ref
+
+truth:
+  mode: legacy_30strains_accession_groups
+
+coverages:
+  10x:
+    fmlrc:
+      run_id: 30strains_legacy_10x_fmlrc_original_k21_k31
+      run_config: benchmark/config/runs/30strains_legacy/10x_fmlrc.yaml
+      corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_fmlrc_original_k21_k31/output/short_10x/fmlrc/corrected.fa
+      historical:
+        report: /home/yczhang/zyc/final_result/30strains/classification/10x/fmlrc1_report.tsv
+        assignment: /home/yczhang/zyc/final_result/30strains/classification/10x/fmlrc1.txt
+        fallback_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/10x/fmlrc1.fa
+    dadec_dev:
+      run_id: 30strains_legacy_10x_dadec_dev_fix_a_k21_k21_s1_a2_a1
+      corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_dadec_dev_fix_a_k21_k21_s1_a2_a1/output/short_10x/dadec/corrected.fa
+    classify:
+      colormap:
+        run_id: 30strains_legacy_10x_colormap_original
+        run_config: benchmark/config/runs/30strains_legacy/10x_colormap.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_colormap_original/output/short_10x/colormap/corrected.fa
+      f_hero:
+        run_id: 30strains_legacy_10x_f_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/10x_f_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_f_hero_original_k21_k31_hs10_hi1/output/short_10x/f_hero/corrected.fa
+      l_hero:
+        run_id: 30strains_legacy_10x_l_hero_original_k21_ls5_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/10x_l_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_l_hero_original_k21_ls5_hs10_hi1/output/short_10x/l_hero/corrected.fa
+      lordec:
+        run_id: 30strains_legacy_10x_lordec_original_k21_ls5
+        run_config: benchmark/config/runs/30strains_legacy/10x_lordec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_lordec_original_k21_ls5/output/short_10x/lordec/corrected.fa
+      proovread:
+        run_id: 30strains_legacy_10x_proovread_original
+        run_config: benchmark/config/runs/30strains_legacy/10x_proovread.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_proovread_original/output/short_10x/proovread/corrected.fa
+      r_hero:
+        run_id: 30strains_legacy_10x_r_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/10x_r_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_r_hero_original_k21_k31_hs10_hi1/output/short_10x/r_hero/corrected.fa
+      ratatosk:
+        run_id: 30strains_legacy_10x_ratatosk_original_k21_k31
+        run_config: benchmark/config/runs/30strains_legacy/10x_ratatosk.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_10x/30strains_legacy_10x_ratatosk_original_k21_k31/output/short_10x/ratatosk/corrected.fa
+  20x:
+    fmlrc:
+      run_id: 30strains_legacy_20x_fmlrc_original_k21_k31
+      run_config: benchmark/config/runs/30strains_legacy/20x_fmlrc.yaml
+      corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_fmlrc_original_k21_k31/output/short_20x/fmlrc/corrected.fa
+      historical:
+        report: /home/yczhang/zyc/final_result/30strains/classification/20x/fmlrc1_report.tsv
+        assignment: /home/yczhang/zyc/final_result/30strains/classification/20x/fmlrc1.txt
+        fallback_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/20x/fmlrc1.fa
+    dadec_dev:
+      run_id: 30strains_legacy_20x_dadec_dev_fix_a_k21_k21_s1_a2_a1
+      corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_dadec_dev_fix_a_k21_k21_s1_a2_a1/output/short_20x/dadec/corrected.fa
+    classify:
+      colormap:
+        run_id: 30strains_legacy_20x_colormap_original
+        run_config: benchmark/config/runs/30strains_legacy/20x_colormap.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_colormap_original/output/short_20x/colormap/corrected.fa
+      f_hero:
+        run_id: 30strains_legacy_20x_f_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/20x_f_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_f_hero_original_k21_k31_hs10_hi1/output/short_20x/f_hero/corrected.fa
+      l_hero:
+        run_id: 30strains_legacy_20x_l_hero_original_k31_ls5_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/20x_l_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_l_hero_original_k31_ls5_hs10_hi1/output/short_20x/l_hero/corrected.fa
+      lordec:
+        run_id: 30strains_legacy_20x_lordec_original_k31_ls5
+        run_config: benchmark/config/runs/30strains_legacy/20x_lordec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_lordec_original_k31_ls5/output/short_20x/lordec/corrected.fa
+      proovread:
+        run_id: 30strains_legacy_20x_proovread_original
+        run_config: benchmark/config/runs/30strains_legacy/20x_proovread.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_proovread_original/output/short_20x/proovread/corrected.fa
+      r_hero:
+        run_id: 30strains_legacy_20x_r_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/20x_r_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_r_hero_original_k21_k31_hs10_hi1/output/short_20x/r_hero/corrected.fa
+      ratatosk:
+        run_id: 30strains_legacy_20x_ratatosk_original_k21_k31
+        run_config: benchmark/config/runs/30strains_legacy/20x_ratatosk.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_ratatosk_original_k21_k31/output/short_20x/ratatosk/corrected.fa
+  30x:
+    fmlrc:
+      run_id: 30strains_legacy_30x_fmlrc_original_k21_k59
+      run_config: benchmark/config/runs/30strains_legacy/30x_fmlrc.yaml
+      corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_fmlrc_original_k21_k59/output/short_30x/fmlrc/corrected.fa
+      historical:
+        report: /home/yczhang/zyc/final_result/30strains/classification/30x/fmlrc1_report.tsv
+        assignment: /home/yczhang/zyc/final_result/30strains/classification/30x/fmlrc1.txt
+        fallback_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/30x/fmlrc1.fa
+    dadec_dev:
+      run_id: 30strains_legacy_30x_dadec_dev_fix_a_k31_k31_s1_a2_a1
+      corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_dadec_dev_fix_a_k31_k31_s1_a2_a1/output/short_30x/dadec/corrected.fa
+    classify:
+      colormap:
+        run_id: 30strains_legacy_30x_colormap_original
+        run_config: benchmark/config/runs/30strains_legacy/30x_colormap.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_colormap_original/output/short_30x/colormap/corrected.fa
+      dadec:
+        run_id: 30strains_legacy_30x_dadec_k31_k31_s1_a2_a1
+        run_config: benchmark/config/runs/30strains_legacy/30x_dadec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_dadec_k31_k31_s1_a2_a1/output/short_30x/dadec/corrected.fa
+      f_hero:
+        run_id: 30strains_legacy_30x_f_hero_original_k21_k59_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/30x_f_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_f_hero_original_k21_k59_hs10_hi1/output/short_30x/f_hero/corrected.fa
+      l_hero:
+        run_id: 30strains_legacy_30x_l_hero_original_k31_ls5_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/30x_l_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_l_hero_original_k31_ls5_hs10_hi1/output/short_30x/l_hero/corrected.fa
+      lordec:
+        run_id: 30strains_legacy_30x_lordec_original_k31_ls5
+        run_config: benchmark/config/runs/30strains_legacy/30x_lordec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_lordec_original_k31_ls5/output/short_30x/lordec/corrected.fa
+      proovread:
+        run_id: 30strains_legacy_30x_proovread_original
+        run_config: benchmark/config/runs/30strains_legacy/30x_proovread.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_proovread_original/output/short_30x/proovread/corrected.fa
+      r_hero:
+        run_id: 30strains_legacy_30x_r_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/30x_r_hero.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_r_hero_original_k21_k31_hs10_hi1/output/short_30x/r_hero/corrected.fa
+      ratatosk:
+        run_id: 30strains_legacy_30x_ratatosk_original_k21_k31
+        run_config: benchmark/config/runs/30strains_legacy/30x_ratatosk.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_30x/30strains_legacy_30x_ratatosk_original_k21_k31/output/short_30x/ratatosk/corrected.fa
+  40x:
+    fmlrc:
+      run_id: 30strains_legacy_40x_fmlrc_original_k21_k59
+      run_config: benchmark/config/runs/30strains_legacy/40x_fmlrc.yaml
+      corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_fmlrc_original_k21_k59/output/short_40x/fmlrc/corrected.fa
+      historical:
+        report: /home/yczhang/zyc/final_result/30strains/classification/40x/fmlrc1_report.tsv
+        assignment: /home/yczhang/zyc/final_result/30strains/classification/40x/fmlrc1.txt
+        fallback_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/40x/fmlrc1.fa
+    dadec_dev:
+      run_id: 30strains_legacy_40x_dadec_dev_fix_a_k31_k31_s1_a2_a1
+      corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_dadec_dev_fix_a_k31_k31_s1_a2_a1/output/short_40x/dadec/corrected.fa
+    classify:
+      colormap:
+        run_id: 30strains_legacy_40x_colormap_original
+        run_config: benchmark/config/runs/30strains_legacy/40x_colormap.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_colormap_original/output/short_40x/colormap/corrected.fa
+      f_hero:
+        run_id: 30strains_legacy_40x_f_hero_original_k21_k59_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/40x_f_hero.yaml
+        corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/40x/F_HERO.fa
+      l_hero:
+        run_id: 30strains_legacy_40x_l_hero_original_k31_ls5_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/40x_l_hero.yaml
+        corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/40x/L_HERO.fa
+      dadec:
+        run_id: 30strains_legacy_40x_dadec_k31_k31_s1_a2_a1
+        run_config: benchmark/config/runs/30strains_legacy/40x_dadec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_dadec_k31_k31_s1_a2_a1/output/short_40x/dadec/corrected.fa
+      lordec:
+        run_id: 30strains_legacy_40x_lordec_original_k31_ls5
+        run_config: benchmark/config/runs/30strains_legacy/40x_lordec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_lordec_original_k31_ls5/output/short_40x/lordec/corrected.fa
+      proovread:
+        run_id: 30strains_legacy_40x_proovread_original
+        run_config: benchmark/config/runs/30strains_legacy/40x_proovread.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_proovread_original/output/short_40x/proovread/corrected.fa
+      r_hero:
+        run_id: 30strains_legacy_40x_r_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/40x_r_hero.yaml
+        corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/40x/R_HERO.fa
+      ratatosk:
+        run_id: 30strains_legacy_40x_ratatosk_original_k21_k31
+        run_config: benchmark/config/runs/30strains_legacy/40x_ratatosk.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_40x/30strains_legacy_40x_ratatosk_original_k21_k31/output/short_40x/ratatosk/corrected.fa
+  50x:
+    fmlrc:
+      run_id: 30strains_legacy_50x_fmlrc_original_k21_k59
+      run_config: benchmark/config/runs/30strains_legacy/50x_fmlrc.yaml
+      corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_fmlrc_original_k21_k59/output/short_50x/fmlrc/corrected.fa
+      historical:
+        report: /home/yczhang/zyc/final_result/30strains/classification/50x/fmlrc1_report.tsv
+        assignment: /home/yczhang/zyc/final_result/30strains/classification/50x/fmlrc1.txt
+        fallback_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/50x/fmlrc1.fa
+    dadec_dev:
+      run_id: 30strains_legacy_50x_dadec_dev_fix_a_k31_k31_s1_a2_a1
+      corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_dadec_dev_fix_a_k31_k31_s1_a2_a1/output/short_50x/dadec/corrected.fa
+    classify:
+      colormap:
+        run_id: 30strains_legacy_50x_colormap_original
+        run_config: benchmark/config/runs/30strains_legacy/50x_colormap.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_colormap_original/output/short_50x/colormap/corrected.fa
+      f_hero:
+        run_id: 30strains_legacy_50x_f_hero_original_k21_k59_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/50x_f_hero.yaml
+        corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/50x/F_HERO.fa
+      l_hero:
+        run_id: 30strains_legacy_50x_l_hero_original_k31_ls5_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/50x_l_hero.yaml
+        corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/50x/L_HERO.fa
+      dadec:
+        run_id: 30strains_legacy_50x_dadec_k31_k31_s1_a2_a1
+        run_config: benchmark/config/runs/30strains_legacy/50x_dadec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_dadec_k31_k31_s1_a2_a1/output/short_50x/dadec/corrected.fa
+      lordec:
+        run_id: 30strains_legacy_50x_lordec_original_k31_ls5
+        run_config: benchmark/config/runs/30strains_legacy/50x_lordec.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_lordec_original_k31_ls5/output/short_50x/lordec/corrected.fa
+      proovread:
+        run_id: 30strains_legacy_50x_proovread_original
+        run_config: benchmark/config/runs/30strains_legacy/50x_proovread.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_proovread_original/output/short_50x/proovread/corrected.fa
+      r_hero:
+        run_id: 30strains_legacy_50x_r_hero_original_k21_k31_hs10_hi1
+        run_config: benchmark/config/runs/30strains_legacy/50x_r_hero.yaml
+        corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/50x/R_HERO.fa
+      ratatosk:
+        run_id: 30strains_legacy_50x_ratatosk_original_k21_k31
+        run_config: benchmark/config/runs/30strains_legacy/50x_ratatosk.yaml
+        corrected_fasta: benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_ratatosk_original_k21_k31/output/short_50x/ratatosk/corrected.fa
+
+imports: {}

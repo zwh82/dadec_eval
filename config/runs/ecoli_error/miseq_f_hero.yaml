@@ -1,0 +1,6 @@
+evaluation: {tool: quast}
+run: {id: ecoli_error_miseq_f_hero_original, coverage: 20x, method: f_hero, parameter_set: original}
+fmlrc_k1: 21
+fmlrc_k2: 59
+hero_split: 30
+hero_iterations: 3

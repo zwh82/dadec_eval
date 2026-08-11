@@ -1,0 +1,2 @@
+evaluation: {tool: metaquast}
+run: {id: 100strains_30x_colormap_original, coverage: 30x, method: colormap, parameter_set: original}

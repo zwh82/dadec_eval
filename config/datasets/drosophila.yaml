@@ -1,0 +1,21 @@
+# benchmark/config/datasets/drosophila.yaml
+dataset:
+  id: drosophila
+  variant: current
+  expected_genomes: 1
+  # The supplied ONT data is approximately 32x.
+  long_coverage: 32x
+
+evaluation:
+  tool: quast
+
+# VeChat and DeChat are intentionally excluded from this dataset profile.
+methods: [dadec, fmlrc, ratatosk, lordec, f_hero, r_hero, l_hero, colormap, proovread]
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/Drosophila/data/long_reads.fa
+  # The supplied Illumina data is approximately 43x.
+  short_reads:
+    43x: /home/yczhang/zyc/final_result/Drosophila/data/short_reads.fa
+  genome_map: benchmark/config/datasets/drosophila_genome_to_id.tsv
+  simulation_configs: []

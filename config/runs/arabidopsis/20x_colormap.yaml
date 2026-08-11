@@ -1,0 +1,2 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_20x_colormap_original, coverage: 20x, method: colormap, parameter_set: original}

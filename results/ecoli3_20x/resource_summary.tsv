@@ -1,0 +1,10 @@
+dataset	long_read_coverage	short_read_coverage	method	threads	CPU_h	wall_time_h	peak_memory_GB	status	run_id
+ecoli3	10x	20x	DADEC	64	0.771	0.060	4.181	measured	ecoli3_20x_dadec_dev_fix_a_k31_k31_s1_a2_a1
+ecoli3	10x	20x	FMLRC	64	0.478	0.013	0.631	measured	ecoli3_20x_fmlrc_original_k21_k59
+ecoli3	10x	20x	F_HERO	64	8.859	0.154	2.343	measured	ecoli3_20x_f_hero_original_k21_k59_hs30_hi3
+ecoli3	10x	20x	Ratatosk	64	1.565	0.037	0.851	measured	ecoli3_20x_ratatosk_original_k31_k63
+ecoli3	10x	20x	R_HERO	64	10.673	0.193	2.597	measured	ecoli3_20x_r_hero_original_k31_k63_hs30_hi3
+ecoli3	10x	20x	LoRDEC	64	4.133	0.267	2.493	measured	ecoli3_20x_lordec_original_k31_ls5
+ecoli3	10x	20x	L_HERO	64	12.372	0.429	2.514	measured	ecoli3_20x_l_hero_original_k31_ls5_hs30_hi3
+ecoli3	10x	20x	CoLoRMap	64	3.446	0.397	10.253	measured	ecoli3_20x_colormap_original
+ecoli3	10x	20x	Proovread	64	6.451	0.219	7.382	measured	ecoli3_20x_proovread_original

@@ -1,0 +1,45 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     30_vechat      
+# contigs (>= 0 bp)          643228         
+# contigs (>= 1000 bp)       643138         
+# contigs (>= 5000 bp)       180773         
+# contigs (>= 10000 bp)      36613          
+# contigs (>= 25000 bp)      1159           
+# contigs (>= 50000 bp)      0              
+Total length (>= 0 bp)       2871044672     
+Total length (>= 1000 bp)    2870954820     
+Total length (>= 5000 bp)    1491906893     
+Total length (>= 10000 bp)   526926936      
+Total length (>= 25000 bp)   33457341       
+Total length (>= 50000 bp)   0              
+# contigs                    643228         
+Largest contig               49213          
+Total length                 2871044672     
+Reference length             76778694       
+N50                          5265           
+N90                          2448           
+auN                          6825.9         
+L50                          169714         
+L90                          485109         
+# misassemblies              34769          
+# misassembled contigs       33162          
+Misassembled contigs length  265598645      
+# local misassemblies        94682          
+# scaffold gap ext. mis.     0              
+# scaffold gap loc. mis.     0              
+# unaligned mis. contigs     80             
+# unaligned contigs          484 + 3008 part
+Unaligned length             8108562        
+Genome fraction (%)          54.826         
+Duplication ratio            71.114         
+# N's per 100 kbp            0.00           
+# mismatches per 100 kbp     102.59         
+# indels per 100 kbp         484.54         
+Largest alignment            45684          
+Total aligned length         2861222092     
+NA50                         4950           
+NA90                         2364           
+auNA                         6393.0         
+LA50                         182804         
+LA90                         514402         

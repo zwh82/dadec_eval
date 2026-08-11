@@ -1,0 +1,45 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     5_vechat     
+# contigs (>= 0 bp)          67916        
+# contigs (>= 1000 bp)       67908        
+# contigs (>= 5000 bp)       17644        
+# contigs (>= 10000 bp)      2244         
+# contigs (>= 25000 bp)      43           
+# contigs (>= 50000 bp)      0            
+Total length (>= 0 bp)       284725762    
+Total length (>= 1000 bp)    284717775    
+Total length (>= 5000 bp)    132635054    
+Total length (>= 10000 bp)   30739352     
+Total length (>= 25000 bp)   1249368      
+Total length (>= 50000 bp)   0            
+# contigs                    67916        
+Largest contig               40703        
+Total length                 284725762    
+Reference length             76778694     
+N50                          4936         
+N90                          2443         
+auN                          5865.0       
+L50                          19603        
+L90                          52013        
+# misassemblies              3524         
+# misassembled contigs       3332         
+Misassembled contigs length  26949399     
+# local misassemblies        5738         
+# scaffold gap ext. mis.     0            
+# scaffold gap loc. mis.     0            
+# unaligned mis. contigs     3            
+# unaligned contigs          96 + 236 part
+Unaligned length             943804       
+Genome fraction (%)          33.513       
+Duplication ratio            11.464       
+# N's per 100 kbp            0.00         
+# mismatches per 100 kbp     101.28       
+# indels per 100 kbp         577.18       
+Largest alignment            38631        
+Total aligned length         283569074    
+NA50                         4505         
+NA90                         2352         
+auNA                         5420.2       
+LA50                         21184        
+LA90                         55129        

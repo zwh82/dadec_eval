@@ -1,0 +1,1 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	CPU(h)	WallTime(h)	Memory(GB)	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number

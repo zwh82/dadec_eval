@@ -1,0 +1,13 @@
+{
+  "assembler": "canu",
+  "assembly_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/l_hero/canu/assembly.fa",
+  "assembly_sha256": "044f390c9f3bb6028f12d47475fa9681be1ffbd6c732a23bf6bdc9a8781d5c91",
+  "assembly_size": 133835617,
+  "assembly_source_path": "/home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_L_HERO.fa",
+  "created_utc": "2026-07-31T02:29:25.825592+00:00",
+  "method": "l_hero",
+  "mode": "reuse",
+  "source_path": "/home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_L_HERO.fa",
+  "source_sha256": "044f390c9f3bb6028f12d47475fa9681be1ffbd6c732a23bf6bdc9a8781d5c91",
+  "source_size": 133835617
+}

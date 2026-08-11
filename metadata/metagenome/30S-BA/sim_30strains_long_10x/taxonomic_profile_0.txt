@@ -1,0 +1,80 @@
+@SampleID:
+@Version:0.9.1
+@Ranks:superkingdom|phylum|class|order|family|genus|species|strain
+
+@@TAXID	RANK	TAXPATH	TAXPATHSN	PERCENTAGE	_CAMI_genomeID	_CAMI_OTU
+2	superkingdom	2	Bacteria	100.0000		
+29547	phylum	2|29547	Bacteria|Campylobacterota	7.1556		
+1224	phylum	2|1224	Bacteria|Pseudomonadota	15.5406		
+1239	phylum	2|1239	Bacteria|Bacillota	77.3038		
+3031852	class	2|29547|3031852	Bacteria|Campylobacterota|Epsilonproteobacteria	7.1556		
+1236	class	2|1224|1236	Bacteria|Pseudomonadota|Gammaproteobacteria	15.5406		
+91061	class	2|1239|91061	Bacteria|Bacillota|Bacilli	40.4377		
+186801	class	2|1239|186801	Bacteria|Bacillota|Clostridia	36.8660		
+213849	order	2|29547|3031852|213849	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales	7.1556		
+2887326	order	2|1224|1236|2887326	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales	5.6359		
+91347	order	2|1224|1236|91347	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales	9.9047		
+1385	order	2|1239|91061|1385	Bacteria|Bacillota|Bacilli|Bacillales	12.6512		
+186826	order	2|1239|91061|186826	Bacteria|Bacillota|Bacilli|Lactobacillales	27.7865		
+186802	order	2|1239|186801|186802	Bacteria|Bacillota|Clostridia|Eubacteriales	36.8660		
+72293	family	2|29547|3031852|213849|72293	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae	7.1556		
+468	family	2|1224|1236|2887326|468	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales|Moraxellaceae	5.6359		
+543	family	2|1224|1236|91347|543	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae	9.9047		
+90964	family	2|1239|91061|1385|90964	Bacteria|Bacillota|Bacilli|Bacillales|Staphylococcaceae	8.4900		
+1300	family	2|1239|91061|186826|1300	Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae	20.9377		
+186817	family	2|1239|91061|1385|186817	Bacteria|Bacillota|Bacilli|Bacillales|Bacillaceae	4.1612		
+31979	family	2|1239|186801|186802|31979	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae	36.8660		
+33958	family	2|1239|91061|186826|33958	Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae	6.8489		
+209	genus	2|29547|3031852|213849|72293|209	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter	7.1556		
+469	genus	2|1224|1236|2887326|468|469	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales|Moraxellaceae|Acinetobacter	5.6359		
+561	genus	2|1224|1236|91347|543|561	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia	7.6317		
+1279	genus	2|1239|91061|1385|90964|1279	Bacteria|Bacillota|Bacilli|Bacillales|Staphylococcaceae|Staphylococcus	8.4900		
+1301	genus	2|1239|91061|186826|1300|1301	Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus	20.9377		
+1386	genus	2|1239|91061|1385|186817|1386	Bacteria|Bacillota|Bacilli|Bacillales|Bacillaceae|Bacillus	4.1612		
+1485	genus	2|1239|186801|186802|31979|1485	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium	36.8660		
+1578	genus	2|1239|91061|186826|33958|1578	Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Lactobacillus	6.8489		
+547	genus	2|1224|1236|91347|543|547	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter	2.2730		
+210	species	2|29547|3031852|213849|72293|209|210	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori	7.1556		
+470	species	2|1224|1236|2887326|468|469|470	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii	5.6359		
+562	species	2|1224|1236|91347|543|561|562	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli	7.6317		
+1280	species	2|1239|91061|1385|90964|1279|1280	Bacteria|Bacillota|Bacilli|Bacillales|Staphylococcaceae|Staphylococcus|Staphylococcus aureus	8.4900		
+1313	species	2|1239|91061|186826|1300|1301|1313	Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae	20.9377		
+1392	species	2|1239|91061|1385|186817|1386|1392	Bacteria|Bacillota|Bacilli|Bacillales|Bacillaceae|Bacillus|Bacillus anthracis	4.1612		
+1492	species	2|1239|186801|186802|31979|1485|1492	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium butyricum	5.9920		
+1502	species	2|1239|186801|186802|31979|1485|1502	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium perfringens	7.9393		
+1504	species	2|1239|186801|186802|31979|1485|1504	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium septicum	6.1328		
+1509	species	2|1239|186801|186802|31979|1485|1509	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium sporogenes	13.4601		
+1513	species	2|1239|186801|186802|31979|1485|1513	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium tetani	2.9815		
+1579	species	2|1239|91061|186826|33958|1578|1579	Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Lactobacillus|Lactobacillus acidophilus	6.8489		
+36745	species	2|1239|186801|186802|31979|1485|36745	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium saccharoperbutylacetonicum	0.3603		
+158836	species	2|1224|1236|91347|543|547|158836	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter hormaechei	2.2730		
+210.1	strain	2|29547|3031852|213849|72293|209|210|210.1	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori|Helicobacter pylori strain	1.5972	GCF_000685705.1_ASM68570v1	210
+210.2	strain	2|29547|3031852|213849|72293|209|210|210.2	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori|Helicobacter pylori strain	0.1540	GCF_006337405.1_ASM633740v1	210
+210.3	strain	2|29547|3031852|213849|72293|209|210|210.3	Bacteria|Campylobacterota|Epsilonproteobacteria|Campylobacterales|Helicobacteraceae|Helicobacter|Helicobacter pylori|Helicobacter pylori strain	5.4045	GCF_007844035.1_ASM784403v1	210
+470.1	strain	2|1224|1236|2887326|468|469|470|470.1	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii|Acinetobacter baumannii strain	4.1242	GCF_003431865.1_ASM343186v1	470
+470.2	strain	2|1224|1236|2887326|468|469|470|470.2	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii|Acinetobacter baumannii strain	1.0035	GCF_006385075.1_ASM638507v1	470
+470.3	strain	2|1224|1236|2887326|468|469|470|470.3	Bacteria|Pseudomonadota|Gammaproteobacteria|Moraxellales|Moraxellaceae|Acinetobacter|Acinetobacter baumannii|Acinetobacter baumannii strain	0.5083	GCF_009455505.1_ASM945550v1	470
+562.1	strain	2|1224|1236|91347|543|561|562|562.1	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli|Escherichia coli strain	1.7281	GCF_003018555.1_ASM301855v1	562
+562.2	strain	2|1224|1236|91347|543|561|562|562.2	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli|Escherichia coli strain	5.1193	GCF_003017915.1_ASM301791v1	562
+562.3	strain	2|1224|1236|91347|543|561|562|562.3	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Escherichia|Escherichia coli|Escherichia coli strain	0.7843	GCF_003790525.1_ASM379052v1	562
+1280.1	strain	2|1239|91061|1385|90964|1279|1280|1280.1	Bacteria|Bacillota|Bacilli|Bacillales|Staphylococcaceae|Staphylococcus|Staphylococcus aureus|Staphylococcus aureus strain	8.4900	GCF_001640905.1_ASM164090v1	1280
+1313.1	strain	2|1239|91061|186826|1300|1301|1313|1313.1	Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae|Streptococcus pneumoniae strain	7.6891	GCF_000817005.1_ASM81700v1	1313
+1313.2	strain	2|1239|91061|186826|1300|1301|1313|1313.2	Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae|Streptococcus pneumoniae strain	7.5467	GCF_002843545.1_ASM284354v1	1313
+1313.3	strain	2|1239|91061|186826|1300|1301|1313|1313.3	Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Streptococcus|Streptococcus pneumoniae|Streptococcus pneumoniae strain	5.7019	GCF_003351525.1_ASM335152v1	1313
+1392.1	strain	2|1239|91061|1385|186817|1386|1392|1392.1	Bacteria|Bacillota|Bacilli|Bacillales|Bacillaceae|Bacillus|Bacillus anthracis|Bacillus anthracis strain	1.3981	GCF_000832965.1_ASM83296v1	1392
+1392.2	strain	2|1239|91061|1385|186817|1386|1392|1392.2	Bacteria|Bacillota|Bacilli|Bacillales|Bacillaceae|Bacillus|Bacillus anthracis|Bacillus anthracis strain	2.7631	GCF_003410355.1_ASM341035v1	1392
+1492.1	strain	2|1239|186801|186802|31979|1485|1492|1492.1	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium butyricum|Clostridium butyricum strain	5.5425	GCF_001465175.1_ASM146517v1	1492
+1492.2	strain	2|1239|186801|186802|31979|1485|1492|1492.2	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium butyricum|Clostridium butyricum strain	0.4494	GCF_001456065.2_ASM145606v2	1492
+1502.1	strain	2|1239|186801|186802|31979|1485|1502|1502.1	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium perfringens|Clostridium perfringens strain	1.7219	GCF_016026995.1_ASM1602699v1	1502
+1502.2	strain	2|1239|186801|186802|31979|1485|1502|1502.2	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium perfringens|Clostridium perfringens strain	6.2174	GCF_018135545.1_ASM1813554v1	1502
+1504.1	strain	2|1239|186801|186802|31979|1485|1504|1504.1	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium septicum|Clostridium septicum strain	2.1454	GCF_003606265.1_ASM360626v1	1504
+1504.2	strain	2|1239|186801|186802|31979|1485|1504|1504.2	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium septicum|Clostridium septicum strain	3.9874	GCF_004101825.1_ASM410182v1	1504
+1509.1	strain	2|1239|186801|186802|31979|1485|1509|1509.1	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium sporogenes|Clostridium sporogenes strain	5.9918	GCF_001020205.1_ASM102020v1	1509
+1509.2	strain	2|1239|186801|186802|31979|1485|1509|1509.2	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium sporogenes|Clostridium sporogenes strain	6.2742	GCF_002865785.1_ASM286578v1	1509
+1509.3	strain	2|1239|186801|186802|31979|1485|1509|1509.3	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium sporogenes|Clostridium sporogenes strain	1.1941	GCF_020099295.1_ASM2009929v1	1509
+1513.1	strain	2|1239|186801|186802|31979|1485|1513|1513.1	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium tetani|Clostridium tetani strain	2.9815	GCF_003013635.1_ASM301363v1	1513
+1579.1	strain	2|1239|91061|186826|33958|1578|1579|1579.1	Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Lactobacillus|Lactobacillus acidophilus|Lactobacillus acidophilus strain	6.8489	GCF_003952845.1_ASM395284v1	1579
+36745.1	strain	2|1239|186801|186802|31979|1485|36745|36745.1	Bacteria|Bacillota|Clostridia|Eubacteriales|Clostridiaceae|Clostridium|Clostridium saccharoperbutylacetonicum|Clostridium saccharoperbutylacetonicum strain	0.3603	GCF_002003305.1_ASM200330v1	36745
+158836.1	strain	2|1224|1236|91347|543|547|158836|158836.1	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter hormaechei|Enterobacter hormaechei strain	0.4113	GCF_003073995.1_ASM307399v1	158836
+158836.2	strain	2|1224|1236|91347|543|547|158836|158836.2	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter hormaechei|Enterobacter hormaechei strain	0.0174	GCF_003408575.1_ASM340857v1	158836
+158836.3	strain	2|1224|1236|91347|543|547|158836|158836.3	Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Enterobacteriaceae|Enterobacter|Enterobacter hormaechei|Enterobacter hormaechei strain	1.8443	GCF_008505035.1_ASM850503v1	158836

@@ -1,0 +1,3 @@
+run: {id: 30strains_legacy_50x_fmlrc_original, coverage: 50x, method: fmlrc, parameter_set: original}
+fmlrc_k1: 21
+fmlrc_k2: 59

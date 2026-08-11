@@ -1,0 +1,10 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+zymo_10pct_dadec_original_dev_fix_a_k59_k59_s1_a2_a1	original	zymo	10pct	10pct	DADEC	0.9999	91.95	77.20	78.616	7724	337507
+zymo_10pct_fmlrc_original_k21_k59	original	zymo	10pct	10pct	FMLRC	0.9999	100.08	116.50	75.174	2879	337187
+zymo_10pct_f_hero_original_k21_k59_hs30_hi1	original	zymo	10pct	10pct	F_HERO	0.9999	184.03	306.82	60.443	11694	337662
+zymo_10pct_ratatosk_original_k31_k63	original	zymo	10pct	10pct	Ratatosk	0.9999	215.01	228.23	76.439	10783	337321
+zymo_10pct_r_hero_original_k31_k63_hs30_hi1	original	zymo	10pct	10pct	R_HERO	0.9999	385.04	467.67	60.602	28283	336710
+zymo_10pct_lordec_original_k31_ls5	original	zymo	10pct	10pct	LoRDEC	0.9999	134.87	161.21	76.039	7276	337442
+zymo_10pct_l_hero_original_k31_ls5_hs30_hi1	original	zymo	10pct	10pct	L_HERO	0.9999	207.35	336.40	61.363	15751	337482
+zymo_10pct_colormap_original	original	zymo	10pct	10pct	CoLoRMap	0.9999	754.53	786.73	78.789	16984	339958
+zymo_10pct_proovread_original	original	zymo	10pct	10pct	Proovread	0.9999	191.25	185.16	78.585	12970	337722

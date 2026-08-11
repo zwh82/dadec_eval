@@ -1,0 +1,43 @@
+Assembly	L_HERO
+# contigs (>= 0 bp)	7190
+# contigs (>= 1000 bp)	7179
+# contigs (>= 5000 bp)	5205
+# contigs (>= 10000 bp)	3397
+# contigs (>= 25000 bp)	1172
+# contigs (>= 50000 bp)	292
+Total length (>= 0 bp)	104091472
+Total length (>= 1000 bp)	104081547
+Total length (>= 5000 bp)	98094693
+Total length (>= 10000 bp)	84954568
+Total length (>= 25000 bp)	49588211
+Total length (>= 50000 bp)	19515336
+# contigs	7190
+Largest contig	99322
+Total length	104091472
+Reference length	9481123
+N50	23828
+N90	6779
+auN	30188.1
+L50	1273
+L90	4452
+# misassemblies	472
+# misassembled contigs	270
+Misassembled contigs length	7615362
+# local misassemblies	456
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	12
+# unaligned contigs	67 + 608 part
+Unaligned length	2882397
+Genome fraction (%)	99.619
+Duplication ratio	11.341
+# N's per 100 kbp	0.00
+# mismatches per 100 kbp	611.07
+# indels per 100 kbp	256.35
+Largest alignment	99286
+Total aligned length	100652910
+NA50	21418
+NA90	5064
+auNA	27700.1
+LA50	1383
+LA90	5146

@@ -1,0 +1,43 @@
+Assembly	ratatosk1
+# contigs (>= 0 bp)	426510
+# contigs (>= 1000 bp)	421450
+# contigs (>= 5000 bp)	415759
+# contigs (>= 10000 bp)	297973
+# contigs (>= 25000 bp)	103
+# contigs (>= 50000 bp)	0
+Total length (>= 0 bp)	4944042910
+Total length (>= 1000 bp)	4941521124
+Total length (>= 5000 bp)	4925501970
+Total length (>= 10000 bp)	3925418956
+Total length (>= 25000 bp)	2684403
+Total length (>= 50000 bp)	0
+# contigs	423827
+Largest contig	29981
+Total length	4943258110
+Reference length	405029333
+N50	12329
+N90	8808
+auN	12558.8
+L50	167769
+L90	353479
+# misassemblies	212
+# misassembled contigs	206
+Misassembled contigs length	2339376
+# local misassemblies	1451
+# scaffold gap ext. mis.	2
+# scaffold gap loc. mis.	390
+# unaligned mis. contigs	286
+# unaligned contigs	4069 + 5589 part
+Unaligned length	70587860
+Genome fraction (%)	99.677
+Duplication ratio	25.341
+# N's per 100 kbp	7.99
+# mismatches per 100 kbp	457.61
+# indels per 100 kbp	1431.70
+Largest alignment	29964
+Total aligned length	4867826523
+NA50	12246
+NA90	8564
+auNA	12337.7
+LA50	168564
+LA90	356694

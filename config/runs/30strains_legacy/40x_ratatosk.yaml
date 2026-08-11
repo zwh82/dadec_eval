@@ -1,0 +1,3 @@
+run: {id: 30strains_legacy_40x_ratatosk_original, coverage: 40x, method: ratatosk, parameter_set: original}
+ratatosk_k1: 21
+ratatosk_k2: 31

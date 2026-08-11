@@ -1,0 +1,45 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     5_dechat.ec       
+# contigs (>= 0 bp)          174177            
+# contigs (>= 1000 bp)       158896            
+# contigs (>= 5000 bp)       47288             
+# contigs (>= 10000 bp)      9215              
+# contigs (>= 25000 bp)      303               
+# contigs (>= 50000 bp)      2                 
+Total length (>= 0 bp)       718907201         
+Total length (>= 1000 bp)    709715409         
+Total length (>= 5000 bp)    384760266         
+Total length (>= 10000 bp)   132005230         
+Total length (>= 25000 bp)   8935384           
+Total length (>= 50000 bp)   217209            
+# contigs                    168591            
+Largest contig               144686            
+Total length                 716858947         
+Reference length             76778694          
+N50                          5282              
+N90                          2304              
+auN                          6849.1            
+L50                          42162             
+L90                          120968            
+# misassemblies              6935              
+# misassembled contigs       6608              
+Misassembled contigs length  54658199          
+# local misassemblies        8279              
+# scaffold gap ext. mis.     0                 
+# scaffold gap loc. mis.     0                 
+# unaligned mis. contigs     2411              
+# unaligned contigs          13226 + 11194 part
+Unaligned length             77003493          
+Genome fraction (%)          63.535            
+Duplication ratio            13.641            
+# N's per 100 kbp            0.00              
+# mismatches per 100 kbp     1234.55           
+# indels per 100 kbp         1982.34           
+Largest alignment            43152             
+Total aligned length         628022618         
+NA50                         4430              
+NA90                         -                 
+auNA                         5527.2            
+LA50                         49719             
+LA90                         -                 

@@ -1,0 +1,2 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_error_readcount_novaseq_proovread_original, coverage: 22x, method: proovread, parameter_set: original}

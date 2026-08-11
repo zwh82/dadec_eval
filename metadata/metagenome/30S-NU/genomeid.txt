@@ -1,0 +1,64 @@
+Escherichia coli
+GCF_000005845.2 q
+GCF_002058765.1 q
+GCF_000008865.2 q
+Bacillus anthracis
+GCF_000007845.1 q
+GCF_000008445.1 q
+Clostridium butyricum
+GCF_014131795.1 q
+GCF_006742065.1 q
+GCF_000409755.1 q
+Clostridium perfringens
+GCF_016027375.1 q
+GCF_000013285.1 q
+Clostridium sporogenes
+GCF_000973705.1 q
+GCF_001020205.1 q
+GCF_900461305.1 q
+GCF_002008145.1 q
+Clostridium septicum
+GCF_003606265.1 q
+GCF_020736665.1 q
+Clostridium saccharoperbut
+GCF_000340885.1 q
+Acinetobacter baumannii
+GCF_009035845.1 q
+GCF_900444725.1 q
+GCF_017090145.1 q
+GCF_000931755.1 q
+GCF_000369385.1 q
+GCF_024618585.1 q
+Streptococcus pneumoniae
+GCF_000006885.1 q
+GCF_001457635.1 q
+GCF_001679535.1 q
+Helicobacter pylori
+GCF_025998455.1 q
+GCF_003050665.1 q
+GCF_004295525.1 q
+Enterobacter hormaechei
+GCF_019048245.1 q
+GCF_001729785.1 q
+GCF_001729745.1 q
+Staphylococcus aureus
+GCF_000013425.1 q
+GCF_026167765.1
+Trichodesmium erythraeum
+GCF_000014265.1 q
+Nitratidesulfovibrio vulgaris
+GCF_000195755.1
+GCF_000015485.1
+GCF_027947635.1
+GCF_000166115.1
+Listeria monocytogenes
+GCF_000196035.1
+Streptococcus agalactiae
+GCF_000689235.1
+Paucilactobacillus hokkaidonensis
+GCF_000829395.1
+Pseudomonas aeruginosa
+GCF_900106225.1
+Bacillus subtilis
+GCF_000009045.1
+

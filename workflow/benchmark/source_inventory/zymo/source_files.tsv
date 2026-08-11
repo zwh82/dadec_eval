@@ -1,0 +1,333 @@
+relative_path	size_bytes	modified_time_iso	category	note
+data/long.txt	332	2025-11-17T22:56:30.475482+08:00	input_metadata	input QC or metadata
+data/long_reads.fa	14591083394	2025-10-10T17:26:20.799865+08:00	input	read/reference sequence input
+data/long_reads_10_quast.txt	2223	2025-11-17T22:47:51.647260+08:00	input_metadata	input QC or metadata
+data/long_reads_20.fa	2964639840	2026-04-14T23:39:14.848130+08:00	input	read/reference sequence input
+data/long_reads_30_quast.txt	2266	2025-10-13T18:43:25.645592+08:00	input_metadata	input QC or metadata
+data/long_reads_quast.txt	2309	2025-10-11T00:26:40.516254+08:00	input_metadata	input QC or metadata
+data/ref/Bacillus_subtilis_complete_genome.fna	4292945	2025-10-10T17:13:59.828102+08:00	reference	per-species or merged reference
+data/ref/Cryptococcus_neoformans_complete_genome.fasta	26306579	2025-10-10T17:14:10.606140+08:00	reference	per-species or merged reference
+data/ref/Enterococcus_faecalis_complete_genome.fna	2943941	2025-10-10T17:14:12.314146+08:00	reference	per-species or merged reference
+data/ref/Escherichia_coli_complete_genome.fna	5007284	2025-10-10T17:14:15.448157+08:00	reference	per-species or merged reference
+data/ref/Lactobacillus_fermentum_complete_genome.fna	2264780	2025-10-10T17:14:16.552161+08:00	reference	per-species or merged reference
+data/ref/Listeria_monocytogenes_complete_genome.fna	3082580	2025-10-10T17:13:46.446055+08:00	reference	per-species or merged reference
+data/ref/Pseudomonas_aeruginosa_complete_genome.fna	6960757	2025-10-10T17:13:48.372062+08:00	reference	per-species or merged reference
+data/ref/Saccharomyces_cerevisiae_complete_genome.fasta	18770733	2025-10-10T17:13:55.270086+08:00	reference	per-species or merged reference
+data/ref/Salmonella_enterica_complete_genome.fna	4904630	2025-10-10T17:13:56.875092+08:00	reference	per-species or merged reference
+data/ref/Staphylococcus_aureus_complete_genome.fna	2774973	2025-10-10T17:13:58.037096+08:00	reference	per-species or merged reference
+data/ref/long_reads_40.fa	0	2025-10-10T17:50:15.959712+08:00	reference	per-species or merged reference
+data/ref/ref.fa	76780837	2025-10-10T17:31:18.367977+08:00	reference	per-species or merged reference
+data/short_reads.fa	3854886664	2025-10-10T17:19:46.337391+08:00	input	read/reference sequence input
+data/short_reads.fa_k59.h5	6879473768	2026-04-14T22:33:27.545963+08:00	intermediate	index or k-mer intermediate
+data/short_reads.fa_k59_a2.fa	362964206	2026-04-14T22:08:10.922349+08:00	input	read/reference sequence input
+zymo_cor/10_DADEC_k49_a21_s1.fa	1468441587	2025-10-23T17:53:29.291451+08:00	corrected_reads	corrected long-read output
+zymo_cor/10_DADEC_k49_a21_s1.txt	2266	2025-11-16T17:28:53.093821+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/10_DADEC_k49_a32_s1.fa	1457569479	2025-11-17T21:44:54.536901+08:00	corrected_reads	corrected long-read output
+zymo_cor/DADEC_k53_a21.txt	2223	2025-11-18T16:30:59.731361+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/DADEC_k55_a21.txt	2223	2025-11-18T15:27:57.382474+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/DADEC_k59_a21.txt	2223	2025-11-17T23:04:39.797703+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/DADEC_k59_a32.txt	2223	2025-11-18T10:48:39.185417+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/F_HERO.fa	1477444404	2025-11-17T16:02:52.155548+08:00	corrected_reads	corrected long-read output
+zymo_cor/F_HERO.txt	2223	2025-11-17T16:33:06.113143+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/L_HERO.fa	1473769687	2025-11-17T17:32:42.016369+08:00	corrected_reads	corrected long-read output
+zymo_cor/L_HERO.txt	2223	2025-11-17T18:09:32.991215+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/R_HERO.fa	1468311909	2025-11-17T19:28:35.316193+08:00	corrected_reads	corrected long-read output
+zymo_cor/R_HERO.txt	2223	2025-11-17T19:53:39.894848+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/a_stats.csv	1313	2025-11-20T11:42:31.143429+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/assambly/canu/asm_10_DADEC_k49_a21_s1.fa	40238655	2025-11-17T21:00:17.984331+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_10_DADEC_k49_a21_s1.txt	2438	2025-11-17T21:01:51.661344+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_10_DADEC_k49_a32_s1.fa	26005270	2025-11-18T11:36:26.808141+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_10_DADEC_k49_a32_s1.txt	2438	2025-11-18T11:38:23.423330+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k53_a21.fa	38132951	2025-11-18T16:19:42.198821+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k53_a21.txt	2180	2025-11-18T16:22:14.570943+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k55_a21.fa	37542322	2025-11-18T15:35:56.309604+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k55_a21.txt	2180	2025-11-18T15:37:42.744633+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k59_a21.fa	30056332	2025-11-18T11:05:24.766714+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k59_a21.txt	2180	2025-11-18T11:07:51.826757+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k59_a32.fa	25192168	2025-11-18T02:12:45.821725+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_DADEC_k59_a32.txt	2180	2025-11-18T02:13:27.477878+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_F_HERO.fa	46267894	2025-11-17T23:53:42.665288+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_F_HERO.txt	1922	2025-11-17T23:57:13.722385+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_L_HERO.fa	44890156	2025-11-18T00:35:48.023299+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_L_HERO.txt	1922	2025-11-18T00:37:13.718332+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_R_HERO.fa	44060476	2025-11-18T01:52:12.353461+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_R_HERO.txt	1922	2025-11-18T01:53:21.571532+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_colormap_sp.fa	39014930	2025-11-18T01:17:30.631133+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_colormap_sp.txt	2094	2025-11-18T01:18:41.767156+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_fmlrc1.fa	36145261	2025-11-17T21:25:49.221583+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_fmlrc1.txt	1879	2025-11-17T21:26:45.518597+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_lordec1.fa	26360170	2025-11-17T22:22:17.251641+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_lordec1.txt	1922	2025-11-17T22:24:43.117692+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_ratatosk1.fa	38761783	2025-11-17T21:39:42.095805+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/asm_ratatosk1.txt	2008	2025-11-17T21:41:10.341832+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/beifen/asm_10_DADEC_k49_a21_s1.fa	157242	2025-11-17T20:29:28.852087+08:00	backup	legacy backup copy
+zymo_cor/assambly/canu/beifen/asm_10_DADEC_k49_a21_s1.txt	2438	2025-11-17T20:32:21.201110+08:00	backup	legacy backup copy
+zymo_cor/assambly/canu/canu_evalue.sh	374	2025-11-18T15:02:26.193027+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/canu/canu_quast.sh	727	2025-11-17T20:34:06.143124+08:00	assembly_canu	Canu assembly or QUAST report
+zymo_cor/assambly/hifiasm/10_DADEC_k49_a21_s1.txt	2610	2025-11-17T20:03:17.405876+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/10_DADEC_k49_a32_s1_hifiasm.txt	2610	2025-11-18T11:54:43.773376+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/DADEC_k53_a21_hifiasm.txt	2352	2025-11-18T16:45:52.501787+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/DADEC_k55_a21_hifiasm.txt	2352	2025-11-18T16:32:40.539441+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/DADEC_k59_a21_hifiasm.txt	2352	2025-11-18T11:45:24.652890+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/DADEC_k59_a32_hifiasm.txt	2352	2025-11-18T11:59:17.414614+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/F_HERO_hifiasm.txt	2051	2025-11-17T20:25:52.049055+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/L_HERO_hifiasm.txt	2051	2025-11-17T20:42:21.995189+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/R_HERO_hifiasm.txt	2051	2025-11-17T20:33:20.494117+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/colormap_sp_hifiasm.txt	2266	2025-11-17T20:49:42.502247+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/fmlrc1_hifiasm.txt	2051	2025-11-17T20:08:05.449891+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/hifiasm_quast.sh	713	2025-11-17T20:10:54.134904+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/hifisam_evalue.sh	295	2025-11-18T15:02:38.868032+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/lordec1_hifiasm.txt	2094	2025-11-17T20:18:58.367985+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/assambly/hifiasm/ratatosk1_hifiasm.txt	2180	2025-11-17T21:23:41.962550+08:00	assembly_hifiasm	hifiasm assembly QUAST report
+zymo_cor/beifen/F_HERO.fa	1481932537	2025-11-17T01:06:55.777940+08:00	backup	legacy backup copy
+zymo_cor/beifen/F_HERO_quast.txt	2223	2025-11-17T09:37:37.276032+08:00	backup	legacy backup copy
+zymo_cor/beifen/F_HERO_quast_s10.txt	2223	2025-11-17T14:19:58.845996+08:00	backup	legacy backup copy
+zymo_cor/beifen/F_HERO_s10.fa	1478413357	2025-11-17T12:49:34.518851+08:00	backup	legacy backup copy
+zymo_cor/beifen/L_HERO.fa	1476418683	2025-11-17T03:22:55.349084+08:00	backup	legacy backup copy
+zymo_cor/beifen/R_HERO.fa	1472192129	2025-11-17T05:18:38.626369+08:00	backup	legacy backup copy
+zymo_cor/colormap_sp.fa	1471192277	2025-11-16T23:08:07.541773+08:00	corrected_reads	corrected long-read output
+zymo_cor/colormap_sp.txt	2223	2025-11-19T14:39:24.344675+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/cor_report.txt	6363	2026-04-14T23:36:27.094082+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/coverage_self/10_DADEC_k49_a21_s1.txt	2266	2025-10-23T18:06:01.269982+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/10_dechat.txt	2223	2025-10-24T09:28:13.429740+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/10_vechat.txt	2051	2025-10-22T16:39:28.709493+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/20_DADEC_k49_a21_s1.txt	2266	2025-10-23T19:59:59.924543+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/20_dechat.txt	2223	2025-10-23T23:39:25.927399+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/20_vechat.txt	2094	2025-10-24T02:14:03.627457+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/30_DADEC_k49_a21_s1.txt	2266	2025-10-24T11:25:40.235366+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/30_dechat.txt	2223	2025-10-14T15:03:54.602080+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/30_vechat.txt	2094	2025-10-25T03:38:06.416567+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/30_vechat1.txt	2094	2025-10-25T13:39:52.222088+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/40_DADEC_k49_a21_s1.txt	2266	2025-10-23T22:23:59.554709+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/40_dechat.txt	2223	2025-10-24T19:35:30.126025+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/40_vechat.txt	2094	2025-10-27T00:12:15.653281+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/5_DADEC_k49_a21_s1.txt	2223	2025-10-24T11:28:40.519297+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/5_dechat.txt	2223	2025-10-24T10:56:19.951144+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/5_vechat.txt	2008	2025-10-24T04:46:37.080586+08:00	coverage_experiment	5/10/20/30/40 subsampling experiment
+zymo_cor/coverage_self/beifen/10_DADEC_k49_a32_s1.txt	2223	2025-10-23T17:27:22.230299+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/30_DADEC_k21_a21.txt	2223	2025-10-14T01:08:02.613654+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/30_DADEC_k35_a21.txt	2223	2025-10-22T18:44:32.986712+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/30_DADEC_k39_a21.txt	2223	2025-10-14T14:47:57.831192+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/30_DADEC_k39_a21_s1.txt	2266	2025-10-23T17:00:51.550268+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/30_DADEC_k39_a32.txt	2223	2025-10-23T12:26:37.747018+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/30_DADEC_k49_a21_s3.txt	2223	2025-10-23T16:55:11.248048+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/35.txt	21786535	2025-10-22T18:12:05.151516+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/39_21_s1.txt	21303734	2025-10-23T14:29:22.385263+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/39_32.txt	21760705	2025-10-23T11:57:28.507571+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/49_21.txt	21785269	2025-10-23T13:44:39.345717+08:00	backup	legacy backup copy
+zymo_cor/coverage_self/beifen/49_32.txt	7235430	2025-10-23T17:17:54.556931+08:00	backup	legacy backup copy
+zymo_cor/dechat_cor.sh	2022	2025-11-18T12:08:08.127744+08:00	script	legacy command script
+zymo_cor/echat_cor.sh	2063	2025-11-17T16:45:14.873394+08:00	script	legacy command script
+zymo_cor/fmlrc.txt	2180	2025-11-16T17:27:30.996679+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/fmlrc1.fa	1462355337	2025-11-16T17:10:33.351176+08:00	corrected_reads	corrected long-read output
+zymo_cor/fmlrc1.txt	2180	2025-11-17T07:18:21.083115+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/log_error.txt	0	2025-11-17T17:21:13.151047+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/lordec.txt	2223	2025-11-16T17:41:43.379157+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/lordec1.fa	1465321490	2025-11-16T17:27:27.932673+08:00	corrected_reads	corrected long-read output
+zymo_cor/lordec1.txt	2223	2025-11-17T05:31:57.782987+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/other_cor.sh	3302	2026-02-13T22:12:43.741729+08:00	script	legacy command script
+zymo_cor/overlap.paf	4800222574	2025-10-26T22:14:53.296169+08:00	intermediate	large temporary or diagnostic artifact
+zymo_cor/proovread.fa	1453905611	2025-11-20T02:20:55.488107+08:00	corrected_reads	corrected long-read output
+zymo_cor/proovread.log	11361009	2025-11-20T02:21:25.291119+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/proovread.txt	2223	2025-11-20T11:29:23.723968+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/proovreadtime.txt	0	2025-11-17T18:17:15.272661+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/quast.sh	486	2025-11-16T18:07:52.446904+08:00	script	legacy command script
+zymo_cor/ratatosk.txt	2223	2025-11-16T16:34:44.405305+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/ratatosk1.fa	1446774915	2025-11-17T21:13:20.833435+08:00	corrected_reads	corrected long-read output
+zymo_cor/ratatosk1.txt	2223	2025-11-18T17:46:55.735247+08:00	evaluation_or_log	QUAST evaluation, resource report, or log
+zymo_cor/short.npy	363057757	2025-11-16T17:05:47.536064+08:00	intermediate	large temporary or diagnostic artifact
+zymo_cor/timetest.fa	1465836507	2025-11-19T17:40:19.940060+08:00	intermediate	large temporary or diagnostic artifact
+zymo_cor/tmp_DADEC1.fa	14648517582	2026-04-14T22:32:06.690930+08:00	intermediate	large temporary or diagnostic artifact
+zymo_cor/trashme_2306254_superK_partitions/superKparts.0	8709162	2026-04-14T22:32:45.658946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.1	8352348	2026-04-14T22:32:45.680946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.10	8090733	2026-04-14T22:32:45.812946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.100	11072350	2026-04-14T22:32:46.467946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.101	11105997	2026-04-14T22:32:46.471946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.102	11192323	2026-04-14T22:32:46.474946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.103	11981897	2026-04-14T22:32:46.478946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.104	11360872	2026-04-14T22:32:46.482946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.105	11511746	2026-04-14T22:32:46.486946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.106	11240271	2026-04-14T22:32:46.490946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.107	11386778	2026-04-14T22:32:46.499946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.108	11320878	2026-04-14T22:32:46.503946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.109	11664505	2026-04-14T22:32:46.508946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.11	8501527	2026-04-14T22:32:45.823946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.110	11587036	2026-04-14T22:32:46.512946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.111	11738921	2026-04-14T22:32:46.515946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.112	11837861	2026-04-14T22:32:46.520946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.113	11592869	2026-04-14T22:32:46.526946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.114	11707380	2026-04-14T22:32:46.537946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.115	12105235	2026-04-14T22:32:46.550946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.116	12459963	2026-04-14T22:32:46.556946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.117	11409125	2026-04-14T22:32:46.560946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.118	12208992	2026-04-14T22:32:46.564946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.119	12229371	2026-04-14T22:32:46.571946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.12	8332670	2026-04-14T22:32:45.844946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.120	12424162	2026-04-14T22:32:46.577946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.121	12291706	2026-04-14T22:32:46.586946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.122	12150721	2026-04-14T22:32:46.590946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.123	12260503	2026-04-14T22:32:46.594946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.124	12377086	2026-04-14T22:32:46.601946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.125	12799719	2026-04-14T22:32:46.609946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.126	12511711	2026-04-14T22:32:46.612946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.127	12341658	2026-04-14T22:32:46.625946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.128	12439905	2026-04-14T22:32:46.629946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.129	17250346	2026-04-14T22:32:46.632946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.13	8290522	2026-04-14T22:32:45.848946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.130	12411676	2026-04-14T22:32:46.636946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.131	12555282	2026-04-14T22:32:46.639946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.132	13452379	2026-04-14T22:32:46.647946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.133	12217095	2026-04-14T22:32:46.655946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.134	13233604	2026-04-14T22:32:46.657946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.135	13060336	2026-04-14T22:32:46.659946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.136	13215955	2026-04-14T22:32:46.661946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.137	12483891	2026-04-14T22:32:46.664946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.138	16886401	2026-04-14T22:32:46.673946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.139	13380167	2026-04-14T22:32:46.678946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.14	8474424	2026-04-14T22:32:45.853946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.140	12672417	2026-04-14T22:32:46.685946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.141	12720448	2026-04-14T22:32:46.688946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.142	12829112	2026-04-14T22:32:46.691946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.143	12997024	2026-04-14T22:32:46.693946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.144	13621892	2026-04-14T22:32:46.695946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.145	13577925	2026-04-14T22:32:46.704946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.146	13310657	2026-04-14T22:32:46.706946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.147	13895349	2026-04-14T22:32:46.709946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.148	13733166	2026-04-14T22:32:46.716946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.149	14307467	2026-04-14T22:32:46.719946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.15	8563196	2026-04-14T22:32:45.871946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.150	13837704	2026-04-14T22:32:46.721946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.151	13901764	2026-04-14T22:32:46.724946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.152	14164172	2026-04-14T22:32:46.726946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.153	14167409	2026-04-14T22:32:46.735946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.154	14034349	2026-04-14T22:32:46.738946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.155	14559142	2026-04-14T22:32:46.741946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.156	14580369	2026-04-14T22:32:46.744946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.157	13550734	2026-04-14T22:32:46.746946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.158	13701212	2026-04-14T22:32:46.749946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.159	14451854	2026-04-14T22:32:46.751946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.16	8309648	2026-04-14T22:32:45.883946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.160	17508008	2026-04-14T22:32:46.760946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.161	15116800	2026-04-14T22:32:46.763946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.162	14448289	2026-04-14T22:32:46.766946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.163	15350426	2026-04-14T22:32:46.769946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.164	15072189	2026-04-14T22:32:46.772946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.165	15090445	2026-04-14T22:32:46.776946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.166	15451766	2026-04-14T22:32:46.779946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.167	15676439	2026-04-14T22:32:46.783946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.168	15501635	2026-04-14T22:32:46.786946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.169	15457158	2026-04-14T22:32:46.790946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.17	8389681	2026-04-14T22:32:45.890946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.170	15631136	2026-04-14T22:32:46.794946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.171	15598010	2026-04-14T22:32:46.813946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.172	15946463	2026-04-14T22:32:46.816946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.173	16828793	2026-04-14T22:32:46.820946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.174	16487344	2026-04-14T22:32:46.826946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.175	16103928	2026-04-14T22:32:46.830946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.176	16740171	2026-04-14T22:32:46.844946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.177	16806831	2026-04-14T22:32:46.852946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.178	16585364	2026-04-14T22:32:46.856946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.179	17429133	2026-04-14T22:32:46.870946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.18	8399961	2026-04-14T22:32:45.902946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.180	17079571	2026-04-14T22:32:46.880946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.181	16726793	2026-04-14T22:32:46.892946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.182	18742214	2026-04-14T22:32:46.895946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.183	17647528	2026-04-14T22:32:46.898946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.184	18123710	2026-04-14T22:32:46.916946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.185	18396004	2026-04-14T22:32:46.919946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.186	18559292	2026-04-14T22:32:46.942946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.187	19076374	2026-04-14T22:32:46.957946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.188	19343896	2026-04-14T22:32:46.976946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.189	18768201	2026-04-14T22:32:46.998946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.19	8331112	2026-04-14T22:32:45.910946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.190	23379459	2026-04-14T22:32:47.019946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.191	45233427	2026-04-14T22:32:47.026946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.2	8331701	2026-04-14T22:32:45.708946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.20	8883739	2026-04-14T22:32:45.920946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.21	8477677	2026-04-14T22:32:45.925946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.22	8587299	2026-04-14T22:32:45.930946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.23	8541204	2026-04-14T22:32:45.936946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.24	9259306	2026-04-14T22:32:45.947946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.25	9187931	2026-04-14T22:32:45.955946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.26	8747475	2026-04-14T22:32:45.963946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.27	8749991	2026-04-14T22:32:45.969946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.28	8942009	2026-04-14T22:32:45.986946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.29	8743671	2026-04-14T22:32:45.992946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.3	8006911	2026-04-14T22:32:45.734946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.30	8961855	2026-04-14T22:32:46.000946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.31	17370224	2026-04-14T22:32:46.005946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.32	9075104	2026-04-14T22:32:46.010946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.33	9312068	2026-04-14T22:32:46.016946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.34	8858865	2026-04-14T22:32:46.028946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.35	10113857	2026-04-14T22:32:46.035946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.36	17813770	2026-04-14T22:32:46.038946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.37	8705912	2026-04-14T22:32:46.044946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.38	9107027	2026-04-14T22:32:46.059946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.39	9263072	2026-04-14T22:32:46.065946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.4	8067328	2026-04-14T22:32:45.756946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.40	17253452	2026-04-14T22:32:46.078946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.41	9534355	2026-04-14T22:32:46.101946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.42	9202672	2026-04-14T22:32:46.107946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.43	9129313	2026-04-14T22:32:46.113946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.44	9831152	2026-04-14T22:32:46.125946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.45	9390527	2026-04-14T22:32:46.131946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.46	9980697	2026-04-14T22:32:46.144946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.47	9380950	2026-04-14T22:32:46.150946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.48	9865817	2026-04-14T22:32:46.158946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.49	9180590	2026-04-14T22:32:46.164946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.5	8038770	2026-04-14T22:32:45.765946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.50	9407052	2026-04-14T22:32:46.170946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.51	9615041	2026-04-14T22:32:46.179946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.52	9323826	2026-04-14T22:32:46.188946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.53	9717112	2026-04-14T22:32:46.194946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.54	9868747	2026-04-14T22:32:46.211946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.55	9762219	2026-04-14T22:32:46.218946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.56	10112996	2026-04-14T22:32:46.222946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.57	9440187	2026-04-14T22:32:46.227946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.58	9553155	2026-04-14T22:32:46.236946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.59	10140066	2026-04-14T22:32:46.250946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.6	7901168	2026-04-14T22:32:45.770946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.60	9507310	2026-04-14T22:32:46.263946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.61	9933584	2026-04-14T22:32:46.277946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.62	9677753	2026-04-14T22:32:46.284946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.63	10344422	2026-04-14T22:32:46.287946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.64	10151086	2026-04-14T22:32:46.294946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.65	10606207	2026-04-14T22:32:46.302946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.66	10124535	2026-04-14T22:32:46.305946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.67	9772293	2026-04-14T22:32:46.311946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.68	10381162	2026-04-14T22:32:46.318946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.69	10079870	2026-04-14T22:32:46.324946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.7	8495256	2026-04-14T22:32:45.775946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.70	10045015	2026-04-14T22:32:46.326946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.71	10560171	2026-04-14T22:32:46.329946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.72	9983392	2026-04-14T22:32:46.332946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.73	10255483	2026-04-14T22:32:46.346946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.74	10146858	2026-04-14T22:32:46.349946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.75	10304992	2026-04-14T22:32:46.352946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.76	10641917	2026-04-14T22:32:46.356946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.77	10787014	2026-04-14T22:32:46.359946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.78	10649928	2026-04-14T22:32:46.363946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.79	10572676	2026-04-14T22:32:46.380946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.8	8204026	2026-04-14T22:32:45.779946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.80	10758895	2026-04-14T22:32:46.387946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.81	10635963	2026-04-14T22:32:46.390946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.82	10960913	2026-04-14T22:32:46.394946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.83	10367727	2026-04-14T22:32:46.400946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.84	10381618	2026-04-14T22:32:46.403946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.85	9924780	2026-04-14T22:32:46.406946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.86	10613048	2026-04-14T22:32:46.409946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.87	10679450	2026-04-14T22:32:46.412946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.88	10649225	2026-04-14T22:32:46.415946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.89	11175394	2026-04-14T22:32:46.419946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.9	8247148	2026-04-14T22:32:45.788946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.90	10841098	2026-04-14T22:32:46.422946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.91	10787635	2026-04-14T22:32:46.431946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.92	10459047	2026-04-14T22:32:46.434946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.93	11156226	2026-04-14T22:32:46.438946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.94	10619919	2026-04-14T22:32:46.441946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.95	11081204	2026-04-14T22:32:46.444946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.96	10981593	2026-04-14T22:32:46.448946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.97	11259493	2026-04-14T22:32:46.451946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.98	11110731	2026-04-14T22:32:46.455946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/trashme_2306254_superK_partitions/superKparts.99	11112943	2026-04-14T22:32:46.464946+08:00	temporary	BCALM/super-k-mer partition
+zymo_cor/zymo_cor.sh	2494	2026-04-14T22:03:09.187227+08:00	script	legacy command script

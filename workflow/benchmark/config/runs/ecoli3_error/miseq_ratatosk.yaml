@@ -1,0 +1,4 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_error_miseq_ratatosk_original, coverage: 20x, method: ratatosk, parameter_set: original}
+ratatosk_k1: 31
+ratatosk_k2: 63

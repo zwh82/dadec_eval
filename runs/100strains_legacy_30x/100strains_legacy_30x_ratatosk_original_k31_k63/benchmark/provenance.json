@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-07-25T12:28:18.118878+00:00",
+  "dataset": "100strains_legacy",
+  "long_coverage": "10x",
+  "run_id": "100strains_legacy_30x_ratatosk_original_k31_k63",
+  "run_group": "100strains_legacy_30x",
+  "parameter_set": "original",
+  "parameter_signature": "k31_k63",
+  "evaluation_tool": "metaquast",
+  "run_root": "/home/work/wenhai/dadec/benchmark/runs/100strains_legacy_30x/100strains_legacy_30x_ratatosk_original_k31_k63",
+  "ambiguity_scores": [
+    "0.99",
+    "0.9999"
+  ],
+  "methods": [
+    "ratatosk"
+  ],
+  "parameter_profile": "study",
+  "parameters_by_coverage": {
+    "30x": {
+      "dadec_abundance1": 2,
+      "dadec_abundance2": 1,
+      "dadec_k1": 31,
+      "dadec_k2": 31,
+      "dadec_split": 1,
+      "dadec_threshold": 0.08,
+      "fmlrc_k1": 21,
+      "fmlrc_k2": 59,
+      "hero_iterations": 3,
+      "hero_split": 10,
+      "lordec_k": 21,
+      "lordec_solid": 5,
+      "ratatosk_k1": 31,
+      "ratatosk_k2": 63
+    }
+  },
+  "preflight": {
+    "status": "ok",
+    "dataset": "100strains_legacy",
+    "methods": [
+      "ratatosk"
+    ],
+    "evaluation_tool": "metaquast",
+    "inputs": [
+      "/home/yczhang/zyc/final_result/100strains/100_cor/ratatosk1.fa"
+    ],
+    "genomes": 100,
+    "free_disk_gb": 34499.22,
+    "executables": {
+      "conda": "/home/wenhai/miniconda3/bin/conda",
+      "metaquast": "/home/yczhang/zyc/tools/quast/metaquast.py",
+      "python": "/home/wenhai/miniconda3/envs/dadec_eval/bin/python3.10"
+    },
+    "method_environments": {},
+    "mode": "evaluation_only",
+    "corrected_read": "/home/yczhang/zyc/final_result/100strains/100_cor/ratatosk1.fa"
+  },
+  "simulation_configs": [],
+  "corrected_fasta": "/home/yczhang/zyc/final_result/100strains/100_cor/ratatosk1.fa"
+}

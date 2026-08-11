@@ -1,0 +1,6 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: 
+  # Optional existing MetaQUAST combined_reference/report.txt; when set, import only the 0.9999 report.
+  report: /home/yczhang/zyc/final_result/zymo/zymo_cor/coverage_self/20_dechat.txt
+run: {id: zymo_20pct_dechat_original, coverage: 20pct, method: dechat, parameter_set: original}

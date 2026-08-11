@@ -1,0 +1,4 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/mhc/pac/proovread.fa
+run: {id: mhc_pac_50x_proovread_original, coverage: 50x, method: proovread, parameter_set: original}

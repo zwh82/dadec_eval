@@ -1,0 +1,145 @@
+​Bacillus anthracis
+Genome ID (Assembly)	RefSeq NC ID（染色体/质粒）	菌株/描述
+GCF_000008445.1	NC_005945.1（染色体）	标准毒株Ames Ancestor
+GCF_000007845.1	NC_003997.3（染色体）	菌株Sterne（疫苗株）
+GCF_900637155.1	NZ_CP033334.1（染色体）	菌株Vollum
+GCF_001687145.1	NZ_CP014544.1（染色体）	环境分离株
+​Bacillus subtilis
+GCF_000009045.1	NC_000964.3（染色体）	模式菌株168
+GCF_900106225.1	NZ_CP010052.1（染色体）	工业菌株PY79
+GCF_001612425.1	NZ_CP019778.1（染色体）	菌株NCIB 3610
+GCF_003869045.1	NZ_CP033305.1（染色体）	土壤分离株
+​Clostridium botulinum
+GCF_000689235.1	NC_017513.1（染色体）	产A型毒素菌株Hall
+GCF_000935825.1	NZ_CP011430.1（染色体）	菌株ATCC 3502
+GCF_900101075.1	NZ_CP034268.1（染色体）	菌株BKT015925
+GCF_019045875.1	NZ_CP092079.1（染色体）	产E型毒素菌株
+​Clostridium tetani
+GCF_000195755.1: NC_015834.1（菌株E88）
+​GCF_024276525.1: NZ_CP125586.1（临床分离株）
+​Escherichia coli​（缩写：​E. coli）
+GCF_000005845.2: NC_000913.3（模式菌株K-12 MG1655）
+​GCF_000732005.1: NZ_CP016603.1（益生菌株Nissle 1917）
+​GCF_023166435.1: NZ_CP094048.1（多重耐药临床株）
+​Helicobacter pylori
+​GCF_018698705.1: NZ_CP085450.1（亚洲临床株）
+​GCF_024281545.1: NZ_CP125266.1（耐药株）
+​Lactobacillus acidophilus
+GCF_000014265.1: NC_006814.3（益生菌株NCFM）
+​GCF_019045715.1: NZ_CP092000.1（环境株）
+​GCF_900637205.1: NZ_CP033313.1（商业菌株）
+​Listeria monocytogenes
+GCF_000196035.1: NC_017544.1（菌株EGD-e）
+​GCF_024277245.1: NZ_CP125629.1（食源性爆发株）
+​GCF_900461885.1: NZ_CP063722.1（环境分离株）
+​Mycobacterium tuberculosis
+GCF_000195955.1: NC_000962.3（标准株H37Rv）
+​GCF_024281425.1: NZ_CP125238.1（耐药株）
+​GCF_900636105.1: NZ_CP033295.1（临床分离株）
+​Neisseria gonorrhoeae
+GCF_000237565.1: NC_017509.1（菌株FA1090）
+​GCF_024281545.1: NZ_CP125267.1（多重耐药株）
+​GCF_900636145.1: NZ_CP033303.1（临床分离株）
+​Staphylococcus aureus
+GCF_000013425.1: NC_002952.3（菌株NCTC 8325）
+​GCF_024276565.1: NZ_CP125538.1（社区获得性MRSA）
+​GCF_900636165.1: NZ_CP033308.1（临床分离株）
+​Streptococcus pneumoniae
+GCF_000006885.1: NC_003098.1（菌株TIGR4）
+​GCF_024281535.1: NZ_CP125259.1（耐药株）
+​GCF_900637175.1: NZ_CP033318.1（疫苗逃逸株）
+​Vibrio cholerae
+GCF_000829395.1: NC_012582.1（菌株N16961，O1型）
+​GCF_024281435.1: NZ_CP125242.1（流行株O139）
+​GCF_900636215.1: NZ_CP033324.1（临床分离株）
+1. Clostridioides difficile (艰难梭菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000009205.1	1496	参考菌株 630
+GCF_000731225.1	1496	临床分离株 R20291
+GCF_900636245.1	1496	高毒力菌株 BI-9
+GCF_023050915.1	1496	抗生素耐药菌株 CD196
+2. Yersinia pestis (鼠疫耶尔森菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000009065.1	632	参考菌株 CO92
+GCF_000834295.1	632	古典型菌株 Antiqua
+GCF_000294535.1	632	中世纪黑死病分离株
+GCF_023630825.1	632	现代流行株 KIM10+
+3. Legionella pneumophila (嗜肺军团菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000008485.1	446	参考菌株 Philadelphia-1
+GCF_016920375.1	446	环境分离株 Alcoy 2300/99
+GCF_000836445.1	446	临床菌株 LPE509
+GCF_024218965.1	446	高致病性菌株 Paris
+4. Borrelia burgdorferi (伯氏疏螺旋体)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000008685.1	139	参考菌株 B31
+GCF_000763695.1	139	临床分离株 JD1
+GCF_902812805.1	139	欧洲亚型菌株 PBi
+GCF_000092645.1	139	蜱传分离株 297
+5. Bifidobacterium longum (长双歧杆菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000020225.1	216816	益生菌株 NCC2705
+GCF_014656585.1	216816	婴儿肠道分离株 DJO10A
+GCF_000696015.1	216816	临床菌株 JDM301
+GCF_024318645.1	216816	发酵乳源菌株 BB536
+6. Streptomyces coelicolor (天蓝色链霉菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000203835.1	100226	模式菌株 A3(2)
+GCF_023629285.1	100226	抗生素高产菌株 M145
+GCF_000696155.1	100226	基因组重排菌株 CH999
+GCF_902373545.1	100226	环境分离株 ATCC 23899
+7. Deinococcus radiodurans (耐辐射奇球菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000008565.1	243230	参考菌株 R1
+GCF_000526635.1	243230	极端环境菌株 VCD115
+GCF_024256325.1	243230	航天器分离株 ATCC 13939
+GCF_902373555.1	243230	代谢工程菌株 KR1
+8. Thermus aquaticus (水生栖热菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000014645.1	271	模式菌株 Y51MC23
+GCF_024256355.1	271	高温环境菌株 HB8
+GCF_000696215.1	271	PCR酶生产菌株 ATCC 25104
+GCF_902373565.1	271	深海热泉分离株 YT1
+9. Corynebacterium glutamicum (谷氨酸棒杆菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000011325.1	196627	工业菌株 ATCC 13032
+GCF_024256395.1	196627	高产谷氨酸菌株 KY9714
+GCF_000734235.1	196627	代谢工程菌株 DM1919
+GCF_902373575.1	196627	环境分离株 SCgG1
+10. Synechocystis sp. PCC 6803 (集胞藻PCC 6803)
+Genome ID (Assembly)	NCID (Taxonomy ID)	注释
+GCF_000009725.1	1111708	标准光合研究菌株
+GCF_024256415.1	1111708	葡萄糖耐受突变株
+GCF_000734245.1	1111708	盐胁迫适应菌株
+GCF_902373585.1	1111708	基因敲除文库宿主
+11. Lactococcus lactis (乳酸乳球菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000007645.1	1358	工业菌株 IL1403
+GCF_024256435.1	1358	奶酪发酵菌株 MG1363
+GCF_000734255.1	1358	益生菌株 KF147
+GCF_902373595.1	1358	噬菌体抗性菌株 UC509.9
+12. Enterococcus faecalis (粪肠球菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000007785.1	1351	参考菌株 V583
+GCF_024256455.1	1351	临床耐药菌株 TUSoD Ef11
+GCF_000734265.1	1351	肠道分离株 OG1RF
+GCF_902373605.1	1351	生物膜形成菌株 HH22
+13. Rhodopseudomonas palustris (沼泽红假单胞菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000017605.1	1111680	模式菌株 CGA009
+GCF_024256475.1	1111680	光合固氮菌株 HaA2
+GCF_000734275.1	1111680	环境修复菌株 TIE-1
+GCF_902373615.1	1111680	极端pH耐受菌株 DX-1
+14. Geobacter sulfurreducens (硫还原地杆菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000007985.1	243231	模式菌株 PCA
+GCF_024256495.1	243231	电子传递强化菌株 KN400
+GCF_000734285.1	243231	环境分离株 DL1
+GCF_902373625.1	243231	工程菌株 GSU1776
+15. Shewanella oneidensis (奥奈达希瓦氏菌)
+Genome ID (Assembly)	NCID (Taxonomy ID)	菌株/注释
+GCF_000007565.1	70863	参考菌株 MR-1
+GCF_024256515.1	70863	重金属还原菌株 LR7-19
+GCF_000734295.1	70863	低温适应菌株 OS223
+GCF_902373635.1	70863	基因编辑菌株 ΔomcA/mtrC
+

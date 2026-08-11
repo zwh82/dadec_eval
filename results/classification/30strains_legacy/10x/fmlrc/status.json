@@ -1,0 +1,10 @@
+{
+  "comparison": {
+    "actual_rows": 21,
+    "diffs": [],
+    "expected_rows": 21,
+    "match": true
+  },
+  "coverage": "10x",
+  "status": "current_match"
+}

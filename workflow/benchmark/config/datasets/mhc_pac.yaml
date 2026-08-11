@@ -1,0 +1,17 @@
+# benchmark/config/datasets/mhc.yaml
+dataset:
+  id: mhc_pac
+  variant: current
+  expected_genomes: 1
+  long_coverage: 10x
+
+evaluation:
+  tool: metaquast
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/mhc/data/pac/reads.fa
+  short_reads:
+    50x: /home/yczhang/zyc/final_result/mhc/data/illumina/short-reads.fa
+  genome_map: benchmark/config/datasets/mhc_genome_to_id.tsv
+  simulation_configs: []
+

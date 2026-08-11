@@ -1,0 +1,10 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+100strains_legacy_30x_dadec_dev_fix_a_k31_k31_s3_a2_a1	original	100strains_legacy	10x	30x	DADEC	0.9999	164.3	14.13	99.737	2136	424049
+100strains_legacy_30x_fmlrc_original_k21_k59	original	100strains_legacy	10x	30x	FMLRC	0.9999	381.73	502.57	99.688	12583	423800
+100strains_legacy_30x_f_hero_original_k21_k59_hs10_hi1	original	100strains_legacy	10x	30x	F_HERO	0.9999	669.87	201.08	99.577	64488	423798
+100strains_legacy_30x_ratatosk_original_k31_k63	original	100strains_legacy	10x	30x	Ratatosk	0.9999	457.61	1431.7	99.677	1451	423827
+100strains_legacy_30x_r_hero_original_k31_k63_hs10_hi1	original	100strains_legacy	10x	30x	R_HERO	0.9999	671.64	511.22	99.589	74600	423758
+100strains_legacy_30x_lordec_original_k31_ls5	original	100strains_legacy	10x	30x	LoRDEC	0.9999	397.25	652.82	99.64	2125	423813
+100strains_legacy_30x_l_hero_original_k31_ls5_hs10_hi1	original	100strains_legacy	10x	30x	L_HERO	0.9999	481.93	314.22	99.502	37415	423821
+100strains_legacy_30x_colormap_original	original	100strains_legacy	10x	30x	CoLoRMap	0.9999	2581.94	5735.77	99.665	1425	424078
+100strains_legacy_30x_proovread_original	original	100strains_legacy	10x	30x	Proovread	0.9999	353.31	181.55	98.46	3813	423805

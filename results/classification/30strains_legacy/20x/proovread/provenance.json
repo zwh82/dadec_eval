@@ -1,0 +1,33 @@
+{
+  "assignment": "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/20x/proovread/assignments.tsv",
+  "assignment_sha256": "7fdcf57e9711fbb29e80f7a090a92faabf7248d75c945900611b4fa9475f1776",
+  "command": [
+    "/home/yczhang/zyc/final_experiment/centrifuge/centrifuge",
+    "-f",
+    "-x",
+    "/home/yczhang/zyc/final_result/30strains/classification/10x/ref",
+    "-U",
+    "/home/work/wenhai/dadec/benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_proovread_original/output/short_20x/proovread/corrected.fa",
+    "-S",
+    "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/20x/proovread/centrifuge.ivd1lfv2/assignments.tsv",
+    "--report-file",
+    "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/20x/proovread/centrifuge.ivd1lfv2/report.tsv"
+  ],
+  "coverage": "20x",
+  "created_utc": "2026-07-27T17:45:42.419739+00:00",
+  "dataset_id": "30strains_legacy",
+  "index_files": [
+    "/home/yczhang/zyc/final_result/30strains/classification/10x/ref.1.cf",
+    "/home/yczhang/zyc/final_result/30strains/classification/10x/ref.2.cf",
+    "/home/yczhang/zyc/final_result/30strains/classification/10x/ref.3.cf",
+    "/home/yczhang/zyc/final_result/30strains/classification/10x/ref.4.cf"
+  ],
+  "index_prefix": "/home/yczhang/zyc/final_result/30strains/classification/10x/ref",
+  "input_fasta": "/home/work/wenhai/dadec/benchmark/runs/30strains_legacy_20x/30strains_legacy_20x_proovread_original/output/short_20x/proovread/corrected.fa",
+  "input_sha256": "73bc783f8d105ef1ef35d0e0371be95e44ac9aff1c7182612e3ccd42dd90ca81",
+  "ld_preload": "",
+  "report": "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/20x/proovread/report.tsv",
+  "report_sha256": "e1434bea945336b36821bd424a0f423e2f997ccd4b440b8a94645c5d5089963c",
+  "sample": "proovread",
+  "source": "current"
+}

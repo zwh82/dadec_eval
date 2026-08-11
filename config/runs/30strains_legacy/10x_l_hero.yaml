@@ -1,0 +1,5 @@
+run: {id: 30strains_legacy_10x_l_hero_original, coverage: 10x, method: l_hero, parameter_set: original}
+lordec_k: 21
+lordec_solid: 5
+hero_split: 10
+hero_iterations: 1

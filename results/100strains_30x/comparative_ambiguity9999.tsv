@@ -1,0 +1,7 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	CPU(h)	WallTime(h)	Memory(GB)	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+100strains_30x_dadec_dev_fix_a_k31_k31_s3_a2_a1	original	100strains	10x	30x	DADEC	0.9999	160.974	8.840	352.188	122.27	13.78	96.731	2132	365362
+100strains_30x_fmlrc_original_k21_k59	original	100strains	10x	30x	FMLRC	0.9999	29.139	0.743	20.117	457.75	529.21	95.916	28071	365365
+100strains_30x_ratatosk_original_k31_k63	original	100strains	10x	30x	Ratatosk	0.9999	44.683	1.005	24.323	336.41	981.61	97.14	1119	365365
+100strains_30x_lordec_original_k31_ls5	original	100strains	10x	30x	LoRDEC	0.9999	65.282	1.233	6.274	338.55	446.18	95.234	2685	365365
+100strains_30x_colormap_original	original	100strains	10x	30x	CoLoRMap	0.9999	773.287	38.347	181.938	1278.37	2399.91	97.264	3550	365365
+100strains_30x_proovread_original	original	100strains	10x	30x	Proovread	0.9999	748.165	24.989	73.773	196.57	69.75	92.114	2391	365365

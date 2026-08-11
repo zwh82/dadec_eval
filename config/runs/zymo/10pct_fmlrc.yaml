@@ -1,0 +1,8 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/zymo/zymo_cor/fmlrc1.fa
+  # Optional existing MetaQUAST combined_reference/report.txt; when set, import only the 0.9999 report.
+  # report: /home/yczhang/zyc/final_result/zymo/zymo_cor/fmlrc1.txt
+run: {id: zymo_10pct_fmlrc_original, coverage: 10pct, method: fmlrc, parameter_set: original}
+fmlrc_k1: 21
+fmlrc_k2: 59

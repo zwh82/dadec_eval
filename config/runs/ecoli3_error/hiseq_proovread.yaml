@@ -1,0 +1,2 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_error_hiseq_proovread_original, coverage: 23x, method: proovread, parameter_set: original}

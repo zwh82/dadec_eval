@@ -1,0 +1,464 @@
+import json
+import os
+import re
+import shlex
+import sys
+from pathlib import Path
+
+BENCHMARK_DIR = Path(workflow.basedir).resolve()
+SCRIPT_DIR = BENCHMARK_DIR / "scripts"
+sys.path.insert(0, str(SCRIPT_DIR))
+from method_config import METHOD_LABELS, resolve_coverage_parameters, select_methods, validate_lordec
+from run_layout import derive_run_group, evaluation_variants
+
+required_sections = {"project_root", "dataset", "inputs", "tools", "environments", "resources", "dadec", "metaquast", "quast", "evaluation", "paths", "parameters"}
+missing_sections = sorted(required_sections - set(config))
+if missing_sections:
+    raise ValueError("Missing config sections: " + ", ".join(missing_sections))
+
+ROOT = Path(config["project_root"]).resolve()
+DATASET = str(config["dataset"]["id"])
+LONG_COVERAGE = str(config["dataset"]["long_coverage"])
+EXPECTED_GENOMES = int(config["dataset"]["expected_genomes"])
+RUN = config.get("run", {}) or {}
+RUN_COVERAGE = str(RUN["coverage"]) if RUN.get("coverage") else None
+RUN_METHOD = str(RUN["method"]) if RUN.get("method") else None
+PARAMETER_SET = str(RUN.get("parameter_set") or config.get("parameter_profile", "study"))
+RUN_ID_SUFFIX = str(
+    os.environ.get("RUN_ID_SUFFIX") or config.get("run_id_suffix") or ""
+).strip()
+if RUN_ID_SUFFIX and not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", RUN_ID_SUFFIX):
+    raise ValueError(f"Invalid run_id_suffix: {RUN_ID_SUFFIX!r}")
+
+SHORT_READS = {
+    str(coverage): path
+    for coverage, path in (config["inputs"].get("short_reads", {}) or {}).items()
+    if path not in (None, "")
+}
+LONG_READ_INPUT = config["inputs"].get("long_reads")
+LONG_READ_SUBSAMPLES = {
+    str(label): path
+    for label, path in (config["inputs"].get("long_read_subsamples", {}) or {}).items()
+    if path not in (None, "")
+}
+COVERAGE_READS = {**SHORT_READS, **LONG_READ_SUBSAMPLES}
+if RUN_COVERAGE:
+    if RUN_COVERAGE not in COVERAGE_READS:
+        raise ValueError(
+            f"run.coverage={RUN_COVERAGE!r} has no non-empty read entry "
+            "in inputs.short_reads or inputs.long_read_subsamples"
+        )
+    COVERAGES = [RUN_COVERAGE]
+else:
+    COVERAGES = list(COVERAGE_READS)
+
+METHOD_SELECTION = RUN_METHOD or config.get("methods", "all")
+METHODS = select_methods(METHOD_SELECTION)
+SELF_CORRECTION_METHODS = {"vechat", "dechat"}
+SELF_ONLY = all(method in SELF_CORRECTION_METHODS for method in METHODS)
+for coverage, method in [(coverage, method) for coverage in COVERAGES for method in METHODS]:
+    if method in SELF_CORRECTION_METHODS and coverage not in LONG_READ_SUBSAMPLES:
+        raise ValueError(
+            f"{method} is a long-read self-correction method; coverage {coverage!r} "
+            "must be configured under inputs.long_read_subsamples"
+        )
+    if method not in SELF_CORRECTION_METHODS and coverage not in SHORT_READS:
+        raise ValueError(
+            f"{method} requires short-read inputs; coverage {coverage!r} "
+            "must be configured under inputs.short_reads"
+        )
+if not SELF_ONLY and LONG_READ_INPUT in (None, ""):
+    raise ValueError(
+        "inputs.long_reads is required when any non-self-correction method is selected"
+    )
+ALL_MODE = isinstance(METHOD_SELECTION, str) and METHOD_SELECTION.strip().lower() == "all"
+if not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", DATASET): raise ValueError(f"Invalid dataset.id: {DATASET}")
+if not COVERAGES or any(not re.fullmatch(r"[0-9]+(?:x|pct|percent)", value) for value in COVERAGES):
+    raise ValueError("Invalid coverage labels; use labels like 20x or 20pct")
+if RUN_METHOD and len(METHODS) != 1:
+    raise ValueError("run.method must select exactly one method")
+
+def slug(value):
+    value = re.sub(r"[^A-Za-z0-9_.-]+", "_", str(value)).strip("._-")
+    return value or "default"
+
+COVERAGE_PARAMETERS = {}
+for coverage in COVERAGES:
+    PARAMETER_PROFILE, parameters = resolve_coverage_parameters(config, coverage)
+    validate_lordec(METHODS, parameters)
+    COVERAGE_PARAMETERS[coverage] = parameters
+METHOD_TARGETS = [(coverage, method) for coverage in COVERAGES for method in METHODS]
+
+def compact_value(value):
+    return str(value).replace(".", "p")
+
+def compact_method_signature(method, values):
+    if method == "dadec":
+        parts = [
+            f"k{values['dadec_k1']}",
+            f"k{values['dadec_k2']}",
+            f"s{values['dadec_split']}",
+            f"a{values['dadec_abundance1']}",
+            f"a{values['dadec_abundance2']}",
+        ]
+        if float(values["dadec_threshold"]) != 0.08:
+            parts.append(f"t{compact_value(values['dadec_threshold'])}")
+        return "_".join(parts)
+    if method in {"fmlrc", "f_hero"}:
+        parts = [f"k{values['fmlrc_k1']}", f"k{values['fmlrc_k2']}"]
+        if method == "f_hero":
+            parts.extend([f"hs{values['hero_split']}", f"hi{values['hero_iterations']}"])
+        return "_".join(parts)
+    if method in {"ratatosk", "r_hero"}:
+        parts = [f"k{values['ratatosk_k1']}", f"k{values['ratatosk_k2']}"]
+        if method == "r_hero":
+            parts.extend([f"hs{values['hero_split']}", f"hi{values['hero_iterations']}"])
+        return "_".join(parts)
+    if method in {"lordec", "l_hero"}:
+        parts = [f"k{values['lordec_k']}", f"ls{values['lordec_solid']}"]
+        if method == "l_hero":
+            parts.extend([f"hs{values['hero_split']}", f"hi{values['hero_iterations']}"])
+        return "_".join(parts)
+    return ""
+
+def parameter_signature():
+    parts = []
+    for coverage, method in METHOD_TARGETS:
+        values = COVERAGE_PARAMETERS[coverage]
+        signature = compact_method_signature(method, values)
+        if signature:
+            parts.append(slug(signature))
+    return "__".join(parts)
+
+RUN_BASE = RUN.get("id") or "_".join([
+    DATASET,
+    RUN_COVERAGE or "allcov",
+    RUN_METHOD or "alltools",
+    PARAMETER_SET,
+])
+if RUN_ID_SUFFIX:
+    RUN_BASE = f"{RUN_BASE}_{RUN_ID_SUFFIX}"
+PARAMETER_SIGNATURE = parameter_signature()
+RUN_ID = slug(f"{RUN_BASE}_{PARAMETER_SIGNATURE}" if PARAMETER_SIGNATURE else RUN_BASE)
+RUN_GROUP = derive_run_group(RUN_BASE, RUN_METHOD) if RUN_METHOD else derive_run_group(RUN_ID)
+RUNS_ROOT = ROOT / config["paths"].get("run_root", "benchmark/runs")
+
+HERO_BASE_METHOD = {"f_hero": "fmlrc", "r_hero": "ratatosk", "l_hero": "lordec"}
+
+def hero_base_run_ids(coverage, method):
+    base_method = HERO_BASE_METHOD[method]
+    values = COVERAGE_PARAMETERS[coverage]
+    base_signature = compact_method_signature(base_method, values)
+    candidate_bases = []
+    replaced = RUN_BASE.replace(method, base_method, 1)
+    if replaced != RUN_BASE:
+        candidate_bases.append(replaced)
+    candidate_bases.append("_".join([DATASET, coverage, base_method, PARAMETER_SET]))
+
+    run_ids = []
+    for candidate_base in candidate_bases:
+        run_id = slug(f"{candidate_base}_{base_signature}" if base_signature else candidate_base)
+        if run_id not in run_ids:
+            run_ids.append(run_id)
+    return run_ids
+
+def external_hero_base_info(coverage, method):
+    base_method = HERO_BASE_METHOD[method]
+    for run_id in hero_base_run_ids(coverage, method):
+        run_root = RUNS_ROOT / RUN_GROUP / run_id
+        corrected = run_root / "output" / f"short_{coverage}" / base_method / "corrected.fa"
+        if corrected.is_file() and corrected.stat().st_size > 0:
+            resources = run_root / "benchmark" / f"short_{coverage}" / base_method / "resources.time.txt"
+            return {
+                "run_id": run_id,
+                "method": base_method,
+                "corrected": str(corrected),
+                "resources": str(resources) if resources.is_file() and resources.stat().st_size > 0 else None,
+            }
+    return None
+
+EXTERNAL_HERO_BASES = {}
+if not ALL_MODE:
+    for coverage, method in METHOD_TARGETS:
+        if method in HERO_BASE_METHOD:
+            info = external_hero_base_info(coverage, method)
+            if info:
+                EXTERNAL_HERO_BASES[(coverage, method)] = info
+
+EVALUATION_TOOL = str(config.get("evaluation", {}).get("tool", "metaquast")).lower()
+if EVALUATION_TOOL not in {"metaquast", "quast"}:
+    raise ValueError("evaluation.tool must be 'metaquast' or 'quast'")
+def rooted(path):
+    path = Path(path)
+    return str(path if path.is_absolute() else ROOT / path)
+
+EXTERNAL_REPORT_VALUE = config.get("evaluation", {}).get("report")
+EXTERNAL_REPORT = (
+    rooted(EXTERNAL_REPORT_VALUE)
+    if EXTERNAL_REPORT_VALUE not in (None, "")
+    else None
+)
+if EXTERNAL_REPORT is not None and EVALUATION_TOOL != "metaquast":
+    raise ValueError("evaluation.report is currently supported only with evaluation.tool=metaquast")
+AMBIGUITY_SELECTION = config.get(
+    "ambiguity_scores",
+    config["metaquast"].get("ambiguity_scores", config["metaquast"].get("ambiguity_score")),
+)
+EVALUATION_VARIANTS = (
+    [("metaquast.ambiguity9999", "0.9999")]
+    if EXTERNAL_REPORT is not None
+    else evaluation_variants(EVALUATION_TOOL, AMBIGUITY_SELECTION)
+)
+EVALUATION_DIR_TO_SCORE = dict(EVALUATION_VARIANTS)
+EVALUATION_DIRS = [directory for directory, _ in EVALUATION_VARIANTS]
+AMBIGUITY_SCORES = [score for _, score in EVALUATION_VARIANTS if score != "NA"]
+QUAST_CLEANUP_THRESHOLD_MIB = float(config.get("quast_cleanup", {}).get("threshold_mib", 100))
+if QUAST_CLEANUP_THRESHOLD_MIB <= 0:
+    raise ValueError("quast_cleanup.threshold_mib must be positive")
+
+RUN_ROOT = RUNS_ROOT / RUN_GROUP / RUN_ID
+WORK = str(RUN_ROOT / "tmp")
+RESULTS = str(RUN_ROOT / "output")
+LOGS = str(RUN_ROOT / "logs")
+BENCHMARK_OUT = str(RUN_ROOT / "benchmark")
+CONDA = config["tools"]["conda"]
+EVAL_ENV = config["environments"]["evaluation"]
+PYTHON = config["tools"]["python"]
+RUN_METHOD_SCRIPT = str(SCRIPT_DIR / "run_method.py")
+PREFLIGHT_SCRIPT = str(SCRIPT_DIR / "preflight.py")
+PREPARE_READS_SCRIPT = str(SCRIPT_DIR / "prepare_reads.py")
+PREPARE_REFERENCE_SCRIPT = str(SCRIPT_DIR / "prepare_reference.py")
+PROVENANCE_SCRIPT = str(SCRIPT_DIR / "provenance.py")
+PARSE_RESOURCES_SCRIPT = str(SCRIPT_DIR / "parse_resources.py")
+PARSE_METAQUAST_SCRIPT = str(SCRIPT_DIR / "parse_metaquast.py")
+AGGREGATE_SCRIPT = str(SCRIPT_DIR / "aggregate.py")
+COLLECT_RUNS_SCRIPT = str(SCRIPT_DIR / "collect_run_summaries.py")
+COMPACT_QUAST_SCRIPT = str(SCRIPT_DIR / "compact_quast.py")
+
+def optional_cli_arg(flag, value):
+    return f"{flag} {shlex.quote(str(value))}" if value not in (None, "") else ""
+
+EXTERNAL_CORRECTED_VALUE = config.get("evaluation", {}).get("corrected_fasta")
+EXTERNAL_CORRECTED = (
+    rooted(EXTERNAL_CORRECTED_VALUE)
+    if EXTERNAL_CORRECTED_VALUE not in (None, "")
+    else None
+)
+
+def strict_bool_config(name, default=False):
+    value = config.get(name, default)
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        normalized = value.strip().lower()
+        if normalized == "true":
+            return True
+        if normalized == "false":
+            return False
+    raise ValueError(f"{name} must be true or false")
+
+EVALUATION_ONLY = strict_bool_config("evaluation_only")
+if EVALUATION_ONLY and len(METHOD_TARGETS) != 1:
+    raise ValueError("evaluation_only requires one run.coverage and one run.method")
+if EVALUATION_ONLY and (
+    EXTERNAL_CORRECTED is not None or EXTERNAL_REPORT is not None
+):
+    raise ValueError(
+        "evaluation_only cannot be combined with evaluation.corrected_fasta "
+        "or evaluation.report"
+    )
+INTERNAL_EVALUATION_CORRECTED = (
+    f"{RESULTS}/short_{METHOD_TARGETS[0][0]}/{METHOD_TARGETS[0][1]}/corrected.fa"
+    if EVALUATION_ONLY and len(METHOD_TARGETS) == 1
+    else None
+)
+EVALUATION_CORRECTED = INTERNAL_EVALUATION_CORRECTED or EXTERNAL_CORRECTED
+DIRECT_EVALUATION = EVALUATION_CORRECTED is not None or EXTERNAL_REPORT is not None
+if DIRECT_EVALUATION and len(METHOD_TARGETS) != 1:
+    if EXTERNAL_REPORT is not None:
+        raise ValueError("evaluation.report requires one run.coverage and one run.method")
+    raise ValueError("evaluation.corrected_fasta requires one run.coverage and one run.method")
+
+LONG_FASTA = f"{WORK}/inputs/long_{LONG_COVERAGE}.fa"
+REFERENCE = f"{WORK}/reference/{DATASET}.fa"
+CORRECTED = [f"{RESULTS}/short_{c}/{m}/corrected.fa" for c, m in METHOD_TARGETS]
+RESOURCES = [f"{BENCHMARK_OUT}/short_{c}/{m}/resources.time.txt" for c, m in METHOD_TARGETS]
+REPORT_TARGETS = [
+    (coverage, method, evaluation_dir, score)
+    for coverage, method in METHOD_TARGETS
+    for evaluation_dir, score in EVALUATION_VARIANTS
+]
+REPORTS = [
+    f"{RESULTS}/short_{coverage}/{method}/{evaluation_dir}/"
+    + ("combined_reference/report.tsv" if EVALUATION_TOOL == "metaquast" else "report.tsv")
+    for coverage, method, evaluation_dir, _ in REPORT_TARGETS
+]
+ALL_TARGETS = (
+    ([] if DIRECT_EVALUATION else CORRECTED + RESOURCES)
+    + REPORTS
+    + [f"{BENCHMARK_OUT}/provenance.json"]
+)
+
+def corrected_fasta_input(wildcards):
+    if DIRECT_EVALUATION:
+        return EVALUATION_CORRECTED
+    return f"{RESULTS}/short_{wildcards.coverage}/{wildcards.method}/corrected.fa"
+
+PREFLIGHT_READS = (
+    [EXTERNAL_REPORT or EVALUATION_CORRECTED]
+    if DIRECT_EVALUATION
+    else [rooted(LONG_READ_SUBSAMPLES[value]) for value in COVERAGES]
+    if SELF_ONLY
+    else [
+        rooted(LONG_READ_INPUT),
+        # Coverage labels may denote long-read subsamples (for example, the
+        # Zymo 5pct/10pct/... runs).  Keep the short-read entries below
+        # unchanged: hybrid methods use the complete short-read dataset.
+        *[rooted(LONG_READ_SUBSAMPLES[value]) for value in COVERAGES
+          if value in LONG_READ_SUBSAMPLES],
+        *[rooted(SHORT_READS[value]) for value in COVERAGES],
+    ]
+)
+PREFLIGHT_READ_ARGS = (
+    optional_cli_arg("--report", EXTERNAL_REPORT)
+    if EXTERNAL_REPORT is not None
+    else optional_cli_arg("--corrected-read", EVALUATION_CORRECTED)
+    if DIRECT_EVALUATION
+    else " ".join([
+        "--long-reads",
+        *[shlex.quote(rooted(LONG_READ_SUBSAMPLES[value])) for value in COVERAGES],
+    ])
+    if SELF_ONLY
+    else " ".join([
+        optional_cli_arg("--long-read", rooted(LONG_READ_INPUT)),
+        "--short-reads",
+        *[shlex.quote(rooted(SHORT_READS[value])) for value in COVERAGES],
+    ])
+)
+
+rule all:
+    input: ALL_TARGETS
+
+rule preflight:
+    input:
+        reads=PREFLIGHT_READS,
+    output: f"{BENCHMARK_OUT}/preflight.json"
+    params:
+        python=config["tools"]["python"], conda=CONDA, env=EVAL_ENV,
+        root=str(ROOT), dataset=DATASET, expected=EXPECTED_GENOMES,
+        min_disk=config["resources"]["min_free_disk_gb"],
+        tools_json=json.dumps(config["tools"]), methods=",".join(METHODS),
+        method_envs=json.dumps(config["environments"]["methods"]),
+        evaluation_tool=EVALUATION_TOOL,
+        read_args=PREFLIGHT_READ_ARGS,
+        script=PREFLIGHT_SCRIPT,
+    shell:
+        r"""
+        mkdir -p $(dirname {output:q})
+        {params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} \
+          --root {params.root:q} --dataset {params.dataset:q} --expected-genomes {params.expected} \
+          {params.read_args} \
+          --tools-json {params.tools_json:q} --methods {params.methods:q} --method-envs-json {params.method_envs:q} \
+          --evaluation-tool {params.evaluation_tool:q} --min-free-disk-gb {params.min_disk} --output {output:q}
+        """
+
+if LONG_READ_INPUT not in (None, ""):
+    rule prepare_long_reads:
+        input:
+            preflight=rules.preflight.output,
+            reads=rooted(LONG_READ_INPUT),
+        output: temp(LONG_FASTA)
+        params: seqkit=config["tools"]["seqkit"], python=PYTHON, conda=CONDA, env=EVAL_ENV, script=PREPARE_READS_SCRIPT
+        shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} {input.reads:q} {output:q} --seqkit {params.seqkit:q}"
+
+if LONG_READ_SUBSAMPLES:
+    rule prepare_long_read_subsample:
+        input:
+            preflight=rules.preflight.output,
+            reads=lambda wc: rooted(LONG_READ_SUBSAMPLES[wc.coverage]),
+        output: temp(f"{WORK}/inputs/long_{{coverage}}.fa")
+        wildcard_constraints:
+            coverage="|".join(re.escape(value) for value in LONG_READ_SUBSAMPLES)
+        params: seqkit=config["tools"]["seqkit"], python=PYTHON, conda=CONDA, env=EVAL_ENV, script=PREPARE_READS_SCRIPT
+        shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} {input.reads:q} {output:q} --seqkit {params.seqkit:q}"
+
+rule prepare_short_reads:
+    input:
+        preflight=rules.preflight.output,
+        reads=lambda wc: rooted(SHORT_READS[wc.coverage]),
+    output: temp(f"{WORK}/inputs/short_{{coverage}}.fa")
+    params: seqkit=config["tools"]["seqkit"], python=PYTHON, conda=CONDA, env=EVAL_ENV, script=PREPARE_READS_SCRIPT
+    shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} {input.reads:q} {output:q} --seqkit {params.seqkit:q}"
+
+rule prepare_reference:
+    input:
+        genome_map=rooted(config["inputs"]["genome_map"]),
+    output:
+        fasta=temp(REFERENCE),
+        mapping=temp(f"{WORK}/reference/contig_to_genome.tsv"),
+    params: python=PYTHON, expected=EXPECTED_GENOMES, conda=CONDA, env=EVAL_ENV, script=PREPARE_REFERENCE_SCRIPT
+    shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} --genome-map {input.genome_map:q} --expected-genomes {params.expected} --fasta {output.fasta:q} --mapping {output.mapping:q}"
+
+rule provenance:
+    input: preflight=rules.preflight.output, configs=[rooted(path) for path in config["inputs"].get("simulation_configs", [])]
+    output: f"{BENCHMARK_OUT}/provenance.json"
+    params:
+        python=PYTHON, conda=CONDA, env=EVAL_ENV, dataset=DATASET,
+        long_coverage=LONG_COVERAGE, methods=",".join(METHODS), profile=PARAMETER_PROFILE,
+        parameters_json=json.dumps(COVERAGE_PARAMETERS, sort_keys=True),
+        run_id=RUN_ID, run_group=RUN_GROUP, parameter_set=PARAMETER_SET, run_root=str(RUN_ROOT),
+        evaluation_tool=EVALUATION_TOOL,
+        ambiguity_scores_arg=optional_cli_arg("--ambiguity-scores", ",".join(AMBIGUITY_SCORES)),
+        corrected_fasta_arg=optional_cli_arg(
+            "--corrected-fasta", EVALUATION_CORRECTED if EXTERNAL_REPORT is None else None
+        ),
+        parameter_signature_arg=optional_cli_arg("--parameter-signature", PARAMETER_SIGNATURE),
+        script=PROVENANCE_SCRIPT
+    shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} --dataset {params.dataset:q} --long-coverage {params.long_coverage:q} --preflight {input.preflight:q} --simulation-configs {input.configs:q} --methods {params.methods:q} --parameter-profile {params.profile:q} --parameters-json {params.parameters_json:q} --run-id {params.run_id:q} --run-group {params.run_group:q} --parameter-set {params.parameter_set:q} {params.parameter_signature_arg} --evaluation-tool {params.evaluation_tool:q} {params.ambiguity_scores_arg} {params.corrected_fasta_arg} --run-root {params.run_root:q} --output {output:q}"
+
+if not DIRECT_EVALUATION:
+    include: "rules/correction.smk"
+include: "rules/metaquast.smk"
+
+rule parse_resources:
+    input: RESOURCES
+    output: f"{BENCHMARK_OUT}/tables/resources.tsv"
+    params: python=PYTHON, conda=CONDA, env=EVAL_ENV, dataset=DATASET,
+            long_coverage=LONG_COVERAGE, coverages=" ".join(c for c, _ in METHOD_TARGETS),
+            methods=" ".join(METHOD_LABELS[m] for _, m in METHOD_TARGETS),
+            run_id=RUN_ID, parameter_set=PARAMETER_SET, script=PARSE_RESOURCES_SCRIPT
+    shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} --dataset {params.dataset:q} --long-coverage {params.long_coverage:q} --run-id {params.run_id:q} --parameter-set {params.parameter_set:q} --coverages {params.coverages} --methods {params.methods} --inputs {input:q} --output {output:q}"
+
+rule parse_metaquast:
+    input: REPORTS
+    output: f"{BENCHMARK_OUT}/tables/metaquast.tsv"
+    params: python=PYTHON, conda=CONDA, env=EVAL_ENV, dataset=DATASET,
+            long_coverage=LONG_COVERAGE, coverages=" ".join(c for c, _, _, _ in REPORT_TARGETS),
+            methods=" ".join(METHOD_LABELS[m] for _, m, _, _ in REPORT_TARGETS),
+            scores=" ".join(score for _, _, _, score in REPORT_TARGETS),
+            run_id=RUN_ID, parameter_set=PARAMETER_SET, script=PARSE_METAQUAST_SCRIPT
+    shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} --dataset {params.dataset:q} --long-coverage {params.long_coverage:q} --run-id {params.run_id:q} --parameter-set {params.parameter_set:q} --coverages {params.coverages} --methods {params.methods} --ambiguity-scores {params.scores} --reports {input:q} --output {output:q}"
+
+rule aggregate:
+    input: resources=rules.parse_resources.output, metaquast=rules.parse_metaquast.output
+    output: f"{BENCHMARK_OUT}/tables/benchmark_summary.tsv"
+    params: python=PYTHON, conda=CONDA, env=EVAL_ENV, script=AGGREGATE_SCRIPT
+    shell: "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} --resources {input.resources:q} --metaquast {input.metaquast:q} --output {output:q}"
+
+rule collect_summaries:
+    input:
+        [str(RUNS_ROOT / derive_run_group(run) / run / "benchmark" / "provenance.json")
+         for run in config.get("summary", {}).get("runs", [])]
+    output:
+        all=str(ROOT / config["paths"].get("summary_all", "benchmark/results/all_parameter_runs.tsv")),
+        best=str(ROOT / config["paths"].get("summary_best", "benchmark/results/best_parameter_runs.tsv")),
+    params:
+        python=PYTHON, conda=CONDA, env=EVAL_ENV,
+        runs_root=str(ROOT / config["paths"].get("run_root", "benchmark/runs")),
+        script=COLLECT_RUNS_SCRIPT
+    shell:
+        "{params.conda:q} run --no-capture-output -n {params.env:q} {params.python:q} {params.script:q} "
+        "--runs-root {params.runs_root:q} --output-all {output.all:q} --output-best {output.best:q}"
+
+wildcard_constraints:
+    coverage="|".join(map(re.escape, COVERAGES)), method="|".join(map(re.escape, METHODS)), evaluation="|".join(map(re.escape, EVALUATION_DIRS))

@@ -1,0 +1,10 @@
+dataset	long_read_fraction	short_read_input	method	threads	CPU_h	wall_time_h	peak_memory_GB	status	run_id
+zymo	10pct	complete	DADEC	64	14.046	0.897	14.344	measured_standard_log	zymo_10pct_dadec_original_dev_fix_a_k59_k59_s1_a2_a1
+zymo	10pct	complete	FMLRC	64	4.122	0.149	3.989	aggregated_legacy_log	zymo_10pct_fmlrc_original_k21_k59
+zymo	10pct	complete	F_HERO	64	96.981	1.730	15.547	aggregated_legacy_log	zymo_10pct_f_hero_original_k21_k59_hs30_hi1
+zymo	10pct	complete	Ratatosk	64	9.244	0.350	5.601	measured_legacy_log	zymo_10pct_ratatosk_original_k31_k63
+zymo	10pct	complete	R_HERO	64	107.065	2.893	14.694	aggregated_legacy_log	zymo_10pct_r_hero_original_k31_k63_hs30_hi1
+zymo	10pct	complete	LoRDEC	64	9.312	0.205	5.745	measured_legacy_log	zymo_10pct_lordec_original_k31_ls5
+zymo	10pct	complete	L_HERO	64	98.549	1.926	14.642	aggregated_legacy_log	zymo_10pct_l_hero_original_k31_ls5_hs30_hi1
+zymo	10pct	complete	CoLoRMap	64	32.512	5.527	52.276	measured_legacy_log	zymo_10pct_colormap_original
+zymo	10pct	complete	Proovread	64	536.832	15.220	73.191	aggregated_legacy_log	zymo_10pct_proovread_original

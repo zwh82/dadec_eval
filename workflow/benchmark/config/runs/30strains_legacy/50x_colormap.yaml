@@ -1,0 +1,1 @@
+run: {id: 30strains_legacy_50x_colormap_original, coverage: 50x, method: colormap, parameter_set: original}

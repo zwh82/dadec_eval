@@ -1,0 +1,244 @@
+{
+  "completed_utc": "2026-07-29T15:01:36.058340+00:00",
+  "dataset": "arabidopsis_sim_32x",
+  "header_transform": "strip_after_colon",
+  "inputs_and_tools": {
+    "/home/work/wenhai/dadec/benchmark/config/runs/arabidopsis_sim/hifieval/32x_f_hero_hifieval.yaml": {
+      "mtime_ns": 1785290141001196569,
+      "path": "/home/work/wenhai/dadec/benchmark/config/runs/arabidopsis_sim/hifieval/32x_f_hero_hifieval.yaml",
+      "sha256": "62ad4408ff0f30bac97e6faab84975cacb87f20350d5ef7e4e849b4c2c30fdb3",
+      "size": 869
+    },
+    "/home/work/wenhai/dadec/tools/hifieval/hifieval.py": {
+      "mtime_ns": 1785256480807757933,
+      "path": "/home/work/wenhai/dadec/tools/hifieval/hifieval.py",
+      "sha256": "72f42cf56edc1793851e83fc0c16338f0cca999148496244a71e034435643d2c",
+      "size": 32388
+    },
+    "/home/work/wenhai/dadec/tools/hifieval/readseval.py": {
+      "mtime_ns": 1785209335764199589,
+      "path": "/home/work/wenhai/dadec/tools/hifieval/readseval.py",
+      "sha256": "28d4273e8253b1df757887825f529a67a66fde65958946bf741edd7600806e6f",
+      "size": 11016
+    },
+    "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta": {
+      "mtime_ns": 1746075880891291547,
+      "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta",
+      "sha256": "c58906c79b312e629a3cf1054849b93890e2d3ed8653e18b022750536ee806b8",
+      "size": 124873467
+    },
+    "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/cor/F_HERO.fa": {
+      "mtime_ns": 1754434328210015083,
+      "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/cor/F_HERO.fa",
+      "sha256": "dc89ba6c7986dd2f85e07f3f1b9d757210f1f0bb1287b97a0a8626c8e5829278",
+      "size": 2448236768
+    },
+    "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/hap.maf": {
+      "mtime_ns": 1753804446450343062,
+      "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/hap.maf",
+      "sha256": "d47fa4a150a0f3921964bbc32ba02c26103d60f036cb32e1bb2055a8ec45ac9e",
+      "size": 5125978956
+    },
+    "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf": {
+      "mtime_ns": 1753975104846575326,
+      "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf",
+      "sha256": "445ff8411c48c7fbd77c1d9663f72bc7738cc4f58d54dc719ea9caa97136bf0b",
+      "size": 1614918422
+    },
+    "/home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2": {
+      "mtime_ns": 1760349389430426929,
+      "path": "/home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2",
+      "sha256": "4046c8243cbc7cc8b32b8b875325a88b56ad476546ffe880eca2f32539f008ec",
+      "size": 1548648
+    }
+  },
+  "method": "f_hero",
+  "outputs": {
+    "corrected_paf": "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/paf/corrected.paf",
+    "filtered_prefix": "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/filtered/f_hero",
+    "unfiltered_prefix": "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/unfiltered/f_hero"
+  },
+  "preflight": {
+    "dataset": "arabidopsis_sim_32x",
+    "environment": "dadec_eval",
+    "free_disk_gb": 34082.74,
+    "inputs": {
+      "corrected_fasta": {
+        "mtime_ns": 1754434328210015083,
+        "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/cor/F_HERO.fa",
+        "size": 2448236768
+      },
+      "raw_paf": {
+        "mtime_ns": 1753975104846575326,
+        "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf",
+        "size": 1614918422
+      },
+      "reference": {
+        "mtime_ns": 1746075880891291547,
+        "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta",
+        "size": 124873467
+      },
+      "truth_maf": {
+        "mtime_ns": 1753804446450343062,
+        "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/hap.maf",
+        "size": 5125978956
+      }
+    },
+    "inspected_maf_ids": 111204,
+    "minimap2": "/home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2",
+    "minimap2_version": "2.28-r1209",
+    "python": "/home/wenhai/miniconda3/envs/dadec_eval/bin/python",
+    "required_free_disk_gb": 8.0,
+    "run_id": "arabidopsis_sim_32x_f_hero_hifieval",
+    "sample_id_overlap": 100,
+    "sample_matching_id": "S99_18081",
+    "sampled_fasta_ids": 100,
+    "status": "ok"
+  },
+  "read_mapping_mode": "legacy_endpoint",
+  "run_id": "arabidopsis_sim_32x_f_hero_hifieval",
+  "stages": {
+    "align_corrected": {
+      "completed_utc": "2026-07-28T20:06:05.809534+00:00",
+      "elapsed_seconds": 117.569,
+      "status": "complete",
+      "token": {
+        "command": [
+          "/home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2",
+          "-t",
+          "20",
+          "-c",
+          "--secondary=no",
+          "--paf-no-hit",
+          "--cs",
+          "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta",
+          "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/work/corrected.cleaned.fa"
+        ],
+        "dependencies": [
+          {
+            "mtime_ns": 1760349389430426929,
+            "path": "/home/yczhang/zyc/tools/quast/quast_libs/minimap2/minimap2",
+            "size": 1548648
+          },
+          {
+            "mtime_ns": 1746075880891291547,
+            "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta",
+            "size": 124873467
+          },
+          {
+            "mtime_ns": 1785269047960892216,
+            "path": "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/work/corrected.cleaned.fa",
+            "size": 2448235802
+          }
+        ]
+      }
+    },
+    "clean_fasta": {
+      "completed_utc": "2026-07-28T20:04:08.212266+00:00",
+      "elapsed_seconds": 4.801,
+      "status": "complete",
+      "token": {
+        "command": [
+          "internal:stream_clean_fasta",
+          "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/cor/F_HERO.fa",
+          "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/work/corrected.cleaned.fa",
+          "strip_after_colon"
+        ],
+        "dependencies": [
+          {
+            "mtime_ns": 1754434328210015083,
+            "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/cor/F_HERO.fa",
+            "size": 2448236768
+          }
+        ]
+      }
+    },
+    "hifieval_unfiltered": {
+      "completed_utc": "2026-07-28T21:23:59.590319+00:00",
+      "elapsed_seconds": 4673.777,
+      "status": "complete",
+      "token": {
+        "command": [
+          "/home/wenhai/miniconda3/envs/dadec_eval/bin/python",
+          "/home/work/wenhai/dadec/tools/hifieval/hifieval.py",
+          "-o",
+          "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/unfiltered/f_hero",
+          "-r",
+          "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf",
+          "-c",
+          "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/paf/corrected.paf",
+          "-h",
+          "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta"
+        ],
+        "dependencies": [
+          {
+            "mtime_ns": 1785256480807757933,
+            "path": "/home/work/wenhai/dadec/tools/hifieval/hifieval.py",
+            "size": 32388
+          },
+          {
+            "mtime_ns": 1753975104846575326,
+            "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf",
+            "size": 1614918422
+          },
+          {
+            "mtime_ns": 1785269165798605260,
+            "path": "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/paf/corrected.paf",
+            "size": 1179682671
+          },
+          {
+            "mtime_ns": 1746075880891291547,
+            "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/Arabidopsis_assembly.fasta",
+            "size": 124873467
+          }
+        ]
+      }
+    },
+    "readseval_filtered": {
+      "completed_utc": "2026-07-28T22:34:06.267813+00:00",
+      "elapsed_seconds": 4206.578,
+      "status": "complete",
+      "token": {
+        "command": [
+          "/home/wenhai/miniconda3/envs/dadec_eval/bin/python",
+          "/home/work/wenhai/dadec/tools/hifieval/readseval.py",
+          "-f",
+          "-o",
+          "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/filtered/f_hero",
+          "-r",
+          "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf",
+          "-c",
+          "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/paf/corrected.paf",
+          "--maf",
+          "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/hap.maf",
+          "--mapping-mode",
+          "legacy_endpoint"
+        ],
+        "dependencies": [
+          {
+            "mtime_ns": 1785209335764199589,
+            "path": "/home/work/wenhai/dadec/tools/hifieval/readseval.py",
+            "size": 11016
+          },
+          {
+            "mtime_ns": 1753975104846575326,
+            "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/expr/long_reads.paf",
+            "size": 1614918422
+          },
+          {
+            "mtime_ns": 1785269165798605260,
+            "path": "/home/work/wenhai/dadec/benchmark/results/hifieval/arabidopsis_sim_32x/f_hero/paf/corrected.paf",
+            "size": 1179682671
+          },
+          {
+            "mtime_ns": 1753804446450343062,
+            "path": "/home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/hap.maf",
+            "size": 5125978956
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete",
+  "threads": 64
+}

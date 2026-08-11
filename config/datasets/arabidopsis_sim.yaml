@@ -1,0 +1,17 @@
+# benchmark/config/datasets/arabidopsis.yaml
+dataset:
+  id: arabidopsis_sim
+  variant: current
+  expected_genomes: 1
+  long_coverage: 20x
+
+evaluation:
+  tool: quast
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/Arabidopsis/data/sim/data/long_reads.fa
+  short_reads:
+    32x: data/arabidopsis/arabidopsis_32x.fa
+  genome_map: benchmark/config/datasets/arabidopsis_genome_to_id.tsv
+  simulation_configs: []
+

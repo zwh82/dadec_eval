@@ -1,0 +1,6 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/zymo/zymo_cor/proovread.fa
+  # Optional existing MetaQUAST combined_reference/report.txt; when set, import only the 0.9999 report.
+  # report: /home/yczhang/zyc/final_result/zymo/zymo_cor/proovread.txt
+run: {id: zymo_10pct_proovread_original, coverage: 10pct, method: proovread, parameter_set: original}

@@ -1,0 +1,10 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	CPU(h)	WallTime(h)	Memory(GB)	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+ecoli3_20x_dadec_dev_fix_a_k31_k31_s1_a2_a1	original	ecoli3	10x	20x	DADEC	0.9999	0.771	0.060	4.181	54.09	1.31	99.91	0	16673
+ecoli3_20x_fmlrc_original_k21_k59	original	ecoli3	10x	20x	FMLRC	0.9999	0.478	0.013	0.631	87.48	37.95	99.911	174	16673
+ecoli3_20x_f_hero_original_k21_k59_hs30_hi3	original	ecoli3	10x	20x	F_HERO	0.9999	8.859	0.154	2.343	73.3	10.98	99.909	188	16673
+ecoli3_20x_ratatosk_original_k31_k63	original	ecoli3	10x	20x	Ratatosk	0.9999	1.565	0.037	0.851	294.21	375.83	99.929	95	16673
+ecoli3_20x_r_hero_original_k31_k63_hs30_hi3	original	ecoli3	10x	20x	R_HERO	0.9999	10.673	0.193	2.597	205.37	87.79	99.916	601	16673
+ecoli3_20x_lordec_original_k31_ls5	original	ecoli3	10x	20x	LoRDEC	0.9999	4.133	0.267	2.493	274.13	349.03	99.946	74	16673
+ecoli3_20x_l_hero_original_k31_ls5_hs30_hi3	original	ecoli3	10x	20x	L_HERO	0.9999	12.372	0.429	2.514	203.53	149.64	99.895	311	16671
+ecoli3_20x_colormap_original	original	ecoli3	10x	20x	CoLoRMap	0.9999	3.446	0.397	10.253	386.42	169.99	99.914	413	16673
+ecoli3_20x_proovread_original	original	ecoli3	10x	20x	Proovread	0.9999	6.451	0.219	7.382	320.14	125.19	99.908	413	16673

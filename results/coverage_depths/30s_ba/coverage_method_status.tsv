@@ -1,0 +1,46 @@
+dataset_label	dataset_id	short_coverage	method	method_id	candidate_count	exact_config_count	exact_config_with_report_count	recommended_run_id	status	note
+30s_ba	30strains	10x	DADEC	dadec	5	2	2	30strains_10x_dadec_dev_fix_a_k21_k21_s10_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+30s_ba	30strains	10x	FMLRC	fmlrc	2	1	1	30strains_10x_fmlrc_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	F_HERO	f_hero	1	1	1	30strains_10x_f_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	Ratatosk	ratatosk	2	1	1	30strains_10x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	R_HERO	r_hero	1	1	1	30strains_10x_r_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	LoRDEC	lordec	2	1	1	30strains_10x_lordec_original_k21_ls5	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	L_HERO	l_hero	1	1	1	30strains_10x_l_hero_original_k21_ls5_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	CoLoRMap	colormap	1	1	1	30strains_10x_colormap_original	selected	exact config; best residual-error rank
+30s_ba	30strains	10x	Proovread	proovread	1	1	1	30strains_10x_proovread_original	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	DADEC	dadec	4	2	2	30strains_20x_dadec_dev_fix_a_k21_k21_s10_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+30s_ba	30strains	20x	FMLRC	fmlrc	2	1	1	30strains_20x_fmlrc_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	F_HERO	f_hero	1	1	1	30strains_20x_f_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	Ratatosk	ratatosk	2	1	1	30strains_20x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	R_HERO	r_hero	1	1	1	30strains_20x_r_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	LoRDEC	lordec	2	1	1	30strains_20x_lordec_original_k31_ls5	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	L_HERO	l_hero	1	1	1	30strains_20x_l_hero_original_k31_ls5_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	CoLoRMap	colormap	1	1	1	30strains_20x_colormap_original	selected	exact config; best residual-error rank
+30s_ba	30strains	20x	Proovread	proovread	1	1	1	30strains_20x_proovread_original	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	DADEC	dadec	2	2	2	30strains_30x_dadec_dev_fix_a_k31_k31_s1_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+30s_ba	30strains	30x	FMLRC	fmlrc	1	1	1	30strains_30x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	F_HERO	f_hero	1	1	1	30strains_30x_f_hero_original_k21_k59_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	Ratatosk	ratatosk	2	1	1	30strains_30x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	R_HERO	r_hero	1	1	1	30strains_30x_r_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	LoRDEC	lordec	2	1	1	30strains_30x_lordec_original_k31_ls5	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	L_HERO	l_hero	1	1	1	30strains_30x_l_hero_original_k31_ls5_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	CoLoRMap	colormap	1	1	1	30strains_30x_colormap_original	selected	exact config; best residual-error rank
+30s_ba	30strains	30x	Proovread	proovread	1	1	1	30strains_30x_proovread_original	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	DADEC	dadec	2	2	2	30strains_40x_dadec_dev_fix_a_k31_k31_s1_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+30s_ba	30strains	40x	FMLRC	fmlrc	1	1	1	30strains_40x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	F_HERO	f_hero	1	1	1	30strains_40x_f_hero_original_k21_k59_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	Ratatosk	ratatosk	2	1	1	30strains_40x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	R_HERO	r_hero	1	1	1	30strains_40x_r_hero_original_k21_k31_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	LoRDEC	lordec	2	1	1	30strains_40x_lordec_original_k31_ls5	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	L_HERO	l_hero	1	1	1	30strains_40x_l_hero_original_k31_ls5_hs10_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	CoLoRMap	colormap	1	1	1	30strains_40x_colormap_original	selected	exact config; best residual-error rank
+30s_ba	30strains	40x	Proovread	proovread	1	1	1	30strains_40x_proovread_original	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	DADEC	dadec	2	2	2	30strains_50x_dadec_dev_fix_a_k31_k31_s1_a2_a1	selected	exact config; current dev_fix_a revision; best residual-error rank within revision
+30s_ba	30strains	50x	FMLRC	fmlrc	1	1	1	30strains_50x_fmlrc_original_k21_k59	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	F_HERO	f_hero	1	1	1	30strains_50x_f_hero_original_k21_k59_hs1_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	Ratatosk	ratatosk	2	1	1	30strains_50x_ratatosk_original_k21_k31	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	R_HERO	r_hero	1	1	1	30strains_50x_r_hero_original_k21_k31_hs1_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	LoRDEC	lordec	2	1	1	30strains_50x_lordec_original_k31_ls5	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	L_HERO	l_hero	1	1	1	30strains_50x_l_hero_original_k31_ls5_hs1_hi1	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	CoLoRMap	colormap	1	1	1	30strains_50x_colormap_original	selected	exact config; best residual-error rank
+30s_ba	30strains	50x	Proovread	proovread	1	1	1	30strains_50x_proovread_original	selected	exact config; best residual-error rank

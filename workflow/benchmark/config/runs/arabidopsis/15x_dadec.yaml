@@ -1,0 +1,9 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_15x_dadec, coverage: 15x, method: dadec, parameter_set: original}
+parameter_profile: study
+dadec_k1: 21
+dadec_k2: 21
+dadec_split: 1
+dadec_threshold: 0.08
+dadec_abundance1: 2
+dadec_abundance2: 1

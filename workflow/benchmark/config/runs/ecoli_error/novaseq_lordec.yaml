@@ -1,0 +1,4 @@
+evaluation: {tool: quast}
+run: {id: ecoli_error_novaseq_lordec_original, coverage: 22x, method: lordec, parameter_set: original}
+lordec_k: 31
+lordec_solid: 5

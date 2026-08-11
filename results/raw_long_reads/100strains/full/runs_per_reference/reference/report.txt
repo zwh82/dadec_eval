@@ -1,0 +1,54 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     raw_long_reads  
+# contigs (>= 1000 bp)       352262          
+# contigs (>= 5000 bp)       351669          
+# contigs (>= 10000 bp)      258304          
+# contigs (>= 25000 bp)      118             
+# contigs (>= 50000 bp)      0               
+Total length (>= 1000 bp)    4226398298      
+Total length (>= 5000 bp)    4223734333      
+Total length (>= 10000 bp)   3426174618      
+Total length (>= 25000 bp)   3097659         
+Total length (>= 50000 bp)   0               
+# contigs                    352269          
+Largest contig               30104           
+Total length                 4226402750      
+Reference length             399927757       
+Reference GC (%)             54.99           
+N50                          12499           
+NG50                         18347           
+N90                          8977            
+NG90                         17188           
+auN                          12751.1         
+auNG                         134752.6        
+L50                          141579          
+LG50                         10027           
+L90                          298014          
+LG90                         19056           
+# misassemblies              2               
+# misassembled contigs       2               
+Misassembled contigs length  23272           
+# local misassemblies        667             
+# scaffold gap ext. mis.     0               
+# scaffold gap loc. mis.     0               
+# unaligned mis. contigs     42              
+# unaligned contigs          1935 + 3604 part
+Unaligned length             35507683        
+Genome fraction (%)          98.068          
+Duplication ratio            10.788          
+# N's per 100 kbp            0.00            
+# mismatches per 100 kbp     1551.70         
+# indels per 100 kbp         6053.80         
+Largest alignment            30104           
+Total aligned length         4182359090      
+NA50                         12423           
+NGA50                        18295           
+NA90                         8800            
+NGA90                        17132           
+auNA                         12580.8         
+auNGA                        132952.3        
+LA50                         142206          
+LGA50                        10052           
+LA90                         300256          
+LGA90                        19109           

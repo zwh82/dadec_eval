@@ -1,0 +1,10 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	CPU(h)	WallTime(h)	Memory(GB)	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+30strains_30x_dadec_dev_fix_a_k31_k31_s1_a2_a1	original	30strains	10x	30x	DADEC	0.9999	26.289	1.352	78.813	170.22	24.86	85.727	344	80411
+30strains_30x_fmlrc_original_k21_k59	original	30strains	10x	30x	FMLRC	0.9999	3.264	0.115	5.432	302.36	311.93	83.293	3115	80411
+30strains_30x_f_hero_original_k21_k59_hs10_hi1	original	30strains	10x	30x	F_HERO	0.9999	30.274	1.187	25.587	241.47	95.2	80.312	7447	80411
+30strains_30x_ratatosk_original_k21_k31	original	30strains	10x	30x	Ratatosk	0.9999	20.482	0.511	13.961	251.06	447.32	87.824	246	80411
+30strains_30x_r_hero_original_k21_k31_hs10_hi1	original	30strains	10x	30x	R_HERO	0.9999	69.941	2.534	25.310	204.33	102.62	85.006	5100	80411
+30strains_30x_lordec_original_k31_ls5	original	30strains	10x	30x	LoRDEC	0.9999	10.375	0.270	5.056	274.1	415.19	84.72	388	80411
+30strains_30x_l_hero_original_k31_ls5_hs10_hi1	original	30strains	10x	30x	L_HERO	0.9999	40.051	1.422	25.233	247.52	166.88	81.334	4208	80411
+30strains_30x_colormap_original	original	30strains	10x	30x	CoLoRMap	0.9999	112.806	8.212	66.317	1434.27	2513.93	89.297	560	80411
+30strains_30x_proovread_original	original	30strains	10x	30x	Proovread	0.9999	71.818	3.075	66.013	189.26	104.63	81.57	579	80411

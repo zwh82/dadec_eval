@@ -1,0 +1,10 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/100strains/100_cor/gra2k31_msa_gra1k31.fa
+run: {id: 100strains_legacy_30x_dadec, coverage: 30x, method: dadec, parameter_set: original}
+dadec_k1: 31
+dadec_k2: 31
+dadec_split: 3
+dadec_threshold: 0.08
+dadec_abundance1: 2
+dadec_abundance2: 1

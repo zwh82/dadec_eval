@@ -1,0 +1,2 @@
+evaluation: {tool: metaquast}
+run: {id: 100strains_30x_proovread_original, coverage: 30x, method: proovread, parameter_set: original}

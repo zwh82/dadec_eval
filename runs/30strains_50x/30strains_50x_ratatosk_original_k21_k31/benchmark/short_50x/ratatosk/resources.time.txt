@@ -1,0 +1,5 @@
+wall_seconds=5585.28
+user_cpu_seconds=196759.98
+system_cpu_seconds=17835.07
+max_rss_kb=42739652
+exit_code=0

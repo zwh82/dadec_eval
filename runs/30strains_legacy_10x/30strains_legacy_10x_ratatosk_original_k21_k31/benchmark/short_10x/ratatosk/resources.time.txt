@@ -1,0 +1,5 @@
+wall_seconds=602.18
+user_cpu_seconds=25405.79
+system_cpu_seconds=2199.89
+max_rss_kb=3334032
+exit_code=0

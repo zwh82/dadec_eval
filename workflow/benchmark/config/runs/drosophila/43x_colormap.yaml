@@ -1,0 +1,5 @@
+evaluation:
+  tool: quast
+  # Fill in the corrected FASTA path before running this evaluation.
+  corrected_fasta: /home/yczhang/zyc/final_result/Drosophila/test/colormap_sp.fa
+run: {id: drosophila_43x_colormap, coverage: 43x, method: colormap, parameter_set: original}

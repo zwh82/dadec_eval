@@ -1,0 +1,2 @@
+evaluation: {tool: metaquast}
+run: {id: ecoli3_error_miseq_colormap_original, coverage: 20x, method: colormap, parameter_set: original}

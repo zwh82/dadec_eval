@@ -1,0 +1,2 @@
+evaluation: {tool: quast}
+run: {id: arabidopsis_3x_proovread_original, coverage: 3x, method: proovread, parameter_set: original}

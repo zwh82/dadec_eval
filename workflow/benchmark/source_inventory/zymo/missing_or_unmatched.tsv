@@ -1,0 +1,12 @@
+item	expected_or_referenced_as	status	meaning
+5% sampled long-read FASTA	data/long_reads_5.fa	missing	Referenced by legacy scripts; only its derived QUAST reports remain
+10% sampled long-read FASTA	data/long_reads_10.fa	missing	QC and QUAST text remain, but the sequence input is absent
+20% sampled long-read FASTA	data/long_reads_20.fa	present	The only retained sampled long-read FASTA
+30% sampled long-read FASTA	data/long_reads_30.fa	missing	Raw QUAST text remains, but the sequence input is absent
+40% sampled long-read FASTA	data/long_reads_40.fa	missing	Referenced by legacy scripts; only its derived QUAST reports remain
+Five-fraction DADEC corrected FASTAs	zymo_cor/coverage_self/{5,10,20,30,40}_DADEC_k49_a21_s1.fa	missing	All five primary QUAST reports remain
+Five-fraction DeChat corrected FASTAs	zymo_cor/coverage_self/{5,10,20,30,40}_dechat.ec	missing	All five primary QUAST reports remain
+Five-fraction VeChat corrected FASTAs	zymo_cor/coverage_self/{5,10,20,30,40}_vechat.fa	missing	All five primary QUAST reports remain
+Taxonomic classification outputs	Centrifuge/Kraken/MetaMaps tables	missing	No classification precision/recall/F1 results are recoverable here
+Fine-grained error classification	bamConcordance mismatch/non-Hp/Hp indel table	missing	QUAST only preserves mismatch and aggregate-indel rates
+DeChat Table 5 method set	LoRMA/Herro/CONSENT/Canu/Racon/hifiasm/Daccord corrected-read reports	unmatched	Local root benchmark uses the DADEC comparison method set instead

@@ -1,0 +1,22 @@
+method	component	CPU_h	wall_time_h	peak_memory_GB	source_record	included_reason
+DADEC	complete_DADEC_pipeline	14.046	0.897	14.344	benchmark/runs/zymo_10pct/zymo_10pct_dadec_original_dev_fix_a_k59_k59_s1_a2_a1/benchmark/short_10pct/dadec/resources.time.txt	standard resource log for selected run
+FMLRC	short_read_index	0.124	0.070	3.989	legacy cor_report line 24	required preprocessing
+FMLRC	FMLRC_pass_1	3.998	0.079	3.691	legacy cor_report line 25	produced selected fmlrc1.fa
+F_HERO	short_read_index	0.124	0.070	3.989	legacy cor_report line 24	required FMLRC preprocessing
+F_HERO	FMLRC_pass_1	3.998	0.079	3.691	legacy cor_report line 25	base-correction stage
+F_HERO	FMLRC_pass_2	1.543	0.039	3.733	legacy cor_report line 26	base-correction stage
+F_HERO	FMLRC_pass_3	1.380	0.037	3.705	legacy cor_report line 27	produced fmlrc3.fa input
+F_HERO	HERO_hs30_hi1	89.936	1.505	15.547	legacy cor_report line 36	produced selected F_HERO.fa
+Ratatosk	Ratatosk_pass_1	9.244	0.350	5.601	legacy cor_report line 39	produced selected ratatosk1.fa
+R_HERO	Ratatosk_pass_1	9.248	0.365	5.618	legacy cor_report line 21	base-correction stage
+R_HERO	Ratatosk_pass_2	5.666	0.238	6.030	legacy cor_report line 22	base-correction stage
+R_HERO	Ratatosk_pass_3	9.637	0.423	6.071	legacy cor_report line 23	produced ratatosk3.fa input
+R_HERO	HERO_hs30_hi1	82.514	1.867	14.694	legacy cor_report line 38	produced selected R_HERO.fa
+LoRDEC	LoRDEC_pass_1	9.312	0.205	5.745	legacy cor_report line 28	produced selected lordec1.fa
+L_HERO	LoRDEC_pass_1	9.312	0.205	5.745	legacy cor_report line 28	base-correction stage
+L_HERO	LoRDEC_pass_2	2.546	0.089	3.245	legacy cor_report line 29	base-correction stage
+L_HERO	LoRDEC_pass_3	2.348	0.062	3.216	legacy cor_report line 30	produced lordec3.fa input
+L_HERO	HERO_hs30_hi1	84.343	1.570	14.642	legacy cor_report line 37	produced selected L_HERO.fa
+CoLoRMap	complete_CoLoRMap_pipeline	32.512	5.527	52.276	legacy cor_report line 31	produced selected colormap_sp.fa
+Proovread	Proovread_correction	536.831	15.214	73.191	legacy cor_report line 54	produced untrimmed corrected FASTQ
+Proovread	FASTQ_to_FASTA	0.001	0.006	0.031	legacy cor_report line 55	produced selected proovread.fa

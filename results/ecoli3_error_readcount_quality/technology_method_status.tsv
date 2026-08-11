@@ -1,0 +1,37 @@
+technology	config_coverage_key	actual_short_coverage	method	status	run_id
+MiSeq	20x	30x	COLORMAP	missing	
+MiSeq	20x	30x	DADEC	selected	ecoli3_error_readcount_miseq_dadec_original_dev_fix_a_k31_k31_s1_a2_a1
+MiSeq	20x	30x	F-HERO	missing	
+MiSeq	20x	30x	FMLRC	missing	
+MiSeq	20x	30x	L-HERO	missing	
+MiSeq	20x	30x	LORDEC	missing	
+MiSeq	20x	30x	PROOVREAD	missing	
+MiSeq	20x	30x	R-HERO	missing	
+MiSeq	20x	30x	RATATOSK	missing	
+NextSeq	21x	30x	COLORMAP	missing	
+NextSeq	21x	30x	DADEC	selected	ecoli3_error_readcount_nextseq_dadec_original_dev_fix_a_k31_k31_s1_a2_a1
+NextSeq	21x	30x	F-HERO	missing	
+NextSeq	21x	30x	FMLRC	missing	
+NextSeq	21x	30x	L-HERO	missing	
+NextSeq	21x	30x	LORDEC	missing	
+NextSeq	21x	30x	PROOVREAD	missing	
+NextSeq	21x	30x	R-HERO	missing	
+NextSeq	21x	30x	RATATOSK	missing	
+NovaSeq	22x	30x	COLORMAP	missing	
+NovaSeq	22x	30x	DADEC	selected	ecoli3_error_readcount_novaseq_dadec_original_dev_fix_a_k31_k31_s1_a2_a1
+NovaSeq	22x	30x	F-HERO	missing	
+NovaSeq	22x	30x	FMLRC	missing	
+NovaSeq	22x	30x	L-HERO	missing	
+NovaSeq	22x	30x	LORDEC	missing	
+NovaSeq	22x	30x	PROOVREAD	missing	
+NovaSeq	22x	30x	R-HERO	missing	
+NovaSeq	22x	30x	RATATOSK	missing	
+HiSeq	23x	30x	COLORMAP	missing	
+HiSeq	23x	30x	DADEC	selected	ecoli3_error_readcount_hiseq_dadec_original_dev_fix_a_k31_k31_s1_a2_a1
+HiSeq	23x	30x	F-HERO	missing	
+HiSeq	23x	30x	FMLRC	missing	
+HiSeq	23x	30x	L-HERO	missing	
+HiSeq	23x	30x	LORDEC	missing	
+HiSeq	23x	30x	PROOVREAD	missing	
+HiSeq	23x	30x	R-HERO	missing	
+HiSeq	23x	30x	RATATOSK	missing	

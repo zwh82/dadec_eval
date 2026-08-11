@@ -1,0 +1,16 @@
+{
+  "assembler": "hifiasm",
+  "assembly_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/dadec/hifiasm/assembly.fa",
+  "assembly_sha256": "e3682b76c923bbad7cc610fdccd5a91c618b01c7898a39a1e34fc9d4c96ca2d0",
+  "assembly_size": 177707742,
+  "bases": 177655404,
+  "created_utc": "2026-07-30T14:56:56.957626+00:00",
+  "gfa_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/dadec/hifiasm/work_corrected/assembly.bp.r_utg.gfa",
+  "gfa_size": 179405055,
+  "method": "dadec",
+  "mode": "build",
+  "records": 4026,
+  "source_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/drosophila_43x_dadec_dev_fix_a_k39_k39_s3_a3_a2/output/short_43x/dadec/corrected.fa",
+  "source_sha256": "261e46fa4c85eb1cdf19bb16790ee713aa0900c9db97e02ae33a612b22319b1b",
+  "source_size": 5072285128
+}

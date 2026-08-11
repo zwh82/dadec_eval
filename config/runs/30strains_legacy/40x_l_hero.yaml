@@ -1,0 +1,8 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/30strains/30_cor/40x/L_HERO.fa
+run: {id: 30strains_legacy_40x_l_hero_original, coverage: 40x, method: l_hero, parameter_set: original}
+lordec_k: 31
+lordec_solid: 5
+hero_split: 10
+hero_iterations: 1

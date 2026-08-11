@@ -1,0 +1,22 @@
+name	taxID	taxRank	genomeSize	numReads	numUniqueReads	abundance
+Helicobacter pylori	210	species	5058328	4260	2734	0.0
+Acinetobacter baumannii	470	species	11893028	11293	6362	0
+Escherichia coli	562	species	5070115	3082	3082	0.0
+Nitratidesulfovibrio vulgaris str. Hildenborough	882	strain	3773159	1847	1847	0.0
+Streptococcus pneumoniae	1313	species	2160842	4768	2583	0.509321
+Clostridium butyricum	1492	species	9410692	10292	1844	0.0
+Clostridium perfringens	1502	species	3256683	696	631	0.0
+Clostridium septicum	1504	species	6803993	10044	2506	0.467285
+Clostridium sporogenes	1509	species	12562466	11964	8507	0
+Staphylococcus aureus subsp. aureus NCTC 8325	93061	strain	2821361	2967	2967	0.0
+Enterobacter hormaechei	158836	species	4670207	3488	3482	0.0
+Streptococcus pneumoniae TIGR4	170187	strain	2160842	72	67	0.0
+Clostridium perfringens ATCC 13124	195103	strain	3256683	3078	3013	0.0
+Bacillus anthracis str. Ames	198094	strain	5227293	6605	201	0.0233935
+Trichodesmium erythraeum IMS101	203124	strain	7750108	6705	6705	0.0
+Bacillus anthracis str. 'Ames Ancestor'	261594	strain	5227419	6470	66	0
+Escherichia coli O157:H7 str. Sakai	386585	strain	5498578	4591	4591	0.0
+Escherichia coli str. K-12 substr. MG1655	511145	leaf	4641652	1330	1330	0.0
+Clostridium saccharoperbutylacetonicum N1-4(HMT)	931276	leaf	6666445	4814	4814	0.0
+Enterobacter hormaechei subsp. xiangfangensis	1296536	subspecies	4661849	3595	3595	0.0
+Enterobacter hormaechei subsp. hoffmannii	1812934	subspecies	4678566	3374	3374	0.0

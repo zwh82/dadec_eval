@@ -1,0 +1,1 @@
+run: {id: 30strains_legacy_30x_proovread_original, coverage: 30x, method: proovread, parameter_set: original}

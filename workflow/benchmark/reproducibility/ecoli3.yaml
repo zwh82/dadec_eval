@@ -1,0 +1,36 @@
+project_root: /home/work/wenhai/dadec
+dataset: ecoli3_legacy
+replicates: [1, 2]
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/ecoil/data/long/long_reads.fa
+  short_reads: /home/yczhang/zyc/final_result/ecoil/data/short/short_reads.fa
+  reference: /home/yczhang/zyc/final_result/ecoil/data/ref/ref.fa
+  historical_report: /home/yczhang/zyc/final_result/ecoil/ecoli_cor/gra_msa/gra2k31_msa_gra1k31.txt
+
+tools:
+  dadec: /home/work/wenhai/wh-github/DADEC/DADEC
+  metaquast: /home/yczhang/zyc/tools/quast/metaquast.py
+  time: /usr/bin/time
+  python: python
+
+resources:
+  dadec_threads: 16
+  metaquast_threads: 16
+
+dadec:
+  split_number: 5
+  kmer_size1: 31
+  kmer_size2: 31
+  msa_threshold: 0.08
+  abundance_min1: 2
+  abundance_min2: 1
+
+metaquast:
+  ambiguity_usage: all
+  ambiguity_score: 0.9999
+  min_contig: 500
+  extra_args: "--no-html --no-icarus --no-krona"
+
+paths:
+  root: benchmark/results/ecoli3/reproducibility

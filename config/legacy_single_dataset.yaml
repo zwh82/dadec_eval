@@ -1,0 +1,51 @@
+project_root: /home/work/wenhai/dadec
+
+inputs:
+  long_reads: data/30strains/sim_30strains_long_10x.fq.gz
+  short_reads:
+    10x: data/30strains/sim_30strains_short_10x.fq.gz
+    # 20x: data/30strains/sim_30strains_short_20x.fq.gz
+    # 30x: data/30strains/sim_30strains_short_30x.fq.gz
+    # 40x: data/30strains/sim_30strains_short_40x.fq.gz
+    # 50x: data/30strains/sim_30strains_short_50x.fq.gz
+  genome_map: data/30strains/genome_to_id.tsv
+  simulation_configs:
+    - data/30strains/sim_30strains_long_10x_config.ini
+    # - data/30strains/sim_30strains_short_10x_config.ini
+    # - data/30strains/sim_30strains_short_20x_config.ini
+    # - data/30strains/sim_30strains_short_30x_config.ini
+    # - data/30strains/sim_30strains_short_40x_config.ini
+    # - data/30strains/sim_30strains_short_50x_config.ini
+
+tools:
+  python: python
+  dadec_env: DADEC
+  dadec: /home/work/wenhai/wh-github/DADEC/DADEC
+  metaquast: /home/yczhang/zyc/tools/quast/metaquast.py
+  time: /usr/bin/time
+
+resources:
+  dadec_threads: 32
+  metaquast_threads: 32
+  min_free_disk_gb: 40
+
+dadec:
+  split_number: 1
+  kmer_size1: 31
+  kmer_size2: 31
+  msa_threshold: 0.08
+  abundance_min1: 2
+  abundance_min2: 1
+
+metaquast:
+  ambiguity_usage: all
+  ambiguity_score: 0.9999
+  min_contig: 500
+  # Previous report-only speed flags (kept for provenance):
+  # extra_args: "--no-html --no-icarus --no-krona"
+  extra_args: "--fast"
+
+paths:
+  work: benchmark/work
+  results: benchmark/results
+  logs: benchmark/logs

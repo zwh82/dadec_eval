@@ -1,0 +1,484 @@
+{
+  "assignment": "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/20x/fmlrc/assignments.tsv",
+  "assignment_sha256": "05718b18d1bd9f06bc6b8191147f908c6712b035d923f73fb8ef5bb33fecb648",
+  "coverage": "20x",
+  "current_comparison": {
+    "actual_rows": 21,
+    "diffs": [
+      {
+        "actual": [
+          "Enterobacter hormaechei subsp. xiangfangensis",
+          "1296536",
+          "subspecies",
+          "4661849",
+          "3483",
+          "3482",
+          "0.0"
+        ],
+        "expected": [
+          "Enterobacter hormaechei subsp. xiangfangensis",
+          "1296536",
+          "subspecies",
+          "4661849",
+          "3515",
+          "3514",
+          "0.0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1296536"
+      },
+      {
+        "actual": [
+          "Streptococcus pneumoniae",
+          "1313",
+          "species",
+          "2160842",
+          "4095",
+          "1843",
+          "0.269224"
+        ],
+        "expected": [
+          "Streptococcus pneumoniae",
+          "1313",
+          "species",
+          "2160842",
+          "4390",
+          "1772",
+          "0.311081"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1313"
+      },
+      {
+        "actual": [
+          "Clostridium butyricum",
+          "1492",
+          "species",
+          "9410692",
+          "8546",
+          "3873",
+          "0.0412223"
+        ],
+        "expected": [
+          "Clostridium butyricum",
+          "1492",
+          "species",
+          "9410692",
+          "9700",
+          "2513",
+          "0.0269431"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1492"
+      },
+      {
+        "actual": [
+          "Clostridium perfringens",
+          "1502",
+          "species",
+          "3256683",
+          "2004",
+          "1958",
+          "0"
+        ],
+        "expected": [
+          "Clostridium perfringens",
+          "1502",
+          "species",
+          "3256683",
+          "1909",
+          "1864",
+          "0.0010046"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1502"
+      },
+      {
+        "actual": [
+          "Clostridium septicum",
+          "1504",
+          "species",
+          "6803993",
+          "7794",
+          "5282",
+          "0.0257826"
+        ],
+        "expected": [
+          "Clostridium septicum",
+          "1504",
+          "species",
+          "6803993",
+          "8433",
+          "4239",
+          "0.00985729"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1504"
+      },
+      {
+        "actual": [
+          "Clostridium sporogenes",
+          "1509",
+          "species",
+          "12562466",
+          "13300",
+          "6005",
+          "0.0296313"
+        ],
+        "expected": [
+          "Clostridium sporogenes",
+          "1509",
+          "species",
+          "12562466",
+          "15306",
+          "6283",
+          "0.0432315"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1509"
+      },
+      {
+        "actual": [
+          "Enterobacter hormaechei",
+          "158836",
+          "species",
+          "4670207",
+          "3750",
+          "3746",
+          "0.00183232"
+        ],
+        "expected": [
+          "Enterobacter hormaechei",
+          "158836",
+          "species",
+          "4670207",
+          "3746",
+          "3742",
+          "0.00175134"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "158836"
+      },
+      {
+        "actual": [
+          "Streptococcus pneumoniae TIGR4",
+          "170187",
+          "strain",
+          "2160842",
+          "885",
+          "856",
+          "0.00204754"
+        ],
+        "expected": [
+          "Streptococcus pneumoniae TIGR4",
+          "170187",
+          "strain",
+          "2160842",
+          "771",
+          "740",
+          "0.00157322"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "170187"
+      },
+      {
+        "actual": [
+          "Enterobacter hormaechei subsp. hoffmannii",
+          "1812934",
+          "subspecies",
+          "4678566",
+          "3216",
+          "3215",
+          "0.0"
+        ],
+        "expected": [
+          "Enterobacter hormaechei subsp. hoffmannii",
+          "1812934",
+          "subspecies",
+          "4678566",
+          "3186",
+          "3185",
+          "0.0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "1812934"
+      },
+      {
+        "actual": [
+          "Clostridium perfringens ATCC 13124",
+          "195103",
+          "strain",
+          "3256683",
+          "1949",
+          "1905",
+          "0.00218967"
+        ],
+        "expected": [
+          "Clostridium perfringens ATCC 13124",
+          "195103",
+          "strain",
+          "3256683",
+          "1886",
+          "1842",
+          "0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "195103"
+      },
+      {
+        "actual": [
+          "Bacillus anthracis str. Ames",
+          "198094",
+          "strain",
+          "5227293",
+          "6493",
+          "133",
+          "0.0265171"
+        ],
+        "expected": [
+          "Bacillus anthracis str. Ames",
+          "198094",
+          "strain",
+          "5227293",
+          "6526",
+          "149",
+          "0.0123887"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "198094"
+      },
+      {
+        "actual": [
+          "Trichodesmium erythraeum IMS101",
+          "203124",
+          "strain",
+          "7750108",
+          "6728",
+          "6725",
+          "0.0"
+        ],
+        "expected": [
+          "Trichodesmium erythraeum IMS101",
+          "203124",
+          "strain",
+          "7750108",
+          "6695",
+          "6695",
+          "0.0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "203124"
+      },
+      {
+        "actual": [
+          "Helicobacter pylori",
+          "210",
+          "species",
+          "5058328",
+          "4707",
+          "2286",
+          "0.0126879"
+        ],
+        "expected": [
+          "Helicobacter pylori",
+          "210",
+          "species",
+          "5058328",
+          "4722",
+          "2266",
+          "0.00485089"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "210"
+      },
+      {
+        "actual": [
+          "Bacillus anthracis str. 'Ames Ancestor'",
+          "261594",
+          "strain",
+          "5227419",
+          "6496",
+          "136",
+          "0.185475"
+        ],
+        "expected": [
+          "Bacillus anthracis str. 'Ames Ancestor'",
+          "261594",
+          "strain",
+          "5227419",
+          "6503",
+          "126",
+          "0.0990154"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "261594"
+      },
+      {
+        "actual": [
+          "Escherichia coli O157:H7 str. Sakai",
+          "386585",
+          "strain",
+          "5498578",
+          "2913",
+          "2911",
+          "1.8619e-16"
+        ],
+        "expected": [
+          "Escherichia coli O157:H7 str. Sakai",
+          "386585",
+          "strain",
+          "5498578",
+          "2512",
+          "2510",
+          "7.31712e-15"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "386585"
+      },
+      {
+        "actual": [
+          "Acinetobacter baumannii",
+          "470",
+          "species",
+          "11893028",
+          "18703",
+          "2216",
+          "0.3907"
+        ],
+        "expected": [
+          "Acinetobacter baumannii",
+          "470",
+          "species",
+          "11893028",
+          "20590",
+          "1495",
+          "0.481133"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "470"
+      },
+      {
+        "actual": [
+          "Escherichia coli str. K-12 substr. MG1655",
+          "511145",
+          "leaf",
+          "4641652",
+          "3020",
+          "3003",
+          "0.0103592"
+        ],
+        "expected": [
+          "Escherichia coli str. K-12 substr. MG1655",
+          "511145",
+          "leaf",
+          "4641652",
+          "3168",
+          "3146",
+          "0.00467251"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "511145"
+      },
+      {
+        "actual": [
+          "Escherichia coli",
+          "562",
+          "species",
+          "5070115",
+          "3114",
+          "3097",
+          "0.00233075"
+        ],
+        "expected": [
+          "Escherichia coli",
+          "562",
+          "species",
+          "5070115",
+          "3362",
+          "3340",
+          "0.00249781"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "562"
+      },
+      {
+        "actual": [
+          "Nitratidesulfovibrio vulgaris str. Hildenborough",
+          "882",
+          "strain",
+          "3773159",
+          "1848",
+          "1848",
+          "0.0"
+        ],
+        "expected": [
+          "Nitratidesulfovibrio vulgaris str. Hildenborough",
+          "882",
+          "strain",
+          "3773159",
+          "1847",
+          "1847",
+          "0.0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "882"
+      },
+      {
+        "actual": [
+          "Staphylococcus aureus subsp. aureus NCTC 8325",
+          "93061",
+          "strain",
+          "2821361",
+          "3001",
+          "2999",
+          "0.0"
+        ],
+        "expected": [
+          "Staphylococcus aureus subsp. aureus NCTC 8325",
+          "93061",
+          "strain",
+          "2821361",
+          "2969",
+          "2969",
+          "0.0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "93061"
+      },
+      {
+        "actual": [
+          "Clostridium saccharoperbutylacetonicum N1-4(HMT)",
+          "931276",
+          "leaf",
+          "6666445",
+          "4926",
+          "4920",
+          "0.0"
+        ],
+        "expected": [
+          "Clostridium saccharoperbutylacetonicum N1-4(HMT)",
+          "931276",
+          "leaf",
+          "6666445",
+          "4819",
+          "4819",
+          "0.0"
+        ],
+        "kind": "row_mismatch",
+        "taxID": "931276"
+      }
+    ],
+    "expected_rows": 21,
+    "match": false
+  },
+  "fallback_comparison": {
+    "actual_rows": 21,
+    "diffs": [],
+    "expected_rows": 21,
+    "match": true
+  },
+  "fallback_fasta": "/home/yczhang/zyc/final_result/30strains/30_cor/20x/fmlrc1.fa",
+  "report": "/home/work/wenhai/dadec/benchmark/results/classification/30strains_legacy/20x/fmlrc/report.tsv",
+  "report_sha256": "3f232d02f00711d650c71dd4d013845fd1d88956d452a6eea2df324dd963999e",
+  "status": "fallback_historical_fmlrc"
+}

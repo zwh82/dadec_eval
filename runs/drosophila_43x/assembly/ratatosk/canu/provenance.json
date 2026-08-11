@@ -1,0 +1,13 @@
+{
+  "assembler": "canu",
+  "assembly_path": "/home/work/wenhai/dadec/benchmark/runs/drosophila_43x/assembly/ratatosk/canu/assembly.fa",
+  "assembly_sha256": "356dfcca4f9968fec8a1af3df83fec3358fe9b5ff8d0a36c4ccf0172c533ff19",
+  "assembly_size": 113169423,
+  "assembly_source_path": "/home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_ratatosk1.fa",
+  "created_utc": "2026-07-31T02:29:26.934431+00:00",
+  "method": "ratatosk",
+  "mode": "reuse",
+  "source_path": "/home/yczhang/zyc/final_result/Drosophila/test/assambly/canu/asm_ratatosk1.fa",
+  "source_sha256": "356dfcca4f9968fec8a1af3df83fec3358fe9b5ff8d0a36c4ccf0172c533ff19",
+  "source_size": 113169423
+}

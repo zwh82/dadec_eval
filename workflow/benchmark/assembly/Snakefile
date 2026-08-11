@@ -1,0 +1,266 @@
+from pathlib import Path
+import re
+import sys
+
+
+CONFIG_PATH = Path(config["config_path"]).resolve()
+PROJECT_ROOT = Path(config["project_root"]).resolve()
+BENCHMARK_ROOT = Path(workflow.basedir).resolve().parent
+sys.path.insert(0, str(BENCHMARK_ROOT / "scripts"))
+import assembly_pipeline as pipeline
+
+
+CFG = pipeline.load_config(CONFIG_PATH)
+OUTPUT_ROOT = CFG["output_root"]
+THREADS = CFG["threads"]
+QUAST_THREADS = CFG.get("quast_threads", THREADS)
+PYTHON = str(CFG["tools"]["python"])
+TIME = str(CFG["tools"]["time"])
+CANU = str(CFG["tools"]["canu"])
+HIFIASM = str(CFG["tools"]["hifiasm"])
+QUAST = str(CFG["tools"]["quast"])
+REFERENCE = str(CFG["reference"])
+HELPER = str(BENCHMARK_ROOT / "scripts" / "assembly_pipeline.py")
+BUILD_METHODS = [
+    method for method, entry in CFG["methods"].items() if entry["mode"] == "build"
+]
+REUSE_METHODS = [
+    method for method, entry in CFG["methods"].items() if entry["mode"] == "reuse"
+]
+METHODS = list(CFG["methods"])
+ACTIVE_CELLS = pipeline.matrix(CFG)
+ASSEMBLERS = list(pipeline.ASSEMBLERS)
+BUILD_PATTERN = "|".join(re.escape(value) for value in BUILD_METHODS)
+REUSE_PATTERN = "|".join(re.escape(value) for value in REUSE_METHODS)
+ASSEMBLER_PATTERN = "|".join(ASSEMBLERS)
+
+
+def corrected_fasta(wildcards):
+    return str(CFG["methods"][wildcards.method]["corrected_fasta"])
+
+
+def legacy_assembly(wildcards):
+    return str(CFG["methods"][wildcards.method]["assemblies"][wildcards.assembler])
+
+
+def cell_root(method, assembler):
+    return OUTPUT_ROOT / method / assembler
+
+
+ASSEMBLY_OUTPUTS = [
+    str(cell_root(cell["method"], cell["assembler"]) / "assembly.fa")
+    for cell in ACTIVE_CELLS
+]
+PROVENANCE_OUTPUTS = [
+    str(cell_root(cell["method"], cell["assembler"]) / "provenance.json")
+    for cell in ACTIVE_CELLS
+]
+QUAST_OUTPUTS = [
+    str(cell_root(cell["method"], cell["assembler"]) / "quast")
+    for cell in ACTIVE_CELLS
+]
+PREFLIGHT = str(OUTPUT_ROOT / "preflight.json")
+SUMMARY = str(OUTPUT_ROOT / "summary.tsv")
+MANIFEST = str(OUTPUT_ROOT / "manifest.json")
+
+
+rule all:
+    input:
+        PREFLIGHT,
+        ASSEMBLY_OUTPUTS,
+        PROVENANCE_OUTPUTS,
+        QUAST_OUTPUTS,
+        SUMMARY,
+        MANIFEST,
+
+
+rule preflight:
+    input:
+        config=str(CONFIG_PATH),
+    output:
+        PREFLIGHT,
+    threads: 1
+    shell:
+        """
+        {PYTHON:q} {HELPER:q} preflight \
+          --config {input.config:q} \
+          --output {output:q}
+        """
+
+
+rule reuse_assembly:
+    input:
+        source=legacy_assembly,
+        # Configuration validation must not invalidate an already materialized
+        # assembly when only workflow ordering/skip settings change.
+        preflight=ancient(PREFLIGHT),
+    output:
+        assembly=str(OUTPUT_ROOT / "{method}" / "{assembler}" / "assembly.fa"),
+        provenance=str(OUTPUT_ROOT / "{method}" / "{assembler}" / "provenance.json"),
+    wildcard_constraints:
+        method=REUSE_PATTERN,
+        assembler=ASSEMBLER_PATTERN,
+    threads: 1
+    shell:
+        """
+        {PYTHON:q} {HELPER:q} publish-fasta \
+          --input {input.source:q} \
+          --output {output.assembly:q} \
+          --provenance {output.provenance:q} \
+          --method {wildcards.method:q} \
+          --assembler {wildcards.assembler:q} \
+          --mode reuse
+        """
+
+
+rule canu_build:
+    input:
+        corrected=corrected_fasta,
+        preflight=ancient(PREFLIGHT),
+    output:
+        assembly=str(OUTPUT_ROOT / "{method}" / "canu" / "assembly.fa"),
+        provenance=str(OUTPUT_ROOT / "{method}" / "canu" / "provenance.json"),
+    log:
+        str(OUTPUT_ROOT / "{method}" / "canu" / "logs" / "canu.log"),
+    benchmark:
+        str(OUTPUT_ROOT / "{method}" / "canu" / "resources" / "canu.time.tsv"),
+    params:
+        work=lambda wildcards: str(
+            cell_root(wildcards.method, "canu") / "work_pacbio"
+        ),
+        resources=lambda wildcards: str(
+            cell_root(wildcards.method, "canu") / "resources" / "canu.time.txt"
+        ),
+    wildcard_constraints:
+        method=BUILD_PATTERN,
+    threads: THREADS
+    shell:
+        """
+        mkdir -p {params.work:q} $(dirname {log:q}) $(dirname {params.resources:q})
+        {TIME:q} -v -o {params.resources:q} \
+          {CANU:q} -p canu -d {params.work:q} \
+          useGrid=false genomeSize={CFG[genome_size]:q} minInputCoverage=1 \
+          maxThreads={threads} \
+          -pacbio {input.corrected:q} \
+          > {log:q} 2>&1
+        {PYTHON:q} {HELPER:q} publish-fasta \
+          --input {params.work:q}/canu.contigs.fasta \
+          --source-input {input.corrected:q} \
+          --output {output.assembly:q} \
+          --provenance {output.provenance:q} \
+          --method {wildcards.method:q} \
+          --assembler canu \
+          --mode build
+        """
+
+
+rule hifiasm_build:
+    input:
+        corrected=corrected_fasta,
+        preflight=ancient(PREFLIGHT),
+    output:
+        assembly=str(OUTPUT_ROOT / "{method}" / "hifiasm" / "assembly.fa"),
+        provenance=str(OUTPUT_ROOT / "{method}" / "hifiasm" / "provenance.json"),
+    log:
+        str(OUTPUT_ROOT / "{method}" / "hifiasm" / "logs" / "hifiasm.log"),
+    benchmark:
+        str(OUTPUT_ROOT / "{method}" / "hifiasm" / "resources" / "hifiasm.time.tsv"),
+    params:
+        prefix=lambda wildcards: str(
+            cell_root(wildcards.method, "hifiasm")
+            / "work_corrected"
+            / "assembly"
+        ),
+        resources=lambda wildcards: str(
+            cell_root(wildcards.method, "hifiasm")
+            / "resources"
+            / "hifiasm.time.txt"
+        ),
+    wildcard_constraints:
+        method=BUILD_PATTERN,
+    threads: THREADS
+    shell:
+        """
+        mkdir -p $(dirname {params.prefix:q}) $(dirname {log:q}) $(dirname {params.resources:q})
+        {TIME:q} -v -o {params.resources:q} \
+          {HIFIASM:q} -o {params.prefix:q} -t {threads} {input.corrected:q} \
+          > {log:q} 2>&1
+        {PYTHON:q} {HELPER:q} gfa-to-fasta \
+          --input {params.prefix:q}.bp.r_utg.gfa \
+          --output {output.assembly:q} \
+          --provenance {output.provenance:q} \
+          --method {wildcards.method:q} \
+          --assembler hifiasm \
+          --corrected-fasta {input.corrected:q}
+        """
+
+
+rule quast:
+    input:
+        assembly=str(OUTPUT_ROOT / "{method}" / "{assembler}" / "assembly.fa"),
+        provenance=str(OUTPUT_ROOT / "{method}" / "{assembler}" / "provenance.json"),
+        reference=REFERENCE,
+        preflight=ancient(PREFLIGHT),
+    output:
+        quast=directory(
+            str(OUTPUT_ROOT / "{method}" / "{assembler}" / "quast")
+        ),
+    log:
+        str(OUTPUT_ROOT / "{method}" / "{assembler}" / "logs" / "quast.log"),
+    benchmark:
+        str(
+            OUTPUT_ROOT
+            / "{method}"
+            / "{assembler}"
+            / "resources"
+            / "quast.time.tsv"
+        ),
+    params:
+        temporary=lambda wildcards: str(
+            cell_root(wildcards.method, wildcards.assembler) / "quast.tmp"
+        ),
+        resources=lambda wildcards: str(
+            cell_root(wildcards.method, wildcards.assembler)
+            / "resources"
+            / "quast.time.txt"
+        ),
+    wildcard_constraints:
+        method="|".join(re.escape(value) for value in METHODS),
+        assembler=ASSEMBLER_PATTERN,
+    threads: QUAST_THREADS
+    shell:
+        """
+        if [[ -e {output.quast:q} ]]; then
+          echo "Refusing to replace existing incomplete QUAST directory: {output.quast}" >&2
+          exit 2
+        fi
+        rm -rf {params.temporary:q}
+        mkdir -p $(dirname {params.temporary:q}) $(dirname {log:q}) $(dirname {params.resources:q})
+        {TIME:q} -v -o {params.resources:q} \
+          {PYTHON:q} {QUAST:q} \
+          -r {input.reference:q} --fast -t {threads} \
+          {input.assembly:q} -o {params.temporary:q} \
+          > {log:q} 2>&1
+        test -s {params.temporary:q}/report.tsv
+        test -s {params.temporary:q}/report.txt
+        mv {params.temporary:q} {output.quast:q}
+        """
+
+
+rule summarize:
+    input:
+        preflight=PREFLIGHT,
+        quast=QUAST_OUTPUTS,
+        provenances=PROVENANCE_OUTPUTS,
+    output:
+        summary=SUMMARY,
+        manifest=MANIFEST,
+    threads: 1
+    shell:
+        """
+        {PYTHON:q} {HELPER:q} summarize \
+          --config {CONFIG_PATH:q} \
+          --preflight {input.preflight:q} \
+          --output {output.summary:q} \
+          --manifest {output.manifest:q}
+        """

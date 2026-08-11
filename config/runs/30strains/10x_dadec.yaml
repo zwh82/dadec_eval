@@ -1,0 +1,7 @@
+run: {id: 30strains_10x_dadec, coverage: 10x, method: dadec, parameter_set: original}
+dadec_k1: 21
+dadec_k2: 21
+dadec_split: 10
+dadec_threshold: 0.08
+dadec_abundance1: 2
+dadec_abundance2: 1

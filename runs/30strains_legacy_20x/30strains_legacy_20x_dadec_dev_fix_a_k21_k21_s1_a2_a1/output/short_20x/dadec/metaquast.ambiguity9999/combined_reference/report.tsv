@@ -1,0 +1,43 @@
+Assembly	corrected
+# contigs (>= 0 bp)	84061
+# contigs (>= 1000 bp)	83753
+# contigs (>= 5000 bp)	83141
+# contigs (>= 10000 bp)	60510
+# contigs (>= 25000 bp)	1135
+# contigs (>= 50000 bp)	20
+Total length (>= 0 bp)	1022987079
+Total length (>= 1000 bp)	1022848047
+Total length (>= 5000 bp)	1020948765
+Total length (>= 10000 bp)	828114001
+Total length (>= 25000 bp)	34721154
+Total length (>= 50000 bp)	1165839
+# contigs	83876
+Largest contig	82733
+Total length	1022937632
+Reference length	119963626
+N50	12593
+N90	8954
+auN	13492.8
+L50	32450
+L90	70253
+# misassemblies	3619
+# misassembled contigs	3260
+Misassembled contigs length	75021725
+# local misassemblies	457
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	2
+# unaligned contigs	3 + 145 part
+Unaligned length	259189
+Genome fraction (%)	99.728
+Duplication ratio	14.071
+# N's per 100 kbp	0.01
+# mismatches per 100 kbp	205.24
+# indels per 100 kbp	19.86
+Largest alignment	31206
+Total aligned length	1022326480
+NA50	12281
+NA90	8804
+auNA	12519.6
+LA50	34834
+LA90	73381

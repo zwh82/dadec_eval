@@ -1,0 +1,19 @@
+dataset:
+  id: ecoli_error
+  variant: current
+  expected_genomes: 1
+  long_coverage: 20x
+
+evaluation:
+  tool: quast
+
+inputs:
+  long_reads: /home/work/wenhai/dadec/data/errors/long/sim_ecoli_long_error_20x_0001.fastq
+  short_reads:
+    miseq: /home/work/wenhai/dadec/data/errors/miseq/miseq_reads.fastq.gz
+    hiseq: /home/work/wenhai/dadec/data/errors/hiseq/hiseq_reads.fastq.gz
+    nextseq: /home/work/wenhai/dadec/data/errors/nextseq/nextseq_reads.fastq.gz
+    novaseq: /home/work/wenhai/dadec/data/errors/novaseq/novaseq_reads.fastq.gz
+  genome_map: /home/work/wenhai/dadec/benchmark/config/datasets/ecoli_error_genome_to_id.tsv
+  simulation_configs: []
+

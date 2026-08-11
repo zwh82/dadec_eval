@@ -1,0 +1,1 @@
+run: {id: 30strains_40x_colormap_original, coverage: 40x, method: colormap, parameter_set: original}

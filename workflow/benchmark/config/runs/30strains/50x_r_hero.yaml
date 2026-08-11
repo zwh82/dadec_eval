@@ -1,0 +1,5 @@
+run: {id: 30strains_50x_r_hero_original, coverage: 50x, method: r_hero, parameter_set: original}
+ratatosk_k1: 21
+ratatosk_k2: 31
+hero_split: 1
+hero_iterations: 1

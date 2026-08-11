@@ -1,0 +1,27 @@
+# benchmark/config/datasets/arabidopsis.yaml
+dataset:
+  id: arabidopsis
+  variant: current
+  expected_genomes: 1
+  # 44.01x
+  long_coverage: 44x
+
+evaluation:
+  tool: quast
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/Arabidopsis/data/long/long_a01.fa
+  short_reads:
+    3x: data/arabidopsis/arabidopsis_3x.fa
+    5x: data/arabidopsis/arabidopsis_5x.fa
+    8x: data/arabidopsis/arabidopsis_8x.fa
+    10x: data/arabidopsis/arabidopsis_10x.fa
+    15x: data/arabidopsis/arabidopsis_15x.fa
+    20x: data/arabidopsis/arabidopsis_20x.fa
+    25x: data/arabidopsis/arabidopsis_25x.fa
+    30x: data/arabidopsis/arabidopsis_30x.fa
+    # 32.15x
+    32x: data/arabidopsis/arabidopsis_32x.fa
+  genome_map: benchmark/config/datasets/arabidopsis_genome_to_id.tsv
+  simulation_configs: []
+

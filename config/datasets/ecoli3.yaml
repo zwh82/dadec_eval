@@ -1,0 +1,14 @@
+dataset:
+  id: ecoli3
+  expected_genomes: 3
+  long_coverage: 10x
+
+evaluation:
+  tool: metaquast
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/ecoil/data/long/long_reads.fa
+  short_reads:
+    20x: /home/yczhang/zyc/final_result/ecoil/data/short/short_reads.fa
+  genome_map: benchmark/config/datasets/ecoli3_genome_to_id.tsv
+  simulation_configs: []

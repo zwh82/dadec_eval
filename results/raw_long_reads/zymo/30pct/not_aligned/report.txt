@@ -1,0 +1,22 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    raw_long_reads
+# contigs (>= 1000 bp)      228200        
+# contigs (>= 5000 bp)      56920         
+# contigs (>= 10000 bp)     9721          
+# contigs (>= 25000 bp)     236           
+# contigs (>= 50000 bp)     8             
+Total length (>= 1000 bp)   927557326     
+Total length (>= 5000 bp)   447267302     
+Total length (>= 10000 bp)  136124014     
+Total length (>= 25000 bp)  7302599       
+Total length (>= 50000 bp)  736311        
+# contigs                   248820        
+Largest contig              144685        
+Total length                942674662     
+N50                         4804          
+N90                         2038          
+auN                         6157.4        
+L50                         61832         
+L90                         177028        
+# N's per 100 kbp           0.00          

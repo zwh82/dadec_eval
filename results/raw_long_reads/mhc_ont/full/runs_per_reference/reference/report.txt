@@ -1,0 +1,54 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     raw_long_reads
+# contigs (>= 1000 bp)       6635          
+# contigs (>= 5000 bp)       4942          
+# contigs (>= 10000 bp)      3271          
+# contigs (>= 25000 bp)      1128          
+# contigs (>= 50000 bp)      278           
+Total length (>= 1000 bp)    98537829      
+Total length (>= 5000 bp)    93332402      
+Total length (>= 10000 bp)   81160809      
+Total length (>= 25000 bp)   47135682      
+Total length (>= 50000 bp)   18292061      
+# contigs                    6635          
+Largest contig               96488         
+Total length                 98537829      
+Reference length             9481123       
+Reference GC (%)             44.87         
+N50                          23846         
+NG50                         77088         
+N90                          7039          
+NG90                         66264         
+auN                          29946.6       
+auNG                         311236.6      
+L50                          1216          
+LG50                         55            
+L90                          4165          
+LG90                         108           
+# misassemblies              0             
+# misassembled contigs       0             
+Misassembled contigs length  0             
+# local misassemblies        9             
+# scaffold gap ext. mis.     0             
+# scaffold gap loc. mis.     0             
+# unaligned mis. contigs     7             
+# unaligned contigs          110 + 568 part
+Unaligned length             4413045       
+Genome fraction (%)          99.911        
+Duplication ratio            10.159        
+# N's per 100 kbp            0.00          
+# mismatches per 100 kbp     3797.67       
+# indels per 100 kbp         5256.97       
+Largest alignment            96452         
+Total aligned length         93559664      
+NA50                         22083         
+NGA50                        75554         
+NA90                         4764          
+NGA90                        64776         
+auNA                         28225.3       
+auNGA                        293347.6      
+LA50                         1272          
+LGA50                        56            
+LA90                         4788          
+LGA90                        111           

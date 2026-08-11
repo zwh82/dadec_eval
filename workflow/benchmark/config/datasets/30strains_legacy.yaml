@@ -1,0 +1,21 @@
+dataset:
+  id: 30strains_legacy
+  variant: historical
+  expected_genomes: 30
+  long_coverage: 10x
+
+evaluation:
+  tool: metaquast
+
+inputs:
+  long_reads: /home/yczhang/zyc/final_result/30strains/data/long/long_reads.fa
+  short_reads:
+    10x: /home/yczhang/zyc/final_result/30strains/data/short/short_reads1.fa
+    20x: /home/yczhang/zyc/final_result/30strains/data/short/short_reads2.fa
+    30x: /home/yczhang/zyc/final_result/30strains/data/short/short_reads3.fa
+    40x: /home/yczhang/zyc/final_result/30strains/data/short/short_reads4.fa
+    50x: /home/yczhang/zyc/final_result/30strains/data/short/short_reads5.fa
+  genome_map: /home/yczhang/zyc/final_result/30strains/data/CAMI_paths.tsv
+  simulation_configs:
+    - /home/yczhang/zyc/final_result/30strains/data/30pbsim_config.ini
+    - /home/yczhang/zyc/final_result/30strains/data/30art_config.ini

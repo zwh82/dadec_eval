@@ -1,0 +1,57 @@
+dataset_id: my_dataset
+run_config_dir: benchmark/config/runs/my_dataset
+default_coverage: 10x
+output_root: benchmark/results/classification
+
+execution:
+  conda_env: dadec_eval
+  python: /path/to/conda/envs/dadec_eval/bin/python
+
+centrifuge:
+  bin_dir: /path/to/centrifuge
+  python_wrapper: /usr/bin/python3
+  ld_preload_fallback: ""
+
+database:
+  mode: existing
+  existing_prefix: /path/to/index/ref
+  # mode: build_taxonomy
+  # reference_fasta: /path/to/reference.fa
+  # conversion_table: /path/to/ref.conv
+  # taxonomy_tree: /path/to/nodes.dmp
+  # name_table: /path/to/names.dmp
+  # output_prefix: benchmark/results/classification/my_dataset/_db/ref
+  # mode: build_flat
+  # reference_fasta: /path/to/reference.fa
+  # output_prefix: benchmark/results/classification/my_dataset/_db/ref
+
+truth:
+  mode: legacy_30strains_accession_groups
+  # For another dataset, provide a TSV with one group per line:
+  # groups_tsv: /path/to/groups.tsv
+
+coverages:
+  10x:
+    fmlrc:
+      run_id: my_dataset_10x_fmlrc_original
+      run_config: benchmark/config/runs/my_dataset/10x_fmlrc.yaml
+      corrected_fasta: /path/to/current/fmlrc/corrected.fa
+      historical:
+        report: /path/to/historical/fmlrc_report.tsv
+        assignment: /path/to/historical/fmlrc_assignments.tsv
+        fallback_fasta: /path/to/historical/fmlrc1.fa
+    dadec_dev:
+      run_id: my_dataset_10x_dadec_dev
+      corrected_fasta: /path/to/dadec_dev/corrected.fa
+
+imports:
+  10x:
+    other_tool:
+      report:
+        path: /path/to/centrifuge_report.tsv
+        # inline: |
+        #   name	taxID	taxRank	genomeSize	numReads	numUniqueReads	abundance
+      assignment:
+        path: /path/to/centrifuge_assignments.tsv
+        # inline: |
+        #   readID	seqID	taxID	score	2ndBestScore	hitLength	queryLength	numMatches

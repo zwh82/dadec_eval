@@ -1,0 +1,156 @@
+from pathlib import Path
+
+configfile: "reproducibility/ecoli3.yaml"
+
+ROOT = Path(config["project_root"])
+OUT = ROOT / config["paths"]["root"]
+REPLICATES = [str(value) for value in config["replicates"]]
+
+rule all:
+    input:
+        str(OUT / "comparison.tsv"),
+        str(OUT / "reproducibility.json"),
+
+rule preflight_ecoli3:
+    input:
+        long=config["inputs"]["long_reads"],
+        short=config["inputs"]["short_reads"],
+        reference=config["inputs"]["reference"],
+        historical=config["inputs"]["historical_report"],
+    output:
+        str(OUT / "preflight.done"),
+    params:
+        dadec=config["tools"]["dadec"],
+        metaquast=config["tools"]["metaquast"],
+        time=config["tools"]["time"],
+    shell:
+        r"""
+        set -euo pipefail
+        test -s {input.long:q}
+        test -s {input.short:q}
+        test -s {input.reference:q}
+        test -s {input.historical:q}
+        test -x {params.dadec:q}
+        test -x {params.metaquast:q}
+        test -x {params.time:q}
+        mkdir -p $(dirname {output:q})
+        printf 'ok\n' > {output:q}
+        """
+
+rule dadec_ecoli3:
+    input:
+        preflight=rules.preflight_ecoli3.output,
+        long=config["inputs"]["long_reads"],
+        short=config["inputs"]["short_reads"],
+    output:
+        corrected=str(OUT / "rep{replicate}" / "dadec.fa"),
+        resources=str(OUT / "rep{replicate}" / "resources.time.txt"),
+    log:
+        str(OUT / "rep{replicate}" / "dadec.log"),
+    threads: config["resources"]["dadec_threads"]
+    params:
+        dadec=config["tools"]["dadec"],
+        time=config["tools"]["time"],
+        split=config["dadec"]["split_number"],
+        k1=config["dadec"]["kmer_size1"],
+        k2=config["dadec"]["kmer_size2"],
+        threshold=config["dadec"]["msa_threshold"],
+        a1=config["dadec"]["abundance_min1"],
+        a2=config["dadec"]["abundance_min2"],
+        work=lambda wc: str(OUT / f"rep{wc.replicate}" / "work"),
+    shell:
+        r"""
+        set -euo pipefail
+        mkdir -p {params.work:q} $(dirname {output.corrected:q})
+        rm -f {params.work:q}/corrected.tmp.fa {output.resources:q}.tmp
+        cd {params.work:q}
+        {params.time:q} -f 'wall_seconds=%e\nuser_cpu_seconds=%U\nsystem_cpu_seconds=%S\ncpu_percent=%P\nmax_rss_kb=%M\nexit_code=%x' \
+          -o {output.resources:q}.tmp \
+          {params.dadec:q} -s {input.short:q} -l {input.long:q} \
+          -o {params.work:q}/corrected.tmp.fa -t {threads} -S {params.split} \
+          -k {params.k1} -K {params.k2} -r {params.threshold} \
+          -a {params.a1} -A {params.a2} > {log:q} 2>&1
+        test -s {params.work:q}/corrected.tmp.fa
+        mv {params.work:q}/corrected.tmp.fa {output.corrected:q}
+        mv {output.resources:q}.tmp {output.resources:q}
+        """
+
+rule metaquast_ecoli3_raw:
+    input:
+        preflight=rules.preflight_ecoli3.output,
+        reads=config["inputs"]["long_reads"],
+        reference=config["inputs"]["reference"],
+    output:
+        str(OUT / "raw" / "metaquast" / "combined_reference" / "report.tsv"),
+    log:
+        str(OUT / "raw" / "metaquast.log"),
+    threads: config["resources"]["metaquast_threads"]
+    params:
+        executable=config["tools"]["metaquast"],
+        outdir=str(OUT / "raw" / "metaquast"),
+        usage=config["metaquast"]["ambiguity_usage"],
+        score=config["metaquast"]["ambiguity_score"],
+        min_contig=config["metaquast"]["min_contig"],
+        extra=config["metaquast"]["extra_args"],
+    shell:
+        r"""
+        set -euo pipefail
+        mkdir -p $(dirname {log:q})
+        rm -rf {params.outdir:q}.tmp
+        {params.executable:q} -r {input.reference:q} -t {threads} \
+          --ambiguity-usage {params.usage:q} --ambiguity-score {params.score} \
+          --min-contig {params.min_contig} {params.extra} -o {params.outdir:q}.tmp \
+          {input.reads:q} > {log:q} 2>&1
+        rm -rf {params.outdir:q}
+        mv {params.outdir:q}.tmp {params.outdir:q}
+        """
+
+rule metaquast_ecoli3_rep:
+    input:
+        reads=str(OUT / "rep{replicate}" / "dadec.fa"),
+        reference=config["inputs"]["reference"],
+    output:
+        str(OUT / "rep{replicate}" / "metaquast" / "combined_reference" / "report.tsv"),
+    log:
+        str(OUT / "rep{replicate}" / "metaquast.log"),
+    threads: config["resources"]["metaquast_threads"]
+    params:
+        executable=config["tools"]["metaquast"],
+        outdir=lambda wc: str(OUT / f"rep{wc.replicate}" / "metaquast"),
+        usage=config["metaquast"]["ambiguity_usage"],
+        score=config["metaquast"]["ambiguity_score"],
+        min_contig=config["metaquast"]["min_contig"],
+        extra=config["metaquast"]["extra_args"],
+    shell:
+        r"""
+        set -euo pipefail
+        rm -rf {params.outdir:q}.tmp
+        {params.executable:q} -r {input.reference:q} -t {threads} \
+          --ambiguity-usage {params.usage:q} --ambiguity-score {params.score} \
+          --min-contig {params.min_contig} {params.extra} -o {params.outdir:q}.tmp \
+          {input.reads:q} > {log:q} 2>&1
+        rm -rf {params.outdir:q}
+        mv {params.outdir:q}.tmp {params.outdir:q}
+        """
+
+rule compare_ecoli3:
+    input:
+        historical=config["inputs"]["historical_report"],
+        raw=rules.metaquast_ecoli3_raw.output,
+        reports=expand(str(OUT / "rep{replicate}" / "metaquast" / "combined_reference" / "report.tsv"), replicate=REPLICATES),
+        corrected=expand(str(OUT / "rep{replicate}" / "dadec.fa"), replicate=REPLICATES),
+        resources=expand(str(OUT / "rep{replicate}" / "resources.time.txt"), replicate=REPLICATES),
+    output:
+        table=str(OUT / "comparison.tsv"),
+        status=str(OUT / "reproducibility.json"),
+    params:
+        python=config["tools"]["python"],
+        replicates=" ".join(REPLICATES),
+    shell:
+        r"""
+        {params.python:q} benchmark/scripts/compare_reproducibility.py \
+          --historical {input.historical:q} --raw {input.raw:q} \
+          --replicates {params.replicates} --reports {input.reports:q} \
+          --corrected {input.corrected:q} --resources {input.resources:q} \
+          --table {output.table:q} --status {output.status:q}
+        """

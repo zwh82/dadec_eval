@@ -1,0 +1,17 @@
+dataset:
+  id: 100strains
+  variant: current
+  expected_genomes: 100
+  long_coverage: 10x
+
+evaluation:
+  tool: metaquast
+
+inputs:
+  long_reads: data/100strains/sim_100strains_long_10x.fq.gz
+  short_reads:
+    30x: data/100strains/sim_100strains_short_30x.fq.gz
+  genome_map: data/100strains/genome_to_id.tsv
+  simulation_configs:
+    - data/100strains/sim_100strains_long_10x_config.ini
+    - data/100strains/sim_100strains_short_30x_config.ini

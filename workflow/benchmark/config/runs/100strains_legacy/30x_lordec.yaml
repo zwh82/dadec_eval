@@ -1,0 +1,6 @@
+evaluation:
+  tool: metaquast
+  corrected_fasta: /home/yczhang/zyc/final_result/100strains/100_cor/lordec1.fa
+run: {id: 100strains_legacy_30x_lordec_original, coverage: 30x, method: lordec, parameter_set: original}
+lordec_k: 31
+lordec_solid: 5

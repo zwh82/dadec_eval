@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-07-15T21:46:36.728363+00:00",
+  "dataset": "30strains_legacy",
+  "long_coverage": "10x",
+  "run_id": "30strains_legacy_50x_ratatosk_original_k21_k31",
+  "parameter_set": "original",
+  "parameter_signature": "k21_k31",
+  "evaluation_tool": "metaquast",
+  "run_root": "/home/work/wenhai/dadec/benchmark/runs/30strains_legacy_50x/30strains_legacy_50x_ratatosk_original_k21_k31",
+  "methods": [
+    "ratatosk"
+  ],
+  "parameter_profile": "study",
+  "parameters_by_coverage": {
+    "50x": {
+      "dadec_abundance1": 2,
+      "dadec_abundance2": 1,
+      "dadec_k1": 31,
+      "dadec_k2": 31,
+      "dadec_split": 1,
+      "dadec_threshold": 0.08,
+      "fmlrc_k1": 21,
+      "fmlrc_k2": 59,
+      "hero_iterations": 3,
+      "hero_split": 10,
+      "lordec_k": 21,
+      "lordec_solid": 5,
+      "ratatosk_k1": 21,
+      "ratatosk_k2": 31
+    }
+  },
+  "preflight": {
+    "status": "ok",
+    "dataset": "30strains_legacy",
+    "methods": [
+      "ratatosk"
+    ],
+    "evaluation_tool": "metaquast",
+    "inputs": [
+      "/home/yczhang/zyc/final_result/30strains/data/long/long_reads.fa",
+      "/home/yczhang/zyc/final_result/30strains/data/short/short_reads5.fa"
+    ],
+    "genomes": 30,
+    "free_disk_gb": 40604.96,
+    "executables": {
+      "conda": "/home/wenhai/miniconda3/bin/conda",
+      "metaquast": "/home/yczhang/zyc/tools/quast/metaquast.py",
+      "python": "/home/wenhai/miniconda3/envs/dadec_eval/bin/python3.10",
+      "ratatosk": "/home/yczhang/zyc/tools/Ratatosk/bin/Ratatosk",
+      "runner_python": "/home/wenhai/miniconda3/envs/dadec_eval/bin/python3.10",
+      "seqkit": "/home/wenhai/application/seqkit/seqkit",
+      "time": "/usr/bin/time"
+    },
+    "method_environments": {
+      "ratatosk": "dadec_eval"
+    }
+  },
+  "simulation_configs": [
+    {
+      "path": "/home/yczhang/zyc/final_result/30strains/data/30pbsim_config.ini",
+      "sha256": "c1ff9413992d72ffb5496ff71ecb085e49e361ee6da12ee73d8ac25667f6793a"
+    },
+    {
+      "path": "/home/yczhang/zyc/final_result/30strains/data/30art_config.ini",
+      "sha256": "ab2fa23b94f5578202c4297376a68af9cb3161522a5cd0fdcf8b65af254d2489"
+    }
+  ],
+  "run_group": "30strains_legacy_50x",
+  "ambiguity_scores": [
+    "0.99"
+  ]
+}

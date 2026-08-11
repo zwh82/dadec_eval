@@ -1,0 +1,29 @@
+dataset:
+  id: zymo
+  variant: long_read_subsample
+  expected_genomes: 10
+  long_coverage: 100pct
+
+evaluation:
+  tool: metaquast
+
+inputs:
+  # The percentage label denotes the long-read fraction. All methods use the
+  # corresponding long_read_subsamples entry; hybrid methods use the complete
+  # Zymo short-read set for every fraction, matching the legacy experiment.
+  long_reads: /home/yczhang/zyc/final_result/zymo/data/long_reads.fa
+  short_reads:
+    5pct: /home/yczhang/zyc/final_result/zymo/data/short_reads.fa
+    10pct: /home/yczhang/zyc/final_result/zymo/data/short_reads.fa
+    20pct: /home/yczhang/zyc/final_result/zymo/data/short_reads.fa
+    30pct: /home/yczhang/zyc/final_result/zymo/data/short_reads.fa
+    40pct: /home/yczhang/zyc/final_result/zymo/data/short_reads.fa
+  long_read_subsamples:
+    5pct: data/zymo/long_reads_5.fa
+    10pct: data/zymo/long_reads_10.fa
+    20pct: data/zymo/long_reads_20.fa
+    30pct: data/zymo/long_reads_30.fa
+    40pct: data/zymo/long_reads_40.fa
+  genome_map: benchmark/config/datasets/zymo_genome_to_id.tsv
+  simulation_configs:
+    - data/zymo/sampling_manifest.tsv

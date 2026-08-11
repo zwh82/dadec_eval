@@ -1,0 +1,25 @@
+dataset:
+  id: 30strains
+  variant: current
+  expected_genomes: 30
+  long_coverage: 10x
+
+evaluation:
+  tool: metaquast
+
+inputs:
+  long_reads: data/30strains/sim_30strains_long_10x.fq.gz
+  short_reads:
+    10x: data/30strains/sim_30strains_short_10x.fq.gz
+    20x: data/30strains/sim_30strains_short_20x.fq.gz
+    30x: data/30strains/sim_30strains_short_30x.fq.gz
+    40x: data/30strains/sim_30strains_short_40x.fq.gz
+    50x: data/30strains/sim_30strains_short_50x.fq.gz
+  genome_map: data/30strains/genome_to_id.tsv
+  simulation_configs:
+    - data/30strains/sim_30strains_long_10x_config.ini
+    - data/30strains/sim_30strains_short_10x_config.ini
+    - data/30strains/sim_30strains_short_20x_config.ini
+    - data/30strains/sim_30strains_short_30x_config.ini
+    - data/30strains/sim_30strains_short_40x_config.ini
+    - data/30strains/sim_30strains_short_50x_config.ini

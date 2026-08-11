@@ -1,0 +1,230 @@
+import pandas as pd
+from io import StringIO
+
+# 第一个表的数据
+table1_data = """Strain ID	SpeciesNames
+GCF_000369385	Acinetobacter baumannii
+GCF_000931755	Acinetobacter baumannii
+GCF_009035845	Acinetobacter baumannii
+GCF_017090145	Acinetobacter baumannii
+GCF_024618585	Acinetobacter baumannii
+GCF_900444725	Acinetobacter baumannii
+GCF_000007845	Bacillus anthracis
+GCF_000008445	Bacillus anthracis
+GCF_022630555	Bacillus licheniformis
+GCF_034478925	Bacillus licheniformis
+GCF_000009045	Bacillus subtilis
+GCF_013009385	Bacillus subtilis
+GCF_014131755	Bacteroides thetaiotaomicron
+GCF_016103195	Bacteroides thetaiotaomicron
+GCF_022453665	Bacteroides thetaiotaomicron
+GCF_900445595	Bacteroides thetaiotaomicron
+GCF_000007125	Brucella melitensis
+GCF_000007505	Brucella suis
+GCF_001182285	Burkholderia pseudomallei
+GCF_006538545	Burkholderia pseudomallei
+GCF_030297255	Burkholderia pseudomallei
+GCF_000009085	Campylobacter jejuni
+GCF_006742065	Clostridium butyricum
+GCF_014131795	Clostridium butyricum
+GCF_000013285	Clostridium perfringens
+GCF_016027375	Clostridium perfringens
+GCF_000340885	Clostridium saccharoperbutylacetonicum
+GCF_003606265	Clostridium septicum
+GCF_020736665	Clostridium septicum
+GCF_000973705	Clostridium sporogenes
+GCF_001020205	Clostridium sporogenes
+GCF_002008145	Clostridium sporogenes
+GCF_900461305	Clostridium sporogenes
+GCF_000011325	Corynebacterium glutamicum
+GCF_000196335	Corynebacterium glutamicum
+GCF_001729745	Enterobacter hormaechei
+GCF_001729785	Enterobacter hormaechei
+GCF_019048245	Enterobacter hormaechei
+GCF_000007785	Enterococcus faecalis
+GCF_000008865	Escherichia coli
+GCF_002058765	Escherichia coli
+GCF_001457655	Haemophilus influenzae
+GCF_020736045	Haemophilus influenzae
+GCF_003050665	Helicobacter pylori
+GCF_004295525	Helicobacter pylori
+GCF_025998455	Helicobacter pylori
+GCF_000290615	Heyndrickxia coagulans
+GCF_000832905	Heyndrickxia coagulans
+GCF_000215745	Klebsiella aerogenes
+GCF_019048125	Klebsiella aerogenes
+GCF_001598695	Klebsiella oxytoca
+GCF_020115535	Klebsiella oxytoca
+GCF_900636985	Klebsiella oxytoca
+GCF_020099175	Klebsiella quasipneumoniae
+GCF_020115515	Klebsiella quasipneumoniae
+GCF_020525685	Klebsiella quasipneumoniae
+GCF_020525925	Klebsiella quasipneumoniae
+GCF_000387565	Lactobacillus delbrueckii
+GCF_001888925	Lactobacillus delbrueckii
+GCF_000008485	Legionella pneumophila
+GCF_000469365	Levilactobacillus brevis
+GCF_001433855	Levilactobacillus brevis
+GCF_000196035	Listeria monocytogenes
+GCF_001598895	Morganella morganii
+GCF_006094455	Morganella morganii
+GCF_040560265	Morganella morganii
+GCF_022869645	Neisseria meningitidis
+GCF_900638555	Neisseria meningitidis
+GCF_000195755	Nitratidesulfovibrio vulgaris
+GCF_001598475	Pantoea agglomerans
+GCF_019048385	Pantoea agglomerans
+GCF_000829395	Paucilactobacillus hokkaidonensis
+GCF_001591525	Priestia megaterium
+GCF_006094495	Priestia megaterium
+GCF_000006765	Pseudomonas aeruginosa
+GCF_900106225	Pseudomonas aeruginosa
+GCF_000006945	Salmonella enterica
+GCF_000013425	Staphylococcus aureus
+GCF_006094375	Staphylococcus epidermidis
+GCF_006742205	Staphylococcus epidermidis
+GCF_900458605	Staphylococcus epidermidis
+GCF_965138055	Staphylococcus epidermidis
+GCF_001431675	Stenotrophomonas maltophilia
+GCF_013004645	Stenotrophomonas maltophilia
+GCF_037213995	Stenotrophomonas maltophilia
+GCF_900186865	Stenotrophomonas maltophilia
+GCF_000689235	Streptococcus agalactiae
+GCF_006739205	Streptococcus mutans
+GCF_019048645	Streptococcus mutans
+GCF_044360185	Streptococcus mutans
+GCF_900475095	Streptococcus mutans
+GCF_965135875	Streptococcus mutans
+GCF_000006885	Streptococcus pneumoniae
+GCF_001457635	Streptococcus pneumoniae
+GCF_001679535	Streptococcus pneumoniae
+GCF_000014265	Trichodesmium erythraeum
+GCF_000006745	Vibrio cholerae
+GCF_001591065	Vibrio vulnificus
+GCF_002224265	Vibrio vulnificus
+GCF_000009065	Yersinia pestis"""
+
+# 第二个表的数据
+table2_data = """GCF_900461305.1	0.00607287	0.61 
+GCF_001431675.1	0.006516508	0.65 
+GCF_000689235.1	0.009422816	0.94 
+GCF_020525925.1	0.006198478	0.62 
+GCF_000008485.1	0.006651866	0.67 
+GCF_019048125.1	0.010138504	1.01 
+GCF_000006745.1	0.010226104	1.02 
+GCF_017090145.1	0.00583608	0.58 
+GCF_965138055.1	0.01210922	1.21 
+GCF_000196335.1	0.017110276	1.71 
+GCF_000009085.1	0.010403484	1.04 
+GCF_006094375.1	0.008139644	0.81 
+GCF_000195755.1	0.008866552	0.89 
+GCF_000369385.1	0.011695413	1.17 
+GCF_006739205.1	0.020823573	2.08 
+GCF_034478925.1	0.011887051	1.19 
+GCF_022869645.1	0.012243269	1.22 
+GCF_022630555.1	0.00796078	0.80 
+GCF_900475095.1	0.008459365	0.85 
+GCF_001729785.1	0.010577256	1.06 
+GCF_013004645.1	0.015601656	1.56 
+GCF_006094455.1	0.011523873	1.15 
+GCF_037213995.1	0.007395927	0.74 
+GCF_009035845.1	0.01205573	1.21 
+GCF_000009065.1	0.012311945	1.23 
+GCF_965135875.1	0.005260287	0.53 
+GCF_030297255.1	0.00470534	0.47 
+GCF_000469365.1	0.017367357	1.74 
+GCF_019048645.1	0.012534107	1.25 
+GCF_019048245.1	0.008647303	0.86 
+GCF_001598475.1	0.0103251	1.03 
+GCF_002058765.1	0.007649955	0.76 
+GCF_900638555.1	0.00852678	0.85 
+GCF_022453665.1	0.008220922	0.82 
+GCF_003050665.1	0.009407514	0.94 
+GCF_001591065.1	0.005932525	0.59 
+GCF_006538545.1	0.008636666	0.86 
+GCF_000290615.1	0.005592236	0.56 
+GCF_024618585.1	0.010810103	1.08 
+GCF_020525685.1	0.010374119	1.04 
+GCF_000011325.1	0.009651717	0.97 
+GCF_000006945.2	0.010151204	1.02 
+GCF_001888925.1	0.016472465	1.65 
+GCF_025998455.1	0.007665321	0.77 
+GCF_000013425.1	0.008269684	0.83 
+GCF_001457635.1	0.005179755	0.52 
+GCF_006742205.1	0.006839242	0.68 
+GCF_000014265.1	0.008121639	0.81 
+GCF_900636985.1	0.00754992	0.75 
+GCF_001433855.1	0.010987231	1.10 
+GCF_000832905.1	0.013609905	1.36 
+GCF_900445595.1	0.009677316	0.97 
+GCF_014131755.1	0.011000381	1.10 
+GCF_002224265.1	0.007808238	0.78 
+GCF_001020205.1	0.00859734	0.86 
+GCF_000340885.1	0.008688724	0.87 
+GCF_016027375.1	0.007335845	0.73 
+GCF_000973705.1	0.010485381	1.05 
+GCF_002008145.1	0.015996875	1.60 
+GCF_001729745.1	0.009000606	0.90 
+GCF_000008445.1	0.009864547	0.99 
+GCF_016103195.1	0.00862002	0.86 
+GCF_001182285.1	0.010637577	1.06 
+GCF_014131795.1	0.012077496	1.21 
+GCF_001598895.1	0.007368054	0.74 
+GCF_019048385.1	0.005891865	0.59 
+GCF_000931755.1	0.009998328	1.00 
+GCF_000009045.1	0.009228303	0.92 
+GCF_000007785.1	0.015502009	1.55 
+GCF_000007845.1	0.011584725	1.16 
+GCF_006742065.1	0.017125016	1.71 
+GCF_000829395.1	0.01581074	1.58 
+GCF_020115535.1	0.01025807	1.03 
+GCF_000196035.1	0.008795525	0.88 
+GCF_000007125.1	0.014348838	1.43 
+GCF_020099175.1	0.008514247	0.85 
+GCF_006094495.1	0.01171683	1.17 
+GCF_020736045.1	0.010138973	1.01 
+GCF_000007505.1	0.010528688	1.05 
+GCF_001457655.1	0.006735251	0.67 
+GCF_000006765.1	0.018264028	1.83 
+GCF_013009385.1	0.005909561	0.59 
+GCF_000215745.1	0.006223995	0.62 
+GCF_020115515.1	0.013911506	1.39 
+GCF_900186865.1	0.012153249	1.22 
+GCF_001679535.1	0.011398365	1.14 
+GCF_004295525.1	0.009118598	0.91 
+GCF_001598695.1	0.009374613	0.94 
+GCF_900444725.1	0.005464975	0.55 
+GCF_044360185.1	0.008692936	0.87 
+GCF_000008865.2	0.011504963	1.15 
+GCF_020736665.1	0.007387246	0.74 
+GCF_003606265.1	0.006377121	0.64 
+GCF_000006885.1	0.009747565	0.97 
+GCF_001591525.1	0.01399904	1.40 
+GCF_900106225.1	0.008836167	0.88 
+GCF_900458605.1	0.011964707	1.20 
+GCF_000013285.1	0.012657303	1.27 
+GCF_040560265.1	0.005888898	0.59 
+GCF_000387565.1	0.009072728	0.91"""
+
+# 读取数据到DataFrame
+table1 = pd.read_csv(StringIO(table1_data), sep='\t')
+table2 = pd.read_csv(StringIO(table2_data), sep='\t', header=None, names=['ID', 'Value1', 'Value2'])
+
+# 从第二个表的ID中提取Strain ID（去掉版本号）用于匹配
+table2['Strain ID'] = table2['ID'].str.split('.').str[0]
+
+# 按照第一个表的顺序进行合并
+# 首先为第一个表添加一个顺序列
+table1['order'] = range(len(table1))
+
+# 合并两个表
+merged_table = pd.merge(table1, table2, on='Strain ID', how='left')
+
+# 按照原始顺序排序
+merged_table = merged_table.sort_values('order')
+
+# 选择需要的列并重命名
+final_table = merged_table[['ID', 'SpeciesNames', 'Value1', 'Value2']]
+
+# 显示结果
+print(final_table.to_string(index=False, na_rep='N/A'))

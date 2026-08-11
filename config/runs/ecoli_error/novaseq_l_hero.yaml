@@ -1,0 +1,6 @@
+evaluation: {tool: quast}
+run: {id: ecoli_error_novaseq_l_hero_original, coverage: 22x, method: l_hero, parameter_set: original}
+lordec_k: 31
+lordec_solid: 5
+hero_split: 30
+hero_iterations: 3

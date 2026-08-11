@@ -1,0 +1,20 @@
+Assembly	raw_long_reads
+# contigs (>= 1000 bp)	648
+# contigs (>= 5000 bp)	439
+# contigs (>= 10000 bp)	236
+# contigs (>= 25000 bp)	17
+# contigs (>= 50000 bp)	0
+Total length (>= 1000 bp)	5889315
+Total length (>= 5000 bp)	5254731
+Total length (>= 10000 bp)	3761498
+Total length (>= 25000 bp)	532427
+Total length (>= 50000 bp)	0
+# contigs	648
+Largest contig	41180
+Total length	5889315
+N50	12509
+N90	4874
+auN	13766.7
+L50	164
+L90	449
+# N's per 100 kbp	0.00

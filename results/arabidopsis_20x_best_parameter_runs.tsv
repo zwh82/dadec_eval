@@ -1,0 +1,10 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	CPU(h)	WallTime(h)	Memory(GB)	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+arabidopsis_20x_colormap_original	original	arabidopsis	44x	20x	CoLoRMap	NA	36.608	6.604	98.931	937.74	1048.85	99.482	60784	546188
+arabidopsis_20x_dadec_dev_fix_a_k21_k21_s1_a2_a1	original	arabidopsis	44x	20x	DADEC	NA	206.373	3.668	26.537	903.9	658.45	99.043	66265	544743
+arabidopsis_20x_fmlrc_original_k21_k59	original	arabidopsis	44x	20x	FMLRC	NA	23.945	0.428	4.329	900.3	1026.15	96.619	64781	544861
+arabidopsis_20x_f_hero_original_k21_k59_hs10_hi3	original	arabidopsis	44x	20x	F_HERO	NA	1297.819	27.182	36.402	968.26	904.53	93.907	221061	539827
+arabidopsis_20x_l_hero_original_k21_ls5_hs10_hi1	original	arabidopsis	44x	20x	L_HERO	NA	1554.659	29.484	63.236	1329.96	1260.01	92.609	95063	543977
+arabidopsis_20x_lordec_original_k21_ls5	original	arabidopsis	44x	20x	LoRDEC	NA	173.484	2.928	5.570	853.45	764.43	98.282	79788	545165
+arabidopsis_20x_proovread_original	original	arabidopsis	44x	20x	Proovread	NA	1421.679	35.196	94.215	746.4	666.37	99.766	67099	447662
+arabidopsis_20x_r_hero_original_k31_k63_hs10_hi1	original	arabidopsis	44x	20x	R_HERO	NA	1213.442	26.693	73.113	1414.83	1428.32	87.891	78136	544923
+arabidopsis_20x_ratatosk_original_k31_k63	original	arabidopsis	44x	20x	Ratatosk	NA	53.918	0.970	6.363	1106.44	1572.8	89.272	20340	545657

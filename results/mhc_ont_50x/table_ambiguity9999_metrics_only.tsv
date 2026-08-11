@@ -1,0 +1,11 @@
+method	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number	evaluation_scope
+Raw	3798.77	5257.00	99.944	12	7190	raw_long_reads
+DADEC	31.27	22.88	99.942	3	7190	ambiguity_0.9999
+FMLRC	121.38	44.32	99.942	102	7190	ambiguity_0.9999
+F_HERO	329.81	82.32	99.784	312	7190	ambiguity_0.9999
+Ratatosk	282.07	294.89	99.941	1	7190	ambiguity_0.9999
+R_HERO	450.81	124.39	99.54	388	7190	ambiguity_0.9999
+LoRDEC	745.96	908.95	99.94	5	7190	ambiguity_0.9999
+L_HERO	611.07	256.35	99.619	456	7190	ambiguity_0.9999
+CoLoRMap	1168.51	1060.52	99.908	5	7190	ambiguity_0.9999
+Proovread	36.58	13.35	99.942	0	7190	ambiguity_0.9999

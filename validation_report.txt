@@ -1,0 +1,8 @@
+status: PASS
+paper evaluation mappings: 18
+source inventory rows: 815
+result inventory rows: 1246
+dataset registry rows: 11
+manifest files: 2611
+YAML configs parsed: 404
+external paths inventoried: 185 (6 currently unavailable)

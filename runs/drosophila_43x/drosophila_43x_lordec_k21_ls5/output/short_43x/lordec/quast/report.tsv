@@ -1,0 +1,54 @@
+Assembly	lordec1
+# contigs (>= 0 bp)	663678
+# contigs (>= 1000 bp)	584005
+# contigs (>= 5000 bp)	317249
+# contigs (>= 10000 bp)	160316
+# contigs (>= 25000 bp)	18956
+# contigs (>= 50000 bp)	151
+Total length (>= 0 bp)	4671301069
+Total length (>= 1000 bp)	4620572881
+Total length (>= 5000 bp)	3873079188
+Total length (>= 10000 bp)	2749043484
+Total length (>= 25000 bp)	581239920
+Total length (>= 50000 bp)	13747813
+# contigs	642960
+Largest contig	447458
+Total length	4663490553
+Reference length	143726002
+Reference GC (%)	42.01
+N50	12101
+NG50	37781
+N90	3587
+NG90	34523
+auN	14133.0
+auNG	458574.4
+L50	122382
+LG50	1558
+L90	393260
+LG90	3155
+# misassemblies	30643
+# misassembled contigs	17729
+Misassembled contigs length	204366632
+# local misassemblies	83379
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	21004
+# unaligned contigs	111992 + 102610 part
+Unaligned length	1009386681
+Genome fraction (%)	97.787
+Duplication ratio	25.951
+# N's per 100 kbp	0.00
+# mismatches per 100 kbp	569.10
+# indels per 100 kbp	363.29
+Largest alignment	57110
+Total aligned length	3618010566
+NA50	8063
+NGA50	34708
+NA90	-
+NGA90	31708
+auNA	10098.6
+auNGA	327670.9
+LA50	155185
+LGA50	1870
+LA90	-
+LGA90	3609

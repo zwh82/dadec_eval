@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-07-01T10:52:03.928594+00:00",
+  "mode": "apply",
+  "operations": [
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/metaquast/raw",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/raw/metaquast",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/metaquast/10x",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/short_10x/dadec/metaquast",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/corrected/10x/dadec.fa",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/short_10x/dadec/corrected.fa",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/resources/10x.time.txt",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/short_10x/dadec/resources.time.txt",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/tables",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/legacy_tables",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/preflight.json",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/preflight.json",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/provenance.json",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/30strains/legacy_provenance.json",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/results/reproducibility/ecoli3",
+      "destination": "/home/work/wenhai/dadec/benchmark/results/ecoli3/reproducibility",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/work/inputs",
+      "destination": "/home/work/wenhai/dadec/benchmark/work/30strains/inputs",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/work/reference",
+      "destination": "/home/work/wenhai/dadec/benchmark/work/30strains/reference",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/work/dadec",
+      "destination": "/home/work/wenhai/dadec/benchmark/work/30strains/dadec",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/logs/dadec/10x.log",
+      "destination": "/home/work/wenhai/dadec/benchmark/logs/30strains/short_10x/dadec.log",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/logs/metaquast/raw.log",
+      "destination": "/home/work/wenhai/dadec/benchmark/logs/30strains/raw/metaquast.log",
+      "status": "moved"
+    },
+    {
+      "source": "/home/work/wenhai/dadec/benchmark/logs/metaquast/10x.log",
+      "destination": "/home/work/wenhai/dadec/benchmark/logs/30strains/short_10x/metaquast.log",
+      "status": "moved"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+import json
+from pathlib import Path
+
+SCRIPT_ROOT = Path(workflow.basedir)
+BENCHMARK_ROOT = SCRIPT_ROOT.parents[1]
+CONFIGFILE = workflow.configfiles[0] if workflow.configfiles else str(BENCHMARK_ROOT / "config/classification/30strains_legacy.yaml")
+
+import sys
+sys.path.insert(0, str(SCRIPT_ROOT / "scripts"))
+from common import configured_classify_samples, configured_import_samples, load_config, output_root, sample_dir, selected_coverages
+
+CFG = load_config(CONFIGFILE)
+COVERAGES = selected_coverages(CFG, config.get("coverage"))
+OUT = output_root(CFG)
+DATASET = CFG["dataset_id"]
+PYTHON = config.get("classification_python") or CFG.get("execution", {}).get("python") or "python"
+CLASSIFY_SAMPLES = configured_classify_samples(CFG, COVERAGES)
+IMPORT_SAMPLES = configured_import_samples(CFG, COVERAGES)
+
+
+def cdir(coverage, sample):
+    return sample_dir(CFG, coverage, sample)
+
+
+def sample_fasta(wc):
+    return CLASSIFY_SAMPLES[(wc.coverage, wc.sample)]["fasta"]
+
+
+def fmlrc_expected_report(wc):
+    return CFG["coverages"][wc.coverage]["fmlrc"]["historical"]["report"]
+
+
+def fmlrc_fallback_fasta(wc):
+    return CFG["coverages"][wc.coverage]["fmlrc"]["historical"]["fallback_fasta"]
+
+
+def metrics_records():
+    records = []
+    for coverage in COVERAGES:
+        samples = ["fmlrc"]
+        samples.extend(
+            sample for cov, sample in sorted(CLASSIFY_SAMPLES)
+            if cov == coverage and sample != "fmlrc_current"
+        )
+        for sample in samples:
+            records.append({
+                "coverage": coverage,
+                "sample": sample,
+                "report": str(cdir(coverage, sample) / "report.tsv"),
+                "assignment": str(cdir(coverage, sample) / "assignments.tsv"),
+                "metrics": str(cdir(coverage, sample) / "metrics.json"),
+                "status": str(cdir(coverage, sample) / "status.json"),
+            })
+        for _, sample in sorted(key for key in IMPORT_SAMPLES if key[0] == coverage):
+            records.append({
+                "coverage": coverage,
+                "sample": sample,
+                "report": str(cdir(coverage, sample) / "report.tsv"),
+                "assignment": str(cdir(coverage, sample) / "assignments.tsv"),
+                "metrics": str(cdir(coverage, sample) / "metrics.json"),
+                "status": str(cdir(coverage, sample) / "provenance.json"),
+            })
+    return records
+
+
+RESOLVED_TARGETS = []
+for cov in COVERAGES:
+    RESOLVED_TARGETS.append(str(cdir(cov, "fmlrc") / "metrics.json"))
+    for _, sample in sorted(key for key in CLASSIFY_SAMPLES if key[0] == cov and key[1] != "fmlrc_current"):
+        RESOLVED_TARGETS.append(str(cdir(cov, sample) / "metrics.json"))
+    for _, sample in sorted(key for key in IMPORT_SAMPLES if key[0] == cov):
+        RESOLVED_TARGETS.append(str(cdir(cov, sample) / "metrics.json"))
+
+
+rule all:
+    input:
+        str(OUT / DATASET / "aggregate.tsv"),
+        *RESOLVED_TARGETS
+
+
+rule preflight:
+    output:
+        str(OUT / DATASET / "_checks/{coverage}/preflight.json")
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/preflight.py --config {CONFIGFILE:q} --coverage {wildcards.coverage:q} --output {output:q}"
+
+
+rule prepare_database:
+    input:
+        preflight=str(OUT / DATASET / "_checks/{coverage}/preflight.json")
+    output:
+        str(OUT / DATASET / "_db/{coverage}/database.json")
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/prepare_database.py --config {CONFIGFILE:q} --preflight {input.preflight:q} --output {output:q}"
+
+
+rule classify:
+    input:
+        fasta=sample_fasta,
+        database=str(OUT / DATASET / "_db/{coverage}/database.json"),
+        preflight=str(OUT / DATASET / "_checks/{coverage}/preflight.json")
+    output:
+        assignment=str(OUT / DATASET / "{coverage}/{sample}/assignments.tsv"),
+        report=str(OUT / DATASET / "{coverage}/{sample}/report.tsv"),
+        provenance=str(OUT / DATASET / "{coverage}/{sample}/provenance.json")
+    wildcard_constraints:
+        sample="|".join(sorted({sample for _, sample in CLASSIFY_SAMPLES}))
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/classify.py --config {CONFIGFILE:q} --coverage {wildcards.coverage:q} "
+        "--sample {wildcards.sample:q} --source current --fasta {input.fasta:q} --database {input.database:q} "
+        "--assignment {output.assignment:q} --report {output.report:q} --provenance {output.provenance:q}"
+
+
+rule resolve_fmlrc:
+    input:
+        current_report=str(OUT / DATASET / "{coverage}/fmlrc_current/report.tsv"),
+        current_assignment=str(OUT / DATASET / "{coverage}/fmlrc_current/assignments.tsv"),
+        current_provenance=str(OUT / DATASET / "{coverage}/fmlrc_current/provenance.json"),
+        expected_report=fmlrc_expected_report,
+        fallback_fasta=fmlrc_fallback_fasta,
+        database=str(OUT / DATASET / "_db/{coverage}/database.json")
+    output:
+        assignment=str(OUT / DATASET / "{coverage}/fmlrc/assignments.tsv"),
+        report=str(OUT / DATASET / "{coverage}/fmlrc/report.tsv"),
+        provenance=str(OUT / DATASET / "{coverage}/fmlrc/provenance.json"),
+        status=str(OUT / DATASET / "{coverage}/fmlrc/status.json")
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/resolve_fmlrc.py --config {CONFIGFILE:q} --coverage {wildcards.coverage:q} "
+        "--database {input.database:q} --current-report {input.current_report:q} --current-assignment {input.current_assignment:q} "
+        "--current-provenance {input.current_provenance:q} --expected-report {input.expected_report:q} "
+        "--fallback-fasta {input.fallback_fasta:q} --output-report {output.report:q} --output-assignment {output.assignment:q} "
+        "--output-provenance {output.provenance:q} --status {output.status:q}"
+
+
+rule materialize_import:
+    output:
+        assignment=str(OUT / DATASET / "{coverage}/{sample}/assignments.tsv"),
+        report=str(OUT / DATASET / "{coverage}/{sample}/report.tsv"),
+        provenance=str(OUT / DATASET / "{coverage}/{sample}/provenance.json")
+    wildcard_constraints:
+        sample="|".join(sorted({sample for _, sample in IMPORT_SAMPLES})) or "NO_IMPORTS"
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/materialize_import.py --config {CONFIGFILE:q} --coverage {wildcards.coverage:q} "
+        "--sample {wildcards.sample:q} --report {output.report:q} --assignment {output.assignment:q} --provenance {output.provenance:q}"
+
+
+rule evaluate:
+    input:
+        assignment=str(OUT / DATASET / "{coverage}/{sample}/assignments.tsv")
+    output:
+        json=str(OUT / DATASET / "{coverage}/{sample}/metrics.json"),
+        text=str(OUT / DATASET / "{coverage}/{sample}/metrics.txt")
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/evaluate.py --assignment {input.assignment:q} --json-output {output.json:q} --text-output {output.text:q}"
+
+
+rule aggregate:
+    input:
+        RESOLVED_TARGETS
+    output:
+        str(OUT / DATASET / "aggregate.tsv")
+    params:
+        records=json.dumps(metrics_records())
+    shell:
+        "{PYTHON:q} {SCRIPT_ROOT}/scripts/aggregate.py --records-json {params.records:q} --output {output:q}"

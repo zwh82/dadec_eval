@@ -1,0 +1,1 @@
+run: {id: 30strains_20x_proovread_original, coverage: 20x, method: proovread, parameter_set: original}

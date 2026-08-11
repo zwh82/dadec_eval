@@ -1,0 +1,5 @@
+dataset	community	source_root	files
+100S-BA	100-strain broad-abundance mixture	/home/work/wenhai/dadec/data/100strains	21
+100S-NU	100-strain near-uniform legacy mixture	/home/yczhang/zyc/final_result/100strains/data	42
+30S-BA	30-strain broad-abundance mixture	/home/work/wenhai/dadec/data/30strains	49
+30S-NU	30-strain near-uniform legacy mixture	/home/yczhang/zyc/final_result/30strains/data	71

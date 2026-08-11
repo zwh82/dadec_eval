@@ -1,0 +1,10 @@
+run_id	parameter_set	dataset	long_coverage	short_coverage	method	ambiguity_score	mismatches_per_100_kbp	indels_per_100_kbp	haplotype_coverage_percent	local_misassemblies	contigs_number
+mhc_ont_50x_dadec_dev_fix_a_k63_k63_s1_a2_a1	original	mhc_ont	10x	50x	DADEC	0.9999	31.27	22.88	99.942	3	7190
+mhc_ont_50x_fmlrc_original_k21_k59	original	mhc_ont	10x	50x	FMLRC	0.9999	121.38	44.32	99.942	102	7190
+mhc_ont_50x_f_hero_original_k21_k59_hs5_hi1	original	mhc_ont	10x	50x	F_HERO	0.9999	329.81	82.32	99.784	312	7190
+mhc_ont_50x_ratatosk_original_k31_k63	original	mhc_ont	10x	50x	Ratatosk	0.9999	282.07	294.89	99.941	1	7190
+mhc_ont_50x_r_hero_original_k31_k63_hs10_hi1	original	mhc_ont	10x	50x	R_HERO	0.9999	450.81	124.39	99.54	388	7190
+mhc_ont_50x_lordec_original_k31_ls5	original	mhc_ont	10x	50x	LoRDEC	0.9999	745.96	908.95	99.94	5	7190
+mhc_ont_50x_l_hero_original_k31_ls5_hs10_hi1	original	mhc_ont	10x	50x	L_HERO	0.9999	611.07	256.35	99.619	456	7190
+mhc_ont_50x_colormap_original	original	mhc_ont	10x	50x	CoLoRMap	0.9999	1168.51	1060.52	99.908	5	7190
+mhc_ont_50x_proovread_original	original	mhc_ont	10x	50x	Proovread	0.9999	36.58	13.35	99.942	0	7190
